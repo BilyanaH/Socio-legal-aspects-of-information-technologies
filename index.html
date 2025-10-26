@@ -225,9 +225,9 @@
         }
 
         // Зареждане и парсинг на CSV
-        fetch('hospitals.csv') // Update to your CSV path in the GitHub repo, e.g., '/your-repo/hospitals.csv'
+        fetch('hospitals.csv') // Update to your GitHub repo path, e.g., '/your-repo/proba/hospitals.csv'
             .then(response => {
-                if (!response.ok) throw new Error('CSV файлът не е намерен. Уверете се, че hospitals.csv е в GitHub репозиториото.');
+                if (!response.ok) throw new Error('CSV файлът не е намерен. Уверете се, че hospitals.csv е в същата папка или в GitHub репозиториото.');
                 return response.text();
             })
             .then(csvText => {
@@ -310,7 +310,7 @@
             })
             .catch(error => {
                 console.error('Грешка при fetch на CSV:', error);
-                document.getElementById('loading').innerHTML = 'Грешка: ' + error.message + '<br>Уверете се, че hospitals.csv е в репозиториото и е достъпен.';
+                document.getElementById('loading').innerHTML = 'Грешка: ' + error.message + '<br>Уверете се, че hospitals.csv е достъпен и стартирайте локален сървър (напр. python -m http.server).';
             });
     </script>
 </body>
