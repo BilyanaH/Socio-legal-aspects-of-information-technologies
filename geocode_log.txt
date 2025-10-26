@@ -22,3 +22,45 @@
 2025-10-26 23:19:19,586 - WARNING - No coordinates found for: бул. Демокрация №86 и ул. Ст.Стамболов №73, БУРГАС, Бургас, Bulgaria
 2025-10-26 23:19:21,270 - WARNING - No coordinates found for: ул. Бригадирска № 1, ЕТРОПОЛЕ, София - област, Bulgaria
 2025-10-26 23:19:22,379 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
+2025-10-26 23:21:09,872 - INFO - Successfully read hospitals.csv with 10 rows
+2025-10-26 23:21:10,576 - INFO - Geocoded ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria: (42.5095302, 27.4695075)
+2025-10-26 23:21:12,437 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:21:13,440 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:21:14,436 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:21:15,483 - INFO - Geocoded КАВАРНА, Добрич, Bulgaria: (43.4332836, 28.3390066)
+2025-10-26 23:21:17,472 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:21:18,508 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:21:19,459 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:21:20,423 - INFO - Geocoded БАЛЧИК, Добрич, Bulgaria: (43.4259186, 28.1602967)
+2025-10-26 23:21:22,287 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:21:23,286 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:21:24,281 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:21:25,327 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:21:26,331 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:21:27,328 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:21:27,328 - ERROR - Failed after 3 attempts for all queries: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-26 23:21:28,966 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:29,962 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:30,962 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:32,021 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:21:33,810 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:34,852 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:35,788 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:36,702 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:21:38,355 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:39,351 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:40,355 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:21:41,407 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:21:43,457 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:21:44,503 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:21:46,465 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:21:46,974 - INFO - Geocoded РУСЕ, Русе, Bulgaria: (43.8480413, 25.9542057)
+2025-10-26 23:21:48,618 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:21:49,618 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:21:50,620 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:21:51,680 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-26 23:21:53,304 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-26 23:21:54,330 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-26 23:21:55,307 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-26 23:21:56,330 - INFO - Geocoded ЕТРОПОЛЕ, София - област, Bulgaria: (42.8326835, 23.9964396)
+2025-10-26 23:21:57,537 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba

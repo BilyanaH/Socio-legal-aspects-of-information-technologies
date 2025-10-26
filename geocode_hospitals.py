@@ -20,33 +20,37 @@ if sys.platform == 'win32':
     sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
 
 def geocode_address(address, city, oblast, retries=3):
-    # Simplify address: remove 'ет.', 'ГР.', and extra spaces
-    address = address.replace('ет.', '').replace('ГР.', '').replace('  ', ' ').strip()
+    # Simplify address: remove 'ет.', 'ГР.', '№', 'и', extra spaces
+    address = address.replace('ет.', '').replace('ГР.', '').replace('№', '').replace('и', '').replace('  ', ' ').strip()
     city = city.replace('ГР.', '').strip() if city else oblast
-    query = f"{address}, {city}, {oblast}, Bulgaria"
+    # Try street-level address first
+    queries = [
+        f"{address}, {city}, {oblast}, Bulgaria",  # Full address
+        f"{city}, {oblast}, Bulgaria"              # Fallback to city-level
+    ]
     
-    for attempt in range(retries):
-        try:
-            headers = {'User-Agent': 'CourseProject/1.0 (your_email@example.com)'}  # Replace with your email
-            response = requests.get(f"https://nominatim.openstreetmap.org/search?format=json&q={query}", headers=headers)
-            if response.status_code != 200:
-                logging.error(f"Attempt {attempt + 1}/{retries}: Status {response.status_code} for {query}")
+    for query in queries:
+        for attempt in range(retries):
+            try:
+                headers = {'User-Agent': 'CourseProject/1.0 (your_email@example.com)'}  # Replace with your email
+                response = requests.get(f"https://nominatim.openstreetmap.org/search?format=json&q={query}", headers=headers)
+                if response.status_code != 200:
+                    logging.error(f"Attempt {attempt + 1}/{retries}: Status {response.status_code} for {query}")
+                    if attempt < retries - 1:
+                        time.sleep(3)  # Longer delay for retries
+                    continue
+                data = response.json()
+                if data:
+                    lat, lng = data[0]['lat'], data[0]['lon']
+                    logging.info(f"Geocoded {query}: ({lat}, {lng})")
+                    return lat, lng
+                logging.warning(f"No coordinates found for: {query}")
+            except Exception as e:
+                logging.error(f"Attempt {attempt + 1}/{retries}: Error geocoding {query}: {e}")
                 if attempt < retries - 1:
-                    time.sleep(2)  # Wait before retrying
-                continue
-            data = response.json()
-            if data:
-                lat, lng = data[0]['lat'], data[0]['lon']
-                logging.info(f"Geocoded {query}: ({lat}, {lng})")
-                return lat, lng
-            logging.warning(f"No coordinates found for: {query}")
-            return None, None
-        except Exception as e:
-            logging.error(f"Attempt {attempt + 1}/{retries}: Error geocoding {query}: {e}")
-            if attempt < retries - 1:
-                time.sleep(2)
-            continue
-    logging.error(f"Failed after {retries} attempts for: {query}")
+                    time.sleep(3)
+        # If street-level fails, try the next query (city-level)
+    logging.error(f"Failed after {retries} attempts for all queries: {address}, {city}, {oblast}")
     return None, None
 
 def main():
@@ -87,7 +91,7 @@ def main():
         df.at[i, 'lat'] = lat
         df.at[i, 'lng'] = lng
         print(f"Geocoded {row['Наименование']} at {row['Адрес']}, {city}, {row['Област']}: ({lat}, {lng})")
-        time.sleep(1.1)  # Respect Nominatim's rate limit
+        time.sleep(1.2)  # Slightly longer delay to avoid rate limits
 
     # Save to output file
     try:
