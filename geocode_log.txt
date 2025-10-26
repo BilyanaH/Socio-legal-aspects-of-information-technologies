@@ -193,3 +193,116 @@
 2025-10-26 23:35:03,047 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
 2025-10-26 23:35:04,056 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
 2025-10-26 23:35:05,060 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:06,048 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:07,066 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:08,049 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:09,048 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:10,050 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:11,059 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:12,049 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:13,089 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:35:15,203 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:16,212 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:17,198 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:18,162 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:19,164 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:20,184 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:21,159 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:22,216 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:23,159 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:24,173 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:25,087 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:35:27,163 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:28,156 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:29,161 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:30,155 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:31,156 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:35:32,158 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:33,165 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:34,177 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:35,155 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:36,157 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Bulgaria
+2025-10-26 23:35:37,185 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:35:39,409 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:35:40,446 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:35:41,427 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:35:42,416 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:35:43,432 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:35:44,471 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Bulgaria
+2025-10-26 23:35:45,370 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Bulgaria
+2025-10-26 23:35:46,405 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Bulgaria
+2025-10-26 23:35:47,415 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Bulgaria
+2025-10-26 23:35:48,507 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Bulgaria
+2025-10-26 23:35:49,354 - INFO - Geocoded РУСЕ, Русе, Bulgaria: (43.8480413, 25.9542057)
+2025-10-26 23:35:51,269 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:35:52,271 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:35:53,271 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:35:54,271 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:35:55,269 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:35:56,271 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Bulgaria
+2025-10-26 23:35:57,271 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Bulgaria
+2025-10-26 23:35:58,270 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Bulgaria
+2025-10-26 23:35:59,272 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Bulgaria
+2025-10-26 23:36:00,279 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Bulgaria
+2025-10-26 23:36:01,320 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-26 23:36:03,292 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-26 23:36:04,760 - INFO - Successfully read hospitals.csv with 10 rows
+2025-10-26 23:36:05,393 - INFO - Geocoded ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria: (42.5095302, 27.4695075)
+2025-10-26 23:36:07,025 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:36:08,027 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:36:09,030 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:36:10,068 - INFO - Geocoded КАВАРНА, Добрич, Bulgaria: (43.4332836, 28.3390066)
+2025-10-26 23:36:11,809 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:36:12,823 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:36:17,029 - INFO - Successfully read hospitals.csv with 10 rows
+2025-10-26 23:36:17,646 - INFO - Geocoded ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria: (42.5095302, 27.4695075)
+2025-10-26 23:36:19,335 - WARNING - No coordinates found for: ул. Васил Левски №36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:36:21,002 - WARNING - No coordinates found for: ул. Д-р Златко Петков №1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:36:22,600 - WARNING - No coordinates found for: к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:36:24,214 - INFO - Geocoded бул. 25-ти септември 68, ДОБРИЧ, Добрич, Bulgaria: (43.5776089, 27.8287398)
+2025-10-26 23:36:25,889 - WARNING - No coordinates found for: ул. Димитър Петков №3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:36:27,514 - INFO - Geocoded 25-ти Септември 68, ДОБРИЧ, Добрич, Bulgaria: (43.4277001, 28.3379965)
+2025-10-26 23:36:29,204 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:36:30,893 - WARNING - No coordinates found for: бул. Демокрация №86 и ул. Ст.Стамболов №73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:36:32,584 - INFO - Successfully read hospitals.csv with 10 rows
+2025-10-26 23:36:33,225 - INFO - Geocoded ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria: (42.5095302, 27.4695075)
+2025-10-26 23:36:34,854 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:36:35,859 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:36:36,863 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-26 23:36:37,923 - INFO - Geocoded КАВАРНА, Добрич, Bulgaria: (43.4332836, 28.3390066)
+2025-10-26 23:36:39,681 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:36:40,627 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:36:41,667 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-26 23:36:42,595 - INFO - Geocoded БАЛЧИК, Добрич, Bulgaria: (43.4259186, 28.1602967)
+2025-10-26 23:36:44,244 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:36:45,241 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:36:46,240 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:36:47,277 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:36:48,284 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:36:49,277 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-26 23:36:49,277 - ERROR - Failed after 3 attempts for all queries: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-26 23:36:50,922 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:36:51,927 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:36:52,947 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:36:54,003 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:36:55,735 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:36:56,790 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:36:57,737 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:36:58,682 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:37:00,309 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:37:01,312 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:37:02,308 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-26 23:37:03,351 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-26 23:37:05,140 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:37:06,163 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:37:07,133 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-26 23:37:08,093 - INFO - Geocoded РУСЕ, Русе, Bulgaria: (43.8480413, 25.9542057)
+2025-10-26 23:37:09,775 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:37:10,789 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:37:11,782 - WARNING - No coordinates found for: бул. Демокраця 86 ул. Ст.Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-26 23:37:12,839 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-26 23:37:14,700 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-26 23:37:15,701 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-26 23:37:16,700 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-26 23:37:17,727 - INFO - Geocoded ЕТРОПОЛЕ, София - област, Bulgaria: (42.8326835, 23.9964396)
+2025-10-26 23:37:18,935 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
