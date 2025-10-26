@@ -158,8 +158,8 @@
 
         // Функция за геокодиране през прокси
         async function geocodeAddress(address, city, oblast) {
-            if (!city || city === 'undefined') {
-                city = oblast; // Fallback to oblast if city is undefined
+            if (!city || city === 'undefined' || city.trim() === '') {
+                city = oblast; // Fallback to oblast if city is missing or undefined
             }
             const cacheKey = `geocode_${address}_${city}_${oblast}`;
             const cached = localStorage.getItem(cacheKey);
@@ -169,6 +169,9 @@
             try {
                 const query = encodeURIComponent(`${address}, ${city}, ${oblast}, Bulgaria`);
                 const response = await fetch(`http://localhost:3000/nominatim?q=${query}`);
+                if (!response.ok) {
+                    throw new Error(`Proxy responded with status ${response.status}`);
+                }
                 const data = await response.json();
                 if (data.length > 0) {
                     const coords = { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
@@ -228,7 +231,7 @@
                         const hospitals = results.data;
                         // Валидиране на данните
                         hospitals.forEach(hospital => {
-                            hospital.Населено_място = hospital.Населено_място || hospital.Област; // Fallback
+                            hospital.Населено_място = (hospital.Населено_място && hospital.Населено_място.trim() !== '') ? hospital.Населено_място : hospital.Област;
                         });
                         document.getElementById('loading-text').textContent = `Геокодиране на ${hospitals.length} адреса...`;
 
