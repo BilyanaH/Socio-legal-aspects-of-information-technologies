@@ -4,6 +4,8 @@ import pandas as pd
 import os
 import sys
 import logging
+import json
+from urllib.parse import urlencode
 
 # Set up logging to a file
 logging.basicConfig(
@@ -19,38 +21,188 @@ if sys.platform == 'win32':
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
     sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
 
-def geocode_address(address, city, oblast, retries=3):
-    # Simplify address: remove 'ет.', 'ГР.', '№', 'и', extra spaces
-    address = address.replace('ет.', '').replace('ГР.', '').replace('№', '').replace('и', '').replace('  ', ' ').strip()
-    city = city.replace('ГР.', '').strip() if city else oblast
-    # Try street-level address first
-    queries = [
-        f"{address}, {city}, {oblast}, Bulgaria",  # Full address
-        f"{city}, {oblast}, Bulgaria"              # Fallback to city-level
-    ]
-    
-    for query in queries:
-        for attempt in range(retries):
-            try:
-                headers = {'User-Agent': 'CourseProject/1.0 (your_email@example.com)'}  # Replace with your email
-                response = requests.get(f"https://nominatim.openstreetmap.org/search?format=json&q={query}", headers=headers)
-                if response.status_code != 200:
-                    logging.error(f"Attempt {attempt + 1}/{retries}: Status {response.status_code} for {query}")
-                    if attempt < retries - 1:
-                        time.sleep(3)  # Longer delay for retries
-                    continue
-                data = response.json()
-                if data:
-                    lat, lng = data[0]['lat'], data[0]['lon']
-                    logging.info(f"Geocoded {query}: ({lat}, {lng})")
-                    return lat, lng
-                logging.warning(f"No coordinates found for: {query}")
-            except Exception as e:
-                logging.error(f"Attempt {attempt + 1}/{retries}: Error geocoding {query}: {e}")
-                if attempt < retries - 1:
-                    time.sleep(3)
-        # If street-level fails, try the next query (city-level)
-    logging.error(f"Failed after {retries} attempts for all queries: {address}, {city}, {oblast}")
+CACHE_FILE = 'geocode_cache.json'
+
+def load_cache(cache_file=CACHE_FILE):
+    if os.path.exists(cache_file):
+        try:
+            with open(cache_file, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            logging.warning(f"Could not read cache {cache_file}: {e}")
+    return {}
+
+
+def save_cache(cache, cache_file=CACHE_FILE):
+    try:
+        with open(cache_file, 'w', encoding='utf-8') as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logging.warning(f"Could not save cache {cache_file}: {e}")
+
+
+def _score_nominatim_candidate(candidate, wanted_city, wanted_oblast, name_hint=None):
+    score = 0.0
+    importance = float(candidate.get('importance', 0) or 0)
+    score += importance * 10
+
+    cclass = candidate.get('class', '')
+    ctype = candidate.get('type', '')
+    if cclass == 'building' or ctype in ('house', 'residential', 'hospital', 'clinic', 'public_building'):
+        score += 20
+
+    display = candidate.get('display_name', '').lower()
+    if name_hint and name_hint.lower() in display:
+        score += 30
+
+    addr = candidate.get('address', {}) if isinstance(candidate.get('address', {}), dict) else {}
+    city_vals = [addr.get(k, '').lower() for k in ('city', 'town', 'village', 'municipality', 'county')]
+    if wanted_city and any(wanted_city.lower() == v for v in city_vals if v):
+        score += 15
+    if wanted_oblast and wanted_oblast.lower() in display:
+        score += 5
+
+    return score
+
+
+def geocode_with_nominatim(street, city, oblast, name_hint=None, limit=5, retries=2):
+    base = 'https://nominatim.openstreetmap.org/search'
+    params = {
+        'format': 'json',
+        'addressdetails': 1,
+        'limit': limit,
+        'countrycodes': 'bg'
+    }
+    # Use structured params when we have a street
+    if street:
+        params['street'] = street
+    if city:
+        params['city'] = city
+    if oblast:
+        params['county'] = oblast
+    params['country'] = 'Bulgaria'
+
+    headers = {'User-Agent': 'GeocodeHospitals/1.0 (contact@example.com)'}
+
+    for attempt in range(retries):
+        try:
+            resp = requests.get(base, params=params, headers=headers, timeout=15)
+            if resp.status_code != 200:
+                logging.warning(f"Nominatim status {resp.status_code} for {params}")
+                time.sleep(1 + attempt)
+                continue
+            data = resp.json()
+            if not data:
+                logging.info(f"Nominatim: no results for {params}")
+                return None, None
+
+            # Score candidates and pick best
+            best = None
+            best_score = -1
+            for cand in data:
+                s = _score_nominatim_candidate(cand, city, oblast, name_hint)
+                if s > best_score:
+                    best_score = s
+                    best = cand
+
+            if best:
+                lat = best.get('lat')
+                lon = best.get('lon')
+                logging.info(f"Nominatim chosen candidate (score={best_score}): {best.get('display_name')}")
+                return float(lat), float(lon)
+            return None, None
+        except Exception as e:
+            logging.error(f"Nominatim attempt {attempt+1} error for {params}: {e}")
+            time.sleep(1 + attempt)
+    return None, None
+
+
+def geocode_with_google(street, city, oblast, name_hint=None, api_key=None):
+    if not api_key:
+        return None, None
+    base = 'https://maps.googleapis.com/maps/api/geocode/json'
+    address_parts = []
+    if street:
+        address_parts.append(street)
+    if city:
+        address_parts.append(city)
+    if oblast and oblast not in (city or ''):
+        address_parts.append(oblast)
+    address_parts.append('Bulgaria')
+    address = ', '.join([p for p in address_parts if p])
+
+    params = {'address': address, 'key': api_key}
+    try:
+        resp = requests.get(base, params=params, timeout=15)
+        if resp.status_code != 200:
+            logging.warning(f"Google geocode status {resp.status_code} for {address}")
+            return None, None
+        data = resp.json()
+        if data.get('status') != 'OK' or not data.get('results'):
+            logging.info(f"Google no results for {address}: {data.get('status')}")
+            return None, None
+
+        # Prefer ROOFTOP or RANGE_INTERPOLATED location types
+        preferred = None
+        for r in data['results']:
+            loc_type = r.get('geometry', {}).get('location_type', '')
+            if loc_type in ('ROOFTOP', 'RANGE_INTERPOLATED'):
+                preferred = r
+                break
+        if not preferred:
+            preferred = data['results'][0]
+
+        # extra check: ensure city component matches
+        formatted = preferred.get('formatted_address', '')
+        lat = preferred.get('geometry', {}).get('location', {}).get('lat')
+        lon = preferred.get('geometry', {}).get('location', {}).get('lng')
+        logging.info(f"Google chosen: {formatted} (type={preferred.get('geometry', {}).get('location_type')})")
+        return float(lat), float(lon)
+    except Exception as e:
+        logging.error(f"Google geocode error for {address}: {e}")
+        return None, None
+
+
+def geocode_address(address, city, oblast, name_hint=None):
+    # Normalize
+    street = address or ''
+    if isinstance(street, str):
+        street = street.replace('ет.', '').replace('ГР.', '').replace('№', '').replace('и', '').replace('\t', ' ').replace('  ', ' ').strip()
+    city = city.replace('ГР.', '').strip() if isinstance(city, str) and city.strip() != '' else (oblast if isinstance(oblast, str) else '')
+    oblast = oblast or ''
+
+    cache_key = f"{street}||{city}||{oblast}"
+    cache = load_cache()
+    if cache_key in cache:
+        logging.info(f"Cache hit for {cache_key}")
+        val = cache[cache_key]
+        return val.get('lat'), val.get('lng')
+
+    # Try Google first if api key present
+    gkey = os.environ.get('GOOGLE_API_KEY')
+    if gkey:
+        lat, lng = geocode_with_google(street, city, oblast, name_hint=name_hint, api_key=gkey)
+        if lat and lng:
+            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google'}
+            save_cache(cache)
+            return lat, lng
+
+    # Fallback to Nominatim
+    lat, lng = geocode_with_nominatim(street, city, oblast, name_hint=name_hint)
+    if lat and lng:
+        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim'}
+        save_cache(cache)
+        return lat, lng
+
+    # As a last resort, try a looser query (city-level)
+    if city:
+        lat, lng = geocode_with_nominatim('', city, oblast, name_hint=name_hint, limit=3)
+        if lat and lng:
+            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_city'}
+            save_cache(cache)
+            return lat, lng
+
+    logging.error(f"Failed to geocode: {street}, {city}, {oblast}")
     return None, None
 
 def main():

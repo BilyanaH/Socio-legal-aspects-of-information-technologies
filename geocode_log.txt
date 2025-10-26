@@ -1203,3 +1203,592 @@
 2025-10-27 00:29:30,869 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
 2025-10-27 00:29:30,869 - ERROR - Failed after 3 attempts for all queries: ул. Стефан Сарафов 7, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
 2025-10-27 00:29:32,083 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
+2025-10-27 00:38:54,143 - INFO - Successfully read hospitals.csv with 277 rows
+2025-10-27 00:38:54,768 - INFO - Nominatim chosen candidate (score=40.000661242084384): бл. 158, ж.к. Лазур, Бургас, 8001, България
+2025-10-27 00:38:56,379 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Левск 36', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:38:57,410 - INFO - Nominatim chosen candidate (score=25.12652827621927): Каварна, Добрич, 9650, България
+2025-10-27 00:38:59,126 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Петков 1', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:39:00,039 - INFO - Nominatim chosen candidate (score=25.34786908939286): Балчик, Добрич, България
+2025-10-27 00:39:01,688 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медка-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:39:02,687 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:39:02,689 - ERROR - Failed to geocode: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 00:39:04,294 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. 25-т септемвр 68', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:39:05,305 - INFO - Nominatim chosen candidate (score=25.476844999457395): Добрич, България
+2025-10-27 00:39:06,986 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Дмтър Петков 3', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:39:07,927 - INFO - Nominatim chosen candidate (score=25.476844999457395): Добрич, България
+2025-10-27 00:39:09,512 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': '25-т Септемвр 68', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:39:10,535 - INFO - Nominatim chosen candidate (score=25.476844999457395): Добрич, България
+2025-10-27 00:39:12,238 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А 2', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 00:39:13,178 - INFO - Nominatim chosen candidate (score=25.980667737699658): Русе, България
+2025-10-27 00:39:14,802 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Демокраця 86', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:39:15,840 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:39:17,509 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов 73', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:39:18,495 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:39:20,138 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Доц.д-р Константн Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:39:21,153 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:39:22,800 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Бргадрска 1', 'city': 'ЕТРОПОЛЕ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:39:23,819 - INFO - Nominatim chosen candidate (score=19.68832140439421): Етрополе, Софийска, 2180, България
+2025-10-27 00:39:25,442 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Божко Божлов 1', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:39:26,457 - INFO - Nominatim chosen candidate (score=20.1312912029114): Ботевград, Софийска, 2140, България
+2025-10-27 00:39:28,101 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георг Бенковск 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:39:29,109 - INFO - Nominatim chosen candidate (score=19.840087414497724): Пирдоп, Софийска, 2070, България
+2025-10-27 00:39:30,778 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Македоня 49', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:39:31,752 - INFO - Nominatim chosen candidate (score=20.355894579013782): Самоков, Софийска, България
+2025-10-27 00:39:32,977 - INFO - Cache hit for ул. Георг Бенковск 24||ПИРДОП||София - област
+2025-10-27 00:39:34,601 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:39:35,583 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:39:35,584 - ERROR - Failed to geocode: ул. Първа 32, С.ДОГАНОВО, София - област
+2025-10-27 00:39:37,952 - INFO - Nominatim chosen candidate (score=35.000554749370565): МБАЛ Елин Пелин, 15, улица Здравец, Елин Пелин, Софийска, 2100, България
+2025-10-27 00:39:39,725 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Коста Хаджпакев 7', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:39:40,750 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:39:42,380 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'парк Кайлъка местност Стражата', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:39:43,380 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:39:45,035 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георг Бенковск 19', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:39:46,004 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:39:46,006 - ERROR - Failed to geocode: ул. Георг Бенковск 19, С.ТУЧЕНИЦА, Плевен
+2025-10-27 00:39:47,634 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Радецк 30', 'city': 'ТРОЯН', 'county': 'Ловеч', 'country': 'Bulgaria'}
+2025-10-27 00:39:48,628 - INFO - Nominatim chosen candidate (score=25.047944385653548): Троян, Ловеч, България
+2025-10-27 00:39:49,833 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 00:39:51,488 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Шпка 30', 'city': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:39:52,489 - INFO - Nominatim chosen candidate (score=19.96665820098214): Ихтиман, Софийска, 2050, България
+2025-10-27 00:39:53,695 - INFO - Cache hit for ул. Васл Левск 36||КАВАРНА||Добрич
+2025-10-27 00:39:55,323 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Търновска 55', 'city': 'ОМУРТАГ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 00:39:56,330 - INFO - Nominatim chosen candidate (score=24.833666697513898): Омуртаг, Търговище, 7900, България
+2025-10-27 00:39:57,999 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Прн 16', 'city': 'ТЪРГОВИЩЕ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 00:39:58,959 - INFO - Nominatim chosen candidate (score=25.347384369322373): Търговище, България
+2025-10-27 00:40:00,575 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'кв. Запад', 'city': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 00:40:01,567 - INFO - Nominatim chosen candidate (score=24.83474126597703): Попово, Търговище, 7800, България
+2025-10-27 00:40:03,217 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Съйко Съев 27', 'city': 'ЛОВЕЧ', 'county': 'Ловеч', 'country': 'Bulgaria'}
+2025-10-27 00:40:04,220 - INFO - Nominatim chosen candidate (score=25.527804620023698): Ловеч, 5503, България
+2025-10-27 00:40:05,871 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Староселска 4', 'city': 'СВОГЕ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:40:06,852 - INFO - Nominatim chosen candidate (score=19.87598307894376): Своге, Софийска, България
+2025-10-27 00:40:08,659 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'кв. Запад', 'city': 'ТЪРГОВИЩЕ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 00:40:09,656 - INFO - Nominatim chosen candidate (score=25.347384369322373): Търговище, България
+2025-10-27 00:40:11,478 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Генерал Леонов 95 3', 'city': 'ВРАЦА', 'county': 'Враца', 'country': 'Bulgaria'}
+2025-10-27 00:40:12,493 - INFO - Nominatim chosen candidate (score=25.455195489550757): Враца, 3002, България
+2025-10-27 00:40:14,319 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хан Крум 5', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 00:40:15,282 - INFO - Nominatim chosen candidate (score=25.181485417528176): Горна Оряховица, Велико Търново, България
+2025-10-27 00:40:17,072 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Отец Пайсй 72', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 00:40:18,078 - INFO - Nominatim chosen candidate (score=25.181485417528176): Горна Оряховица, Велико Търново, България
+2025-10-27 00:40:20,015 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александровска 87', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:20,981 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:22,886 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Славейков ул. Георг Мнков 174', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:23,798 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:25,630 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александровска 78', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:26,602 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:28,462 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Транспортна 33', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:29,447 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:31,311 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов 11', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:32,283 - INFO - Nominatim chosen candidate (score=25.475256199581576): Несебър, Бургас, България
+2025-10-27 00:40:34,152 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Средна Гора 1', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:40:35,090 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 00:40:36,905 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Левск 66', 'city': 'ХАРМАНЛИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:40:37,923 - INFO - Nominatim chosen candidate (score=24.9847775472778): Харманли, Хасково, 6450, България
+2025-10-27 00:40:39,793 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хрсто Ботев 29', 'city': 'ДИМИТРОВГРАД', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:40:40,802 - INFO - Nominatim chosen candidate (score=25.078822111144827): Димитровград, Хасково, 6400, България
+2025-10-27 00:40:42,631 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Стефан Стамболов 73 прземен етаж 1 част от 2 от Терапевтчен корпус /блок 3/', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:43,645 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:45,508 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'УПИ VII-842 кв.68 по плана на ПЗ Север', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:46,471 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:48,298 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Здраве 29', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:49,281 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:51,138 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов 2', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:40:52,110 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 00:40:53,923 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Тодор Нколов 10', 'city': 'СРЕДЕЦ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:54,946 - INFO - Nominatim chosen candidate (score=24.82136145283213): Средец, Бургас, 8300, България
+2025-10-27 00:40:56,729 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Изгрев бул. Дмтър Дмов /Панорамен път/', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:40:57,733 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:40:59,712 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ивайло 11А', 'city': 'СВЕТИ ВЛАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:41:00,565 - INFO - Nominatim chosen candidate (score=24.857248938188): Свети Влас, Несебър, Бургас, 8256, България
+2025-10-27 00:41:02,378 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Сан Стефано 1', 'city': 'СВИЛЕНГРАД', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:41:03,375 - INFO - Nominatim chosen candidate (score=25.03390687811509): Свиленград, Хасково, България
+2025-10-27 00:41:05,137 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Съеднене 49', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:41:06,149 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 00:41:07,960 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Зорнца срещу бл.15', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:41:08,970 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:41:10,824 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стара планна 180', 'city': 'КАРНОБАТ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:41:11,790 - INFO - Nominatim chosen candidate (score=25.01928824220517): Карнобат, Бургас, 8400, България
+2025-10-27 00:41:13,570 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Шейново 4', 'city': 'АЙТОС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:41:14,572 - INFO - Nominatim chosen candidate (score=25.04226223415261): Айтос, Бургас, 8500, България
+2025-10-27 00:41:16,389 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Меден Руднк зона А', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:41:17,402 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:41:19,206 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Проф.Парашкев Стоянов 1', 'city': 'ПОМОРИЕ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:41:20,194 - INFO - Nominatim chosen candidate (score=25.250228425855447): Поморие, Бургас, България
+2025-10-27 00:41:22,028 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Зл. Петков 1', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:41:22,969 - INFO - Nominatim chosen candidate (score=25.34786908939286): Балчик, Добрич, България
+2025-10-27 00:41:24,882 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Мзя 5', 'city': 'ЛОВЕЧ', 'county': 'Ловеч', 'country': 'Bulgaria'}
+2025-10-27 00:41:25,776 - INFO - Nominatim chosen candidate (score=25.527804620023698): Ловеч, 5503, България
+2025-10-27 00:41:27,631 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Северна промшлена зона бул. Янко Комтов 7', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:41:28,641 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:41:30,411 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георг Крков 24', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:41:31,423 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 00:41:33,197 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хадж Дмтър 2 партер кабнет 1', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:41:34,206 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 00:41:36,087 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. П. Евтмй 1 нула-партер', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:41:37,104 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 00:41:39,115 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Българя 2', 'city': 'ДИМИТРОВГРАД', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:41:40,045 - INFO - Nominatim chosen candidate (score=25.078822111144827): Димитровград, Хасково, 6400, България
+2025-10-27 00:41:41,917 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Левск 253', 'city': 'ТРОЯН', 'county': 'Ловеч', 'country': 'Bulgaria'}
+2025-10-27 00:41:42,949 - INFO - Nominatim chosen candidate (score=25.047944385653548): Троян, Ловеч, България
+2025-10-27 00:41:44,792 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Бул. Столетов 67', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:41:45,835 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:41:45,837 - ERROR - Failed to geocode: Бул. Столетов 67, СОФИЯ, София (столица)
+2025-10-27 00:41:47,638 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Слвнца 309', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:41:48,717 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:41:48,719 - ERROR - Failed to geocode: бул. Слвнца 309, СОФИЯ, София (столица)
+2025-10-27 00:41:50,321 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Царградско шосе 56', 'city': 'КОСТЕНЕЦ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:41:51,338 - INFO - Nominatim chosen candidate (score=19.787222793054895): Костенец, Долна Василица, Костенец, Софийска, 2030, България
+2025-10-27 00:41:52,951 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'кв. Санаторума', 'city': 'С.ИСКРЕЦ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:41:53,956 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ИСКРЕЦ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:41:53,958 - ERROR - Failed to geocode: кв. Санаторума, С.ИСКРЕЦ, София - област
+2025-10-27 00:41:55,555 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хрсто Ботев 6', 'city': 'МОМИН ПРОХОД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 00:41:56,581 - INFO - Nominatim chosen candidate (score=19.638382221728925): Момин проход, Горна Василица, Костенец, Софийска, 2035, България
+2025-10-27 00:41:58,215 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'местност Тузлата', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:41:59,221 - INFO - Nominatim chosen candidate (score=25.34786908939286): Балчик, Добрич, България
+2025-10-27 00:42:01,065 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александър Стамболйск 25', 'city': 'ТЪРГОВИЩЕ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 00:42:02,075 - INFO - Nominatim chosen candidate (score=25.347384369322373): Търговище, България
+2025-10-27 00:42:03,881 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'кв. Болярово ул. Перущца 2', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:42:04,867 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 00:42:06,686 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Генерал Гурко 64', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:07,678 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:42:09,542 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Мусала 1', 'city': 'ТОПОЛОВГРАД', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:42:10,549 - INFO - Nominatim chosen candidate (score=24.78219490533734): Тополовград, Хасково, 6560, България
+2025-10-27 00:42:11,753 - INFO - Cache hit for бул. Съеднене 49||ХАСКОВО||Хасково
+2025-10-27 00:42:13,640 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Републканска 38', 'city': 'ЛЮБИМЕЦ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:42:14,642 - INFO - Nominatim chosen candidate (score=24.76687168623597): Любимец, Хасково, България
+2025-10-27 00:42:16,556 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хан Крум 31', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:17,547 - INFO - Nominatim chosen candidate (score=25.475256199581576): Несебър, Бургас, България
+2025-10-27 00:42:19,390 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'кв. Перла 20', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:20,343 - INFO - Nominatim chosen candidate (score=25.475256199581576): Несебър, Бургас, България
+2025-10-27 00:42:22,189 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов 11 Здравна къща Несебър', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:23,156 - INFO - Nominatim chosen candidate (score=25.475256199581576): Несебър, Бургас, България
+2025-10-27 00:42:25,018 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Проф. Парашкев Стоянов 7', 'city': 'ПОМОРИЕ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:26,033 - INFO - Nominatim chosen candidate (score=25.250228425855447): Поморие, Бургас, България
+2025-10-27 00:42:27,842 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'местност Кокалу ул. Кпарс 8', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:28,856 - INFO - Nominatim chosen candidate (score=25.475256199581576): Несебър, Бургас, България
+2025-10-27 00:42:30,735 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Слънчев бряг хотел Средец', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:31,691 - INFO - Nominatim chosen candidate (score=25.475256199581576): Несебър, Бургас, България
+2025-10-27 00:42:33,509 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Любен Каравелов 8', 'city': 'С.МИНЕРАЛНИ БАНИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:42:34,469 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.МИНЕРАЛНИ БАНИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 00:42:34,471 - ERROR - Failed to geocode: ул. Любен Каравелов 8, С.МИНЕРАЛНИ БАНИ, Хасково
+2025-10-27 00:42:36,360 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. П. Р. Славейков ул. Георг Мнков 174 до спортна зала Младост', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:37,255 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:42:39,049 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Проф. П. Стоянов 12', 'city': 'ПОМОРИЕ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:40,034 - INFO - Nominatim chosen candidate (score=25.250228425855447): Поморие, Бургас, България
+2025-10-27 00:42:41,779 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Гео Млев 14', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:42:42,786 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:42:44,592 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Цар Смеон 23', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:42:45,589 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:42:47,435 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к Дружба ул. Трте бора 24', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:42:48,408 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:42:50,176 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Местност Русково бърдо', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:42:51,185 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:42:52,391 - INFO - Cache hit for ул. Стефан Стамболов 73||БУРГАС||Бургас
+2025-10-27 00:42:54,176 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александър Стамболйск 32 корпус 1 2', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:55,187 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:42:56,958 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ванче Мхайлов 1', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:42:57,974 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:42:59,787 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Бузлуджа 1', 'city': 'ВЕЛИКО ТЪРНОВО', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 00:43:00,900 - INFO - Nominatim chosen candidate (score=25.87911008276574): Велико Търново, България
+2025-10-27 00:43:02,527 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Колхда продължене МТБ Пловдв Стацонар 2  3', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:43:03,543 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:43:05,185 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Гоце Делчев 38', 'city': 'ВЕЛИНГРАД', 'county': 'Пазарджик', 'country': 'Bulgaria'}
+2025-10-27 00:43:06,199 - INFO - Nominatim chosen candidate (score=25.057135800471624): Велинград, Пазарджик, 4600, България
+2025-10-27 00:43:07,838 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. М. Ташев 2', 'city': 'СОФИЯ 11 рн КРАСНА ПОЛЯНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:08,832 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 11 рн КРАСНА ПОЛЯНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:08,834 - ERROR - Failed to geocode: ул. М. Ташев 2, СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица)
+2025-10-27 00:43:10,544 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Македоня 38', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:11,462 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:11,464 - ERROR - Failed to geocode: бул. Македоня 38, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 00:43:13,077 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Хрсто Ботев 120', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:14,083 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:14,085 - ERROR - Failed to geocode: бул. Хрсто Ботев 120, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 00:43:15,739 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Околовръстен път 127', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:16,708 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:16,710 - ERROR - Failed to geocode: ул. Околовръстен път 127, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 00:43:18,362 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Царградско шосе 66А', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:19,370 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:19,371 - ERROR - Failed to geocode: бул. Царградско шосе 66А, СОФИЯ 15 рн МЛАДОСТ, София (столица)
+2025-10-27 00:43:20,968 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Константн Помянов-1', 'city': 'СОФИЯ КВ.ДРАГАЛЕВЦИ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:21,974 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ КВ.ДРАГАЛЕВЦИ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:21,976 - ERROR - Failed to geocode: ул. Константн Помянов-1, СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица)
+2025-10-27 00:43:23,706 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Н. Й. Вапцаров 51Б', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:24,581 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:24,583 - ERROR - Failed to geocode: бул. Н. Й. Вапцаров 51Б, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 00:43:26,175 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Брегалнца 47', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:27,187 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:43:27,189 - ERROR - Failed to geocode: ул. Брегалнца 47, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица)
+2025-10-27 00:43:28,786 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александър Стамболйск 31', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:43:29,793 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:43:31,474 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ген. Стефан Тошев 36А', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:43:32,435 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:43:34,053 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хан Кардам 2', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:43:35,081 - INFO - Nominatim chosen candidate (score=25.476844999457395): Добрич, България
+2025-10-27 00:43:36,696 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Проф. д-р Георг Георгев 4', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:43:37,709 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:43:39,353 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Драсов 12', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:43:40,354 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:43:42,064 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Цар Иван Александър 110А', 'city': 'ШУМЕН', 'county': 'Шумен', 'country': 'Bulgaria'}
+2025-10-27 00:43:43,008 - INFO - Nominatim chosen candidate (score=25.67439696239118): Шумен, България
+2025-10-27 00:43:44,693 - INFO - Nominatim chosen candidate (score=20.533994575417715): бул. Даме Груев, ж.к. Братя Миладинови, Бургас, 8005, България
+2025-10-27 00:43:45,899 - INFO - Cache hit for ул. Иван Драсов 12||ВАРНА||Варна
+2025-10-27 00:43:47,101 - INFO - Cache hit for ул. Проф. д-р Георг Георгев 4||ВАРНА||Варна
+2025-10-27 00:43:48,929 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Слвнца 40', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:43:49,947 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:43:51,889 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Драсов 10А', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:43:52,784 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:43:53,989 - INFO - Cache hit for ул. Иван Драсов 12||ВАРНА||Варна
+2025-10-27 00:43:55,191 - INFO - Cache hit for ул. Проф. д-р Георг Георгев 4||ВАРНА||Варна
+2025-10-27 00:43:56,884 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Коматевско шосе 79 партер 1  2', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:43:57,799 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:43:59,409 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Колхда-продължене 1 каб. 1 2 манпулацонна', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:44:00,421 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:44:02,024 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Левск 124', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:44:03,091 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:44:04,900 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. П. Евтмй 5', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:44:05,915 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:44:07,736 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Алеко Константнов 3-5', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:44:08,761 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:44:10,552 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Брегалнца 1', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:44:11,564 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:44:13,370 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Свет Константн Елена', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:44:14,420 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:44:16,372 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов 5', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:17,281 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:17,282 - ERROR - Failed to geocode: ул. Иван Вазов 5, СОФИЯ 24 рн БАНКЯ, София (столица)
+2025-10-27 00:44:19,278 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хсар 2', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:20,120 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:20,122 - ERROR - Failed to geocode: ул. Хсар 2, СОФИЯ 24 рн БАНКЯ, София (столица)
+2025-10-27 00:44:21,975 - INFO - Nominatim chosen candidate (score=40.533886129549096): бул. Иван Вазов, кв. Веригово, Хисаря, Пловдив, 4180, България
+2025-10-27 00:44:23,861 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Илн Паунов 1', 'city': 'ХИСАРЯ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:44:24,846 - INFO - Nominatim chosen candidate (score=24.841151346589584): Хисаря, Пловдив, 4180, България
+2025-10-27 00:44:26,648 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Г. Кочев 6', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:44:27,615 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:44:29,391 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Св. Георг Софйск 3', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:30,379 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:30,382 - ERROR - Failed to geocode: ул. Св. Георг Софйск 3, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:44:32,165 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Шейново 19', 'city': 'СОФИЯ 01 рн СРЕДЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:33,161 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 01 рн СРЕДЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:33,163 - ERROR - Failed to geocode: ул. Шейново 19, СОФИЯ 01 рн СРЕДЕЦ, София (столица)
+2025-10-27 00:44:34,774 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хрсто Смрненск 2', 'city': 'ЯМБОЛ', 'county': 'Ямбол', 'country': 'Bulgaria'}
+2025-10-27 00:44:35,881 - INFO - Nominatim chosen candidate (score=25.3968384673289): Ямбол, 8600, България
+2025-10-27 00:44:37,725 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ивайло 1', 'city': 'ЯМБОЛ', 'county': 'Ямбол', 'country': 'Bulgaria'}
+2025-10-27 00:44:38,685 - INFO - Nominatim chosen candidate (score=25.3968384673289): Ямбол, 8600, България
+2025-10-27 00:44:40,724 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Българка 2', 'city': 'ЯМБОЛ', 'county': 'Ямбол', 'country': 'Bulgaria'}
+2025-10-27 00:44:41,712 - INFO - Nominatim chosen candidate (score=25.3968384673289): Ямбол, 8600, България
+2025-10-27 00:44:43,468 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов 11 Общнска здравна къща - Несебър', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:44:44,490 - INFO - Nominatim chosen candidate (score=25.475256199581576): Несебър, Бургас, България
+2025-10-27 00:44:46,284 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Найчо Цанов 12', 'city': 'ВИДИН', 'county': 'Видин', 'country': 'Bulgaria'}
+2025-10-27 00:44:47,270 - INFO - Nominatim chosen candidate (score=25.81053071015903): Видин, 3700, България
+2025-10-27 00:44:49,030 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Херман Шкорпл 6', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:44:50,071 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:44:51,935 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Българя 104', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:52,827 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:44:52,829 - ERROR - Failed to geocode: бул. Българя 104, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:44:54,690 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Сан Стефано 1', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:44:55,577 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:44:57,285 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Дружба бл 112 вх.В ет 1', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:44:58,188 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:44:59,861 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Петко Ю. Тодоров 20', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:45:00,802 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:45:00,804 - ERROR - Failed to geocode: бул. Петко Ю. Тодоров 20, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:45:02,511 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хан Крум 2', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:45:03,455 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:45:05,126 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Дружба ул. Трте бора 24', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:45:06,103 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:45:07,895 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Сарафов 7', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:45:08,877 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:45:08,879 - ERROR - Failed to geocode: ул. Стефан Сарафов 7, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:45:10,660 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Св. Иван Рлск 3', 'city': 'ПАЗАРДЖИК', 'county': 'Пазарджик', 'country': 'Bulgaria'}
+2025-10-27 00:45:11,688 - INFO - Nominatim chosen candidate (score=25.4472147260135): Пазарджик, 4400, България
+2025-10-27 00:45:13,578 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Свобода 17', 'city': 'ПАЗАРДЖИК', 'county': 'Пазарджик', 'country': 'Bulgaria'}
+2025-10-27 00:45:14,511 - INFO - Nominatim chosen candidate (score=25.4472147260135): Пазарджик, 4400, България
+2025-10-27 00:45:16,314 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Дмтър Пехлванов 5', 'city': 'СЛИВЕН', 'county': 'Сливен', 'country': 'Bulgaria'}
+2025-10-27 00:45:17,329 - INFO - Nominatim chosen candidate (score=25.601507580134527): Сливен, 8801, България
+2025-10-27 00:45:19,168 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Хадж Дмтър 19', 'city': 'СЛИВЕН', 'county': 'Сливен', 'country': 'Bulgaria'}
+2025-10-27 00:45:20,147 - INFO - Nominatim chosen candidate (score=25.601507580134527): Сливен, 8801, България
+2025-10-27 00:45:21,920 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Архтект Цолов 98', 'city': 'ОРЯХОВО', 'county': 'Враца', 'country': 'Bulgaria'}
+2025-10-27 00:45:22,925 - INFO - Nominatim chosen candidate (score=24.99658033463987): Оряхово, Враца, 3300, България
+2025-10-27 00:45:24,783 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Втор юн 66', 'city': 'ВРАЦА', 'county': 'Враца', 'country': 'Bulgaria'}
+2025-10-27 00:45:25,734 - INFO - Nominatim chosen candidate (score=25.455195489550757): Враца, 3002, България
+2025-10-27 00:45:27,550 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Желез Йорданов 1', 'city': 'ПРОВАДИЯ', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:45:28,493 - INFO - Nominatim chosen candidate (score=24.814750597439318): Провадия, Варна, България
+2025-10-27 00:45:30,465 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Васл Апрлов 20', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:45:31,338 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:45:33,168 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Левск 62', 'city': 'БЯЛА', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 00:45:34,235 - INFO - Nominatim chosen candidate (score=24.725408525227436): Бяла, Русе, 7100, България
+2025-10-27 00:45:36,099 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Петър Ангелов 18', 'city': 'СВИЩОВ', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 00:45:37,081 - INFO - Nominatim chosen candidate (score=25.439274148038905): Свищов, Велико Търново, 5250, България
+2025-10-27 00:45:38,880 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Хрсто Ботев 81', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:45:39,895 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:45:41,706 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Мхал Добромров 1', 'city': 'РАКОВСКИ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:45:42,728 - INFO - Nominatim chosen candidate (score=24.811790546237543): Раковски, Пловдив, 4150, България
+2025-10-27 00:45:44,494 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Гео Млев 47', 'city': 'БЕЛЕНЕ', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:45:45,511 - INFO - Nominatim chosen candidate (score=24.901974192202704): Белене, Плевен, 5930, България
+2025-10-27 00:45:47,127 - INFO - Nominatim chosen candidate (score=40.53389269092851): Александровска, ж.к. Изгрев, Берковица, Монтана, 3500, България
+2025-10-27 00:45:48,730 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Левск 34', 'city': 'ГУЛЯНЦИ', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:45:49,754 - INFO - Nominatim chosen candidate (score=24.511118816666): Гулянци, Плевен, България
+2025-10-27 00:45:51,384 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Панайот Хтов 24', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 00:45:52,374 - INFO - Nominatim chosen candidate (score=25.476844999457395): Добрич, България
+2025-10-27 00:45:53,999 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ахнора 39', 'city': 'ИСПЕРИХ', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:45:55,040 - INFO - Nominatim chosen candidate (score=24.814750597439318): Исперих, Разград, България
+2025-10-27 00:45:56,659 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Марн Боев 4', 'city': 'КНЕЖА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:45:57,683 - INFO - Nominatim chosen candidate (score=24.709960600466285): Кнежа, Плевен, 5835, България
+2025-10-27 00:45:59,402 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Княз Борс I 12', 'city': 'КУБРАТ', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:46:00,331 - INFO - Nominatim chosen candidate (score=24.72752510088312): Кубрат, Разград, 7300, България
+2025-10-27 00:46:01,991 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Н. Вапцаров 5', 'city': 'ЛЕВСКИ', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:46:02,996 - INFO - Nominatim chosen candidate (score=24.75927254067416): Левски, Плевен, 5900, България
+2025-10-27 00:46:04,597 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александър Стамболйск 27', 'city': 'НИКОПОЛ', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:46:05,620 - INFO - Nominatim chosen candidate (score=25.24966443804214): Никопол, Плевен, 5940, България
+2025-10-27 00:46:07,234 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Болнчна 15', 'city': 'ПАЗАРДЖИК', 'county': 'Пазарджик', 'country': 'Bulgaria'}
+2025-10-27 00:46:08,268 - INFO - Nominatim chosen candidate (score=25.4472147260135): Пазарджик, 4400, България
+2025-10-27 00:46:09,934 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Пушкн 2', 'city': 'СЛИВЕН', 'county': 'Сливен', 'country': 'Bulgaria'}
+2025-10-27 00:46:10,889 - INFO - Nominatim chosen candidate (score=25.601507580134527): Сливен, 8801, България
+2025-10-27 00:46:12,507 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Цар Смеон Велк 119', 'city': 'ВИДИН', 'county': 'Видин', 'country': 'Bulgaria'}
+2025-10-27 00:46:13,515 - INFO - Nominatim chosen candidate (score=25.81053071015903): Видин, 3700, България
+2025-10-27 00:46:15,131 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Яне Санданск 61', 'city': 'ЧЕРВЕН БРЯГ', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:46:16,130 - INFO - Nominatim chosen candidate (score=24.729213374159862): Червен бряг, Плевен, 5980, България
+2025-10-27 00:46:17,844 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Яворов 19', 'city': 'ЧИРПАН', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:46:18,812 - INFO - Nominatim chosen candidate (score=24.9235369487792): Чирпан, Стара Загора, България
+2025-10-27 00:46:20,444 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Царградско шосе IV-т клометър ул. Д-р Любен Русев 1', 'city': 'СОФИЯ 08 рн ИЗГРЕВ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:21,441 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 08 рн ИЗГРЕВ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:21,442 - ERROR - Failed to geocode: бул. Царградско шосе IV-т клометър ул. Д-р Любен Русев 1, СОФИЯ 08 рн ИЗГРЕВ, София (столица)
+2025-10-27 00:46:23,096 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Трет март 20', 'city': 'СОПОТ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:46:24,091 - INFO - Nominatim chosen candidate (score=24.77241431109896): Сопот, Пловдив, 4330, България
+2025-10-27 00:46:25,696 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Монтевдео 21', 'city': 'СОФИЯ 18 рн ОВЧА КУПЕЛ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:26,735 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 18 рн ОВЧА КУПЕЛ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:26,738 - ERROR - Failed to geocode: бул. Монтевдео 21, СОФИЯ 18 рн ОВЧА КУПЕЛ, София (столица)
+2025-10-27 00:46:28,400 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Дунав 43', 'city': 'СТАМБОЛИЙСКИ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:46:29,375 - INFO - Nominatim chosen candidate (score=24.7095261645971): Стамболийски, Пловдив, 4210, България
+2025-10-27 00:46:31,046 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Марца 31', 'city': 'СТАМБОЛИЙСКИ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:46:32,008 - INFO - Nominatim chosen candidate (score=24.7095261645971): Стамболийски, Пловдив, 4210, България
+2025-10-27 00:46:33,631 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Съеднене 17 1 2', 'city': 'АСЕНОВГРАД', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:46:34,640 - INFO - Nominatim chosen candidate (score=25.26288161926287): Асеновград, Пловдив, 4230, България
+2025-10-27 00:46:36,402 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Съеднене 13 1 2', 'city': 'АСЕНОВГРАД', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:46:37,426 - INFO - Nominatim chosen candidate (score=25.26288161926287): Асеновград, Пловдив, 4230, България
+2025-10-27 00:46:39,299 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стара Планна 7 вх. В', 'city': 'ГОЦЕ ДЕЛЧЕВ', 'county': 'Благоевград', 'country': 'Bulgaria'}
+2025-10-27 00:46:40,280 - INFO - Nominatim chosen candidate (score=24.975349977062855): Гоце Делчев, Благоевград, 2900, България
+2025-10-27 00:46:42,093 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Струма 6 партер', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:43,082 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:43,084 - ERROR - Failed to geocode: ул. Струма 6 партер, СОФИЯ 04 рн ОБОРИЩЕ, София (столица)
+2025-10-27 00:46:44,891 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Княгня Маря Луза 191 2', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:45,886 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:45,888 - ERROR - Failed to geocode: бул. Княгня Маря Луза 191 2, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 00:46:47,727 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Ген. М. Скобелев 79', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:48,672 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:46:48,673 - ERROR - Failed to geocode: бул. Ген. М. Скобелев 79, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 00:46:50,562 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Пер Кюр 2', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:46:51,490 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:46:53,240 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Константн Велчков 50', 'city': 'ПАЗАРДЖИК', 'county': 'Пазарджик', 'country': 'Bulgaria'}
+2025-10-27 00:46:54,261 - INFO - Nominatim chosen candidate (score=25.4472147260135): Пазарджик, 4400, България
+2025-10-27 00:46:56,052 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Колхда - продължене', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:46:57,063 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:46:59,028 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'пл. Свобода 1 4 каб. 203 204', 'city': 'ДУПНИЦА', 'county': 'Кюстендил', 'country': 'Bulgaria'}
+2025-10-27 00:46:59,827 - INFO - Nominatim chosen candidate (score=25.260111736593778): Дупница, Кюстендил, 2604, България
+2025-10-27 00:47:01,744 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Знаме 4А 2', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:47:02,689 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:47:04,595 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Германея 38 2', 'city': 'САПАРЕВА БАНЯ', 'county': 'Кюстендил', 'country': 'Bulgaria'}
+2025-10-27 00:47:05,500 - INFO - Nominatim chosen candidate (score=24.66266779411071): Сапарева баня, Кюстендил, 2650, България
+2025-10-27 00:47:07,322 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'пл. Свобода 1', 'city': 'ДУПНИЦА', 'county': 'Кюстендил', 'country': 'Bulgaria'}
+2025-10-27 00:47:08,291 - INFO - Nominatim chosen candidate (score=25.260111736593778): Дупница, Кюстендил, 2604, България
+2025-10-27 00:47:10,192 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Солун 4 4', 'city': 'ДУПНИЦА', 'county': 'Кюстендил', 'country': 'Bulgaria'}
+2025-10-27 00:47:11,105 - INFO - Nominatim chosen candidate (score=25.260111736593778): Дупница, Кюстендил, 2604, България
+2025-10-27 00:47:12,918 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Черн Връх 14 партер', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:47:13,875 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:47:13,876 - ERROR - Failed to geocode: бул. Черн Връх 14 партер, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 00:47:15,650 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Мтрополт Методй Кусев 9 каб. 1 каб. 2 каб. 3', 'city': 'СТАРА ЗАГОРА', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:47:16,667 - INFO - Nominatim chosen candidate (score=25.856830712620493): Стара Загора, 6000, България
+2025-10-27 00:47:18,508 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Кенал 4', 'city': 'СТАРА ЗАГОРА', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:47:19,521 - INFO - Nominatim chosen candidate (score=25.856830712620493): Стара Загора, 6000, България
+2025-10-27 00:47:21,351 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александър Батенберг 1', 'city': 'КАЗАНЛЪК', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:47:22,339 - INFO - Nominatim chosen candidate (score=25.325854908509132): Казанлък, Стара Загора, България
+2025-10-27 00:47:24,237 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стара Планна 12 3 каб. 82', 'city': 'КАЗАНЛЪК', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:47:25,155 - INFO - Nominatim chosen candidate (score=25.325854908509132): Казанлък, Стара Загора, България
+2025-10-27 00:47:27,045 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Шар Планна 26А', 'city': 'БЛАГОЕВГРАД', 'county': 'Благоевград', 'country': 'Bulgaria'}
+2025-10-27 00:47:27,970 - INFO - Nominatim chosen candidate (score=25.604877587082363): Благоевград, 2700, България
+2025-10-27 00:47:29,794 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Мара Бунева 5', 'city': 'БЛАГОЕВГРАД', 'county': 'Благоевград', 'country': 'Bulgaria'}
+2025-10-27 00:47:30,776 - INFO - Nominatim chosen candidate (score=25.604877587082363): Благоевград, 2700, България
+2025-10-27 00:47:32,593 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Странджа 9', 'city': 'РАЗГРАД', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:47:33,588 - INFO - Nominatim chosen candidate (score=25.477769995039374): Разград, България
+2025-10-27 00:47:35,401 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Бел Лом 56 вх. В ап. 48', 'city': 'РАЗГРАД', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:47:36,372 - INFO - Nominatim chosen candidate (score=25.477769995039374): Разград, България
+2025-10-27 00:47:38,265 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ген. Карцов 36 1 2', 'city': 'КАРЛОВО', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:47:39,200 - INFO - Nominatim chosen candidate (score=25.218057610172036): Карлово, Пловдив, 4300, България
+2025-10-27 00:47:41,153 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Тодор Ана Пулев 18 1 2 3', 'city': 'КАРЛОВО', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:47:42,007 - INFO - Nominatim chosen candidate (score=25.218057610172036): Карлово, Пловдив, 4300, България
+2025-10-27 00:47:43,814 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ген. Гурко Мархолев 3', 'city': 'КАРЛОВО', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:47:44,807 - INFO - Nominatim chosen candidate (score=25.218057610172036): Карлово, Пловдив, 4300, България
+2025-10-27 00:47:46,676 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'пл. 17-т януар 1', 'city': 'КЮСТЕНДИЛ', 'county': 'Кюстендил', 'country': 'Bulgaria'}
+2025-10-27 00:47:47,598 - INFO - Nominatim chosen candidate (score=25.55131993417435): Кюстендил, България
+2025-10-27 00:47:49,667 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Яворов 6 к-т 98 99 109 219 405', 'city': 'КЮСТЕНДИЛ', 'county': 'Кюстендил', 'country': 'Bulgaria'}
+2025-10-27 00:47:50,387 - INFO - Nominatim chosen candidate (score=25.55131993417435): Кюстендил, България
+2025-10-27 00:47:52,200 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Българска морава 123', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:47:53,179 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:47:53,181 - ERROR - Failed to geocode: ул. Българска морава 123, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица)
+2025-10-27 00:47:54,997 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. В. Левск 1', 'city': 'РАЗГРАД', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:47:56,016 - INFO - Nominatim chosen candidate (score=25.477769995039374): Разград, България
+2025-10-27 00:47:57,685 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Бяло море 25', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:47:58,639 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:47:58,641 - ERROR - Failed to geocode: ул. Бяло море 25, СОФИЯ 04 рн ОБОРИЩЕ, София (столица)
+2025-10-27 00:48:00,305 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Стефан Сарафов 72', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:01,241 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:01,243 - ERROR - Failed to geocode: ул. Д-р Стефан Сарафов 72, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:48:02,836 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Ал. Стамболйск 31', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:03,847 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:48:05,519 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Местност Герена 020 Г', 'city': 'С.БРАНИПОЛЕ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:06,484 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.БРАНИПОЛЕ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:06,485 - ERROR - Failed to geocode: Местност Герена 020 Г, С.БРАНИПОЛЕ, Пловдив
+2025-10-27 00:48:08,230 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Българя 59', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:09,090 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:48:11,080 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Българя 47А 1 каб. 1 3 4 5', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:11,874 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:48:13,663 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Запад бл.11 партер оператвен блок', 'city': 'БЛАГОЕВГРАД', 'county': 'Благоевград', 'country': 'Bulgaria'}
+2025-10-27 00:48:14,666 - INFO - Nominatim chosen candidate (score=25.604877587082363): Благоевград, 2700, България
+2025-10-27 00:48:16,445 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Вктор Гргоровч 8', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:17,455 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:17,457 - ERROR - Failed to geocode: ул. Вктор Гргоровч 8, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 00:48:19,253 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Проф. Цветан Лазаров 86', 'city': 'СОФИЯ 14 рн ИСКЪР', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:20,236 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 14 рн ИСКЪР', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:20,237 - ERROR - Failed to geocode: бул. Проф. Цветан Лазаров 86, СОФИЯ 14 рн ИСКЪР, София (столица)
+2025-10-27 00:48:22,133 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к-с Изгрев бл.28А партер', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:48:23,024 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:48:24,801 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Д. Дмов', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:48:25,824 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:48:27,662 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Враня 109-111', 'city': 'СОФИЯ 12 рн ИЛИНДЕН', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:28,611 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 12 рн ИЛИНДЕН', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:28,613 - ERROR - Failed to geocode: ул. Враня 109-111, СОФИЯ 12 рн ИЛИНДЕН, София (столица)
+2025-10-27 00:48:30,423 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Цар Освободтел 100', 'city': 'ШУМЕН', 'county': 'Шумен', 'country': 'Bulgaria'}
+2025-10-27 00:48:31,419 - INFO - Nominatim chosen candidate (score=25.67439696239118): Шумен, България
+2025-10-27 00:48:33,246 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Тракя 46', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:34,219 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:48:34,220 - ERROR - Failed to geocode: ул. Тракя 46, СОФИЯ 04 рн ОБОРИЩЕ, София (столица)
+2025-10-27 00:48:36,732 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Крл Методй 2 вх. А 1 ап. 3', 'city': 'РАЗГРАД', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:48:37,282 - INFO - Nominatim chosen candidate (score=25.477769995039374): Разград, България
+2025-10-27 00:48:39,082 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'пл. Момна чешма 1 вх. Д', 'city': 'РАЗГРАД', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:48:40,082 - INFO - Nominatim chosen candidate (score=25.477769995039374): Разград, България
+2025-10-27 00:48:41,726 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов 19', 'city': 'РАЗГРАД', 'county': 'Разград', 'country': 'Bulgaria'}
+2025-10-27 00:48:42,700 - INFO - Nominatim chosen candidate (score=25.477769995039374): Разград, България
+2025-10-27 00:48:44,344 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'местност Русково бърдо', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:48:45,347 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:48:46,554 - INFO - Cache hit for ул. Цар Смеон 23||ПЛЕВЕН||Плевен
+2025-10-27 00:48:48,244 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'пл. Възраждане 1', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 00:48:49,192 - INFO - Nominatim chosen candidate (score=25.694616748664693): Плевен, 5805, България
+2025-10-27 00:48:50,800 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Демокраця 17 23', 'city': 'ВРАЦА', 'county': 'Враца', 'country': 'Bulgaria'}
+2025-10-27 00:48:51,826 - INFO - Nominatim chosen candidate (score=25.455195489550757): Враца, 3002, България
+2025-10-27 00:48:53,448 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Велко Търново 21', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:54,425 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:48:56,040 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георг Дмтров 25 1', 'city': 'БРЕЗОВО', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:57,060 - INFO - Nominatim chosen candidate (score=24.293056225857626): Брезово, Пловдив, 4160, България
+2025-10-27 00:48:58,714 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Петлешков 1', 'city': 'РАКОВСКИ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:48:59,734 - INFO - Nominatim chosen candidate (score=24.811790546237543): Раковски, Пловдив, 4150, България
+2025-10-27 00:49:01,483 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Родоп 43 сутерен 1 2', 'city': 'С.БЕЛОЗЕМ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:49:02,380 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.БЕЛОЗЕМ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:49:02,382 - ERROR - Failed to geocode: ул. Родоп 43 сутерен 1 2, С.БЕЛОЗЕМ, Пловдив
+2025-10-27 00:49:04,129 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. С.Съев 27', 'city': 'ЛОВЕЧ', 'county': 'Ловеч', 'country': 'Bulgaria'}
+2025-10-27 00:49:05,052 - INFO - Nominatim chosen candidate (score=25.527804620023698): Ловеч, 5503, България
+2025-10-27 00:49:06,640 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Герасм Папазчев 1', 'city': 'СТАРА ЗАГОРА', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:49:07,663 - INFO - Nominatim chosen candidate (score=25.856830712620493): Стара Загора, 6000, България
+2025-10-27 00:49:09,287 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хрсто Ботев 78 1 каб. 3', 'city': 'КАЗАНЛЪК', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:49:10,286 - INFO - Nominatim chosen candidate (score=25.325854908509132): Казанлък, Стара Загора, България
+2025-10-27 00:49:11,883 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Алдомровска 144', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:12,904 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:12,906 - ERROR - Failed to geocode: ул. Алдомровска 144, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица)
+2025-10-27 00:49:14,108 - INFO - Cache hit for ул. Велко Търново 21||ПЛОВДИВ||Пловдив
+2025-10-27 00:49:15,876 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Дунав 43 1 2', 'city': 'СТАМБОЛИЙСКИ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:49:16,772 - INFO - Nominatim chosen candidate (score=24.7095261645971): Стамболийски, Пловдив, 4210, България
+2025-10-27 00:49:18,410 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Алеко Константнов 10', 'city': 'ГЪЛЪБОВО', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:49:19,429 - INFO - Nominatim chosen candidate (score=24.72710234110173): Гълъбово, Стара Загора, 6280, България
+2025-10-27 00:49:21,072 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Трет март 9', 'city': 'ГАБРОВО', 'county': 'Габрово', 'country': 'Bulgaria'}
+2025-10-27 00:49:22,059 - INFO - Nominatim chosen candidate (score=25.60628559172332): Габрово, България
+2025-10-27 00:49:23,877 - INFO - Nominatim chosen candidate (score=25.533819249256123): Седма улица, Ново Градище, Стражица, Велико Търново, 5175, България
+2025-10-27 00:49:25,513 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Княгня Маря Луза 108 104', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:26,532 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:26,534 - ERROR - Failed to geocode: бул. Княгня Маря Луза 108 104, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 00:49:28,173 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Овча купел 2В', 'city': 'СОФИЯ 18 рн ОВЧА КУПЕЛ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:29,151 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 18 рн ОВЧА КУПЕЛ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:29,153 - ERROR - Failed to geocode: бул. Овча купел 2В, СОФИЯ 18 рн ОВЧА КУПЕЛ, София (столица)
+2025-10-27 00:49:30,773 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Транспортна', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 00:49:31,803 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 00:49:33,439 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Мтрополт Методй Кусев 61', 'city': 'СТАРА ЗАГОРА', 'county': 'Стара Загора', 'country': 'Bulgaria'}
+2025-10-27 00:49:34,452 - INFO - Nominatim chosen candidate (score=25.856830712620493): Стара Загора, 6000, България
+2025-10-27 00:49:36,138 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Скакля 6', 'city': 'ВРАЦА', 'county': 'Враца', 'country': 'Bulgaria'}
+2025-10-27 00:49:37,109 - INFO - Nominatim chosen candidate (score=25.455195489550757): Враца, 3002, България
+2025-10-27 00:49:38,759 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Втор юн 96А', 'city': 'ВРАЦА', 'county': 'Враца', 'country': 'Bulgaria'}
+2025-10-27 00:49:39,758 - INFO - Nominatim chosen candidate (score=25.455195489550757): Враца, 3002, България
+2025-10-27 00:49:41,589 - INFO - Nominatim chosen candidate (score=40.533943228809036): Ген. Леонов, кв. 103, Враца, 3000, България
+2025-10-27 00:49:43,277 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хрсто Благоев 25-31', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:44,315 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:44,317 - ERROR - Failed to geocode: ул. Хрсто Благоев 25-31, СОФИЯ, София (столица)
+2025-10-27 00:49:46,031 - INFO - Nominatim chosen candidate (score=20.533951544975967): ул. Ичеренско шосе, м. Андреева чешма, Вилна Зона Лозята, Сливен, 8800, България
+2025-10-27 00:49:47,777 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Панайот Хтов 117', 'city': 'СЛИВЕН', 'county': 'Сливен', 'country': 'Bulgaria'}
+2025-10-27 00:49:48,730 - INFO - Nominatim chosen candidate (score=25.601507580134527): Сливен, 8801, България
+2025-10-27 00:49:50,395 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Ген. Нколай Столетов 67А', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:51,410 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:51,412 - ERROR - Failed to geocode: бул. Ген. Нколай Столетов 67А, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 00:49:53,054 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Св. Георг Софйск 3', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:54,067 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:54,068 - ERROR - Failed to geocode: ул. Св. Георг Софйск 3, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:49:55,743 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Ген. Столетов 67А', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:56,700 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:49:56,701 - ERROR - Failed to geocode: бул. Ген. Столетов 67А, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 00:49:58,363 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Дмтър Благоев 69', 'city': 'ЯМБОЛ', 'county': 'Ямбол', 'country': 'Bulgaria'}
+2025-10-27 00:49:59,336 - INFO - Nominatim chosen candidate (score=25.3968384673289): Ямбол, 8600, България
+2025-10-27 00:50:01,276 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Алея Лля 1', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 00:50:02,263 - INFO - Nominatim chosen candidate (score=25.980667737699658): Русе, България
+2025-10-27 00:50:04,096 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Смеоновско шосе 4А', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:05,099 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:05,101 - ERROR - Failed to geocode: бул. Смеоновско шосе 4А, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 00:50:07,005 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Рга 35', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 00:50:08,009 - INFO - Nominatim chosen candidate (score=25.980667737699658): Русе, България
+2025-10-27 00:50:09,914 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Незавсмост 2', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 00:50:10,932 - INFO - Nominatim chosen candidate (score=25.980667737699658): Русе, България
+2025-10-27 00:50:12,752 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Цар Освободтел 100', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:50:13,765 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:50:15,627 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'пл. Понеделнк пазар 5 2 крло Изток крло Юг', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:50:16,642 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:50:18,669 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Здраве 2', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:19,599 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:19,600 - ERROR - Failed to geocode: ул. Здраве 2, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:50:21,426 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Дмтър Цончев 5', 'city': 'ПЛОВДИВ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 00:50:22,412 - INFO - Nominatim chosen candidate (score=26.51678424703775): Пловдив, 4000, България
+2025-10-27 00:50:24,262 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'местност Голо бърдо', 'city': 'ПЕРНИК', 'county': 'Перник', 'country': 'Bulgaria'}
+2025-10-27 00:50:25,262 - INFO - Nominatim chosen candidate (score=25.433501438180762): Перник, 2300, България
+2025-10-27 00:50:26,992 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Крл Въгленов 1', 'city': 'ГАБРОВО', 'county': 'Габрово', 'country': 'Bulgaria'}
+2025-10-27 00:50:27,929 - INFO - Nominatim chosen candidate (score=25.60628559172332): Габрово, България
+2025-10-27 00:50:29,642 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Гоце Делчев 46', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:30,601 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:30,602 - ERROR - Failed to geocode: бул. Гоце Делчев 46, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 00:50:32,254 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Акад. Иван Гешов 11', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:33,237 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:33,239 - ERROR - Failed to geocode: бул. Акад. Иван Гешов 11, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:50:34,898 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Акад. Иван Гешов 17', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:35,881 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:35,883 - ERROR - Failed to geocode: бул. Акад. Иван Гешов 17, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:50:37,523 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Републка Медцнск център Младост бл. А', 'city': 'ВАРНА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 00:50:38,540 - INFO - Nominatim chosen candidate (score=26.413738209914488): Варна, Одесос, Варна, България
+2025-10-27 00:50:39,770 - INFO - Cache hit for ул. Бузлуджа 1||ВЕЛИКО ТЪРНОВО||Велико Търново
+2025-10-27 00:50:40,972 - INFO - Cache hit for ул. Рга 35||РУСЕ||Русе
+2025-10-27 00:50:42,174 - INFO - Cache hit for ул. Незавсмост 2||РУСЕ||Русе
+2025-10-27 00:50:43,874 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Апрлов 63', 'city': 'ШУМЕН', 'county': 'Шумен', 'country': 'Bulgaria'}
+2025-10-27 00:50:44,834 - INFO - Nominatim chosen candidate (score=25.67439696239118): Шумен, България
+2025-10-27 00:50:46,517 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васл Левск 62', 'city': 'БЛАГОЕВГРАД', 'county': 'Благоевград', 'country': 'Bulgaria'}
+2025-10-27 00:50:47,523 - INFO - Nominatim chosen candidate (score=25.604877587082363): Благоевград, 2700, България
+2025-10-27 00:50:49,273 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Росца 21', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:50,265 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 04 рн ОБОРИЩЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:50,266 - ERROR - Failed to geocode: ул. Росца 21, СОФИЯ 04 рн ОБОРИЩЕ, София (столица)
+2025-10-27 00:50:51,896 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Княгня Маря-Луза 191', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:52,905 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:52,906 - ERROR - Failed to geocode: бул. Княгня Маря-Луза 191, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 00:50:54,597 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Петър Протч 4', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:55,618 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:55,620 - ERROR - Failed to geocode: ул. Петър Протч 4, СОФИЯ 15 рн МЛАДОСТ, София (столица)
+2025-10-27 00:50:57,274 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Джеймс Баучер 33 вх. В', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:58,251 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:50:58,253 - ERROR - Failed to geocode: бул. Джеймс Баучер 33 вх. В, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 00:51:00,002 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Балша 5', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:51:00,894 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:51:00,896 - ERROR - Failed to geocode: ул. Балша 5, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:51:02,586 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. А. Сахаров 22', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:51:03,563 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 00:51:03,566 - ERROR - Failed to geocode: бул. А. Сахаров 22, СОФИЯ 15 рн МЛАДОСТ, София (столица)
+2025-10-27 00:51:04,778 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
