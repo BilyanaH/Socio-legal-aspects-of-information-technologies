@@ -19,14 +19,40 @@ if sys.platform == 'win32':
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
     sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
 
-def geocode_address(address, city, oblast, retries=3):
-    # Simplify address: remove 'ет.', 'ГР.', '№', 'и', extra spaces
-    address = address.replace('ет.', '').replace('ГР.', '').replace('№', '').replace('и', '').replace('  ', ' ').strip()
+def transliterate_cyrillic(text):
+    """Transliterate Cyrillic to Latin for Nominatim compatibility."""
+    cyrillic_to_latin = {
+        'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ж': 'zh', 'з': 'z',
+        'и': 'i', 'й': 'y', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p',
+        'р': 'r', 'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'h', 'ц': 'ts', 'ч': 'ch',
+        'ш': 'sh', 'щ': 'sht', 'ъ': 'a', 'ь': '', 'ю': 'yu', 'я': 'ya'
+    }
+    text = text.lower()
+    result = ''
+    for char in text:
+        result += cyrillic_to_latin.get(char, char)
+    return result
+
+def geocode_address(address, city, oblast, retries=5):
+    # Normalize address: remove 'ет.', 'ГР.', '№', 'и', 'Д-р', extra spaces
+    address = (address.replace('ет.', '')
+                     .replace('ГР.', '')
+                     .replace('№', '')
+                     .replace('и', '')
+                     .replace('Д-р', '')
+                     .replace('  ', ' ')
+                     .strip())
     city = city.replace('ГР.', '').strip() if city else oblast
-    # Try street-level address first
+    oblast = oblast.strip()
+    
+    # Try multiple query formats: Cyrillic and transliterated Latin
     queries = [
-        f"{address}, {city}, {oblast}, Bulgaria",  # Full address
-        f"{city}, {oblast}, Bulgaria"              # Fallback to city-level
+        f"{address}, {city}, {oblast}, Bulgaria",           # Full Cyrillic
+        f"{address}, {city}, Bulgaria",                     # Cyrillic without oblast
+        f"{city}, {oblast}, Bulgaria",                      # City-level Cyrillic
+        f"{city}, Bulgaria",                                # City only Cyrillic
+        f"{transliterate_cyrillic(address)}, {transliterate_cyrillic(city)}, Bulgaria",  # Full Latin
+        f"{transliterate_cyrillic(city)}, Bulgaria"         # City only Latin
     ]
     
     for query in queries:
@@ -37,7 +63,7 @@ def geocode_address(address, city, oblast, retries=3):
                 if response.status_code != 200:
                     logging.error(f"Attempt {attempt + 1}/{retries}: Status {response.status_code} for {query}")
                     if attempt < retries - 1:
-                        time.sleep(3)  # Longer delay for retries
+                        time.sleep(5)
                     continue
                 data = response.json()
                 if data:
@@ -48,8 +74,8 @@ def geocode_address(address, city, oblast, retries=3):
             except Exception as e:
                 logging.error(f"Attempt {attempt + 1}/{retries}: Error geocoding {query}: {e}")
                 if attempt < retries - 1:
-                    time.sleep(3)
-        # If street-level fails, try the next query (city-level)
+                    time.sleep(5)
+        # Try next query format if current one fails
     logging.error(f"Failed after {retries} attempts for all queries: {address}, {city}, {oblast}")
     return None, None
 
@@ -91,7 +117,7 @@ def main():
         df.at[i, 'lat'] = lat
         df.at[i, 'lng'] = lng
         print(f"Geocoded {row['Наименование']} at {row['Адрес']}, {city}, {row['Област']}: ({lat}, {lng})")
-        time.sleep(1.2)  # Slightly longer delay to avoid rate limits
+        time.sleep(1.5)  # Longer delay to avoid rate limits
 
     # Save to output file
     try:
