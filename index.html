@@ -156,7 +156,7 @@
             }
         });
 
-        // Функция за геокодиране през прокси
+        // Функция за геокодиране през публичен CORS прокси
         async function geocodeAddress(address, city, oblast) {
             if (!city || city === 'undefined' || city.trim() === '') {
                 city = oblast; // Fallback to oblast if city is missing or undefined
@@ -168,7 +168,14 @@
             }
             try {
                 const query = encodeURIComponent(`${address}, ${city}, ${oblast}, Bulgaria`);
-                const response = await fetch(`http://localhost:3000/nominatim?q=${query}`);
+                const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+                const nominatimUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${query}`;
+                const response = await fetch(`${proxyUrl}${nominatimUrl}`, {
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'User-Agent': 'CourseProject/1.0 (your_email@example.com)' // Replace with your email
+                    }
+                });
                 if (!response.ok) {
                     throw new Error(`Proxy responded with status ${response.status}`);
                 }
@@ -218,9 +225,9 @@
         }
 
         // Зареждане и парсинг на CSV
-        fetch('hospitals.csv')
+        fetch('hospitals.csv') // Update to your CSV path in the GitHub repo, e.g., '/your-repo/hospitals.csv'
             .then(response => {
-                if (!response.ok) throw new Error('CSV файлът не е намерен. Уверете се, че hospitals.csv е в същата папка и се сервира през локален сървър.');
+                if (!response.ok) throw new Error('CSV файлът не е намерен. Уверете се, че hospitals.csv е в GitHub репозиториото.');
                 return response.text();
             })
             .then(csvText => {
@@ -303,7 +310,7 @@
             })
             .catch(error => {
                 console.error('Грешка при fetch на CSV:', error);
-                document.getElementById('loading').innerHTML = 'Грешка: ' + error.message + '<br>Моля, стартирайте локален сървър (напр. python -m http.server) и отворете страницата през http://localhost:8000/hospitals_map.html';
+                document.getElementById('loading').innerHTML = 'Грешка: ' + error.message + '<br>Уверете се, че hospitals.csv е в репозиториото и е достъпен.';
             });
     </script>
 </body>
