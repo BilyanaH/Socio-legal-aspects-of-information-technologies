@@ -458,3 +458,748 @@
 2025-10-27 00:01:37,046 - WARNING - No coordinates found for: ул. Транспортна 33, БУРГАС, Бургас, Bulgaria
 2025-10-27 00:01:37,990 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
 2025-10-27 00:01:39,197 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
+2025-10-27 00:08:41,827 - INFO - Successfully read hospitals.csv with 143 rows
+2025-10-27 00:08:42,569 - INFO - Geocoded ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria: (42.5095302, 27.4695075)
+2025-10-27 00:08:44,182 - ERROR - Attempt 1/3: Status 403 for ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:08:47,566 - ERROR - Attempt 2/3: Status 403 for ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:08:50,986 - ERROR - Attempt 3/3: Status 403 for ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:08:53,990 - ERROR - Attempt 1/3: Status 403 for КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:08:57,383 - ERROR - Attempt 2/3: Status 403 for КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:09:00,760 - ERROR - Attempt 3/3: Status 403 for КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:09:00,760 - ERROR - Failed after 3 attempts for all queries: ул. Васл Левск 36, КАВАРНА, Добрич
+2025-10-27 00:09:03,762 - ERROR - Attempt 1/3: Status 403 for ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:09:07,309 - ERROR - Attempt 2/3: Status 403 for ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:09:10,834 - ERROR - Attempt 3/3: Status 403 for ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:09:13,839 - ERROR - Attempt 1/3: Status 403 for БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:09:17,379 - ERROR - Attempt 2/3: Status 403 for БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:09:20,869 - ERROR - Attempt 3/3: Status 403 for БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:09:20,869 - ERROR - Failed after 3 attempts for all queries: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич
+2025-10-27 00:09:23,872 - ERROR - Attempt 1/3: Status 403 for к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:09:27,466 - ERROR - Attempt 2/3: Status 403 for к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:09:30,986 - ERROR - Attempt 3/3: Status 403 for к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:09:33,991 - ERROR - Attempt 1/3: Status 403 for С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:09:37,505 - ERROR - Attempt 2/3: Status 403 for С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:09:41,050 - ERROR - Attempt 3/3: Status 403 for С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:09:41,050 - ERROR - Failed after 3 attempts for all queries: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 00:09:44,051 - ERROR - Attempt 1/3: Status 403 for бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:09:47,447 - ERROR - Attempt 2/3: Status 403 for бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:09:50,817 - ERROR - Attempt 3/3: Status 403 for бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:09:53,820 - ERROR - Attempt 1/3: Status 403 for ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:09:57,198 - ERROR - Attempt 2/3: Status 403 for ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:00,584 - ERROR - Attempt 3/3: Status 403 for ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:00,584 - ERROR - Failed after 3 attempts for all queries: бул. 25-т септемвр 68, ДОБРИЧ, Добрич
+2025-10-27 00:10:03,589 - ERROR - Attempt 1/3: Status 403 for ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:06,968 - ERROR - Attempt 2/3: Status 403 for ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:10,347 - ERROR - Attempt 3/3: Status 403 for ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:13,351 - ERROR - Attempt 1/3: Status 403 for ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:16,738 - ERROR - Attempt 2/3: Status 403 for ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:20,135 - ERROR - Attempt 3/3: Status 403 for ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:20,136 - ERROR - Failed after 3 attempts for all queries: ул. Дмтър Петков 3, ДОБРИЧ, Добрич
+2025-10-27 00:10:23,135 - ERROR - Attempt 1/3: Status 403 for 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:26,525 - ERROR - Attempt 2/3: Status 403 for 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:10:29,271 - INFO - Successfully read hospitals.csv with 38 rows
+2025-10-27 00:10:29,659 - ERROR - Attempt 1/3: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:10:33,063 - ERROR - Attempt 2/3: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:10:36,447 - ERROR - Attempt 3/3: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:10:39,450 - ERROR - Attempt 1/3: Status 403 for БУРГАС, Бургас, Bulgaria
+2025-10-27 00:10:42,829 - ERROR - Attempt 2/3: Status 403 for БУРГАС, Бургас, Bulgaria
+2025-10-27 00:10:46,215 - ERROR - Attempt 3/3: Status 403 for БУРГАС, Бургас, Bulgaria
+2025-10-27 00:10:46,215 - ERROR - Failed after 3 attempts for all queries: ж.к. Лазур бл. 158, БУРГАС, Бургас
+2025-10-27 00:10:49,219 - ERROR - Attempt 1/3: Status 403 for ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:10:52,599 - ERROR - Attempt 2/3: Status 403 for ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:10:55,994 - ERROR - Attempt 3/3: Status 403 for ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:10:58,999 - ERROR - Attempt 1/3: Status 403 for КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:11:03,968 - INFO - Successfully read hospitals.csv with 38 rows
+2025-10-27 00:11:04,356 - ERROR - Attempt 1/3: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:07,363 - ERROR - Attempt 2/3: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:10,365 - ERROR - Attempt 3/3: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:10,365 - ERROR - Failed after 3 attempts for: ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:13,368 - ERROR - Attempt 1/3: Status 403 for ул. Васил Левски №36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:11:16,373 - ERROR - Attempt 2/3: Status 403 for ул. Васил Левски №36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:11:19,380 - ERROR - Attempt 3/3: Status 403 for ул. Васил Левски №36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:11:19,380 - ERROR - Failed after 3 attempts for: ул. Васил Левски №36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:11:22,384 - ERROR - Attempt 1/3: Status 403 for ул. Д-р Златко Петков №1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:11:25,392 - ERROR - Attempt 2/3: Status 403 for ул. Д-р Златко Петков №1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:11:28,912 - INFO - Successfully read hospitals.csv with 38 rows
+2025-10-27 00:11:29,291 - ERROR - Attempt 1/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:34,711 - ERROR - Attempt 2/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:40,087 - ERROR - Attempt 3/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:45,458 - ERROR - Attempt 4/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:50,833 - ERROR - Attempt 5/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:11:53,838 - ERROR - Attempt 1/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:11:59,221 - ERROR - Attempt 2/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:12:04,606 - ERROR - Attempt 3/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:12:09,993 - ERROR - Attempt 4/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:12:16,777 - INFO - Successfully read hospitals.csv with 38 rows
+2025-10-27 00:12:17,175 - ERROR - Attempt 1/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:12:22,560 - ERROR - Attempt 2/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:12:27,949 - ERROR - Attempt 3/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:12:33,326 - ERROR - Attempt 4/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:12:38,709 - ERROR - Attempt 5/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:12:41,713 - ERROR - Attempt 1/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:12:47,105 - ERROR - Attempt 2/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:12:52,502 - ERROR - Attempt 3/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:12:57,921 - ERROR - Attempt 4/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:13:03,299 - ERROR - Attempt 5/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Bulgaria
+2025-10-27 00:13:06,303 - ERROR - Attempt 1/5: Status 403 for БУРГАС, Бургас, Bulgaria
+2025-10-27 00:13:13,007 - INFO - Successfully read hospitals.csv with 143 rows
+2025-10-27 00:13:13,416 - ERROR - Attempt 1/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:13:17,231 - INFO - Successfully read hospitals.csv with 143 rows
+2025-10-27 00:13:17,630 - ERROR - Attempt 1/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:13:23,020 - ERROR - Attempt 2/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:13:28,451 - ERROR - Attempt 3/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:13:33,838 - ERROR - Attempt 4/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:13:39,220 - ERROR - Attempt 5/5: Status 403 for ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:13:45,842 - INFO - Successfully read hospitals.csv with 143 rows
+2025-10-27 00:13:46,636 - INFO - Geocoded ж.к. Лазур бл. 158, БУРГАС, Бургас, Bulgaria: (42.5095302, 27.4695075)
+2025-10-27 00:13:48,263 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:13:49,258 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:13:50,261 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:13:51,321 - INFO - Geocoded КАВАРНА, Добрич, Bulgaria: (43.4332836, 28.3390066)
+2025-10-27 00:13:53,072 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:13:54,125 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:13:55,062 - WARNING - No coordinates found for: ул. Д-р Златко Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:13:55,993 - INFO - Geocoded БАЛЧИК, Добрич, Bulgaria: (43.4259186, 28.1602967)
+2025-10-27 00:13:57,607 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:13:58,610 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:13:59,602 - WARNING - No coordinates found for: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:14:00,664 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:14:01,645 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:14:02,651 - WARNING - No coordinates found for: С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria
+2025-10-27 00:14:02,652 - ERROR - Failed after 3 attempts for all queries: к.к. Албена МЦ Медка-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 00:14:04,247 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:05,265 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:06,257 - WARNING - No coordinates found for: бул. 25-т септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:07,306 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-27 00:14:09,099 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:10,092 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:11,032 - WARNING - No coordinates found for: ул. Дмтър Петков 3, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:11,953 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-27 00:14:13,559 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:14,586 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:15,559 - WARNING - No coordinates found for: 25-т Септемвр 68, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:14:16,602 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-27 00:14:18,582 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-27 00:14:19,580 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-27 00:14:20,550 - WARNING - No coordinates found for: ул. Славянска 2А 2, РУСЕ, Русе, Bulgaria
+2025-10-27 00:14:21,518 - INFO - Geocoded РУСЕ, Русе, Bulgaria: (43.8480413, 25.9542057)
+2025-10-27 00:14:23,296 - WARNING - No coordinates found for: бул. Демокраця 86, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:24,288 - WARNING - No coordinates found for: бул. Демокраця 86, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:25,293 - WARNING - No coordinates found for: бул. Демокраця 86, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:26,333 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:14:28,272 - WARNING - No coordinates found for: ул. Стефан Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:29,285 - WARNING - No coordinates found for: ул. Стефан Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:30,303 - WARNING - No coordinates found for: ул. Стефан Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:31,187 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:14:32,950 - WARNING - No coordinates found for: ул. Доц.д-р Константн Кънчев, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:33,957 - WARNING - No coordinates found for: ул. Доц.д-р Константн Кънчев, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:34,952 - WARNING - No coordinates found for: ул. Доц.д-р Константн Кънчев, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:14:36,000 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:14:37,785 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-27 00:14:38,782 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-27 00:14:39,784 - WARNING - No coordinates found for: ул. Бргадрска 1, ЕТРОПОЛЕ, София - област, Bulgaria
+2025-10-27 00:14:40,825 - INFO - Geocoded ЕТРОПОЛЕ, София - област, Bulgaria: (42.8326835, 23.9964396)
+2025-10-27 00:14:42,590 - WARNING - No coordinates found for: ул. Божко Божлов 1, БОТЕВГРАД, София - област, Bulgaria
+2025-10-27 00:14:43,586 - WARNING - No coordinates found for: ул. Божко Божлов 1, БОТЕВГРАД, София - област, Bulgaria
+2025-10-27 00:14:44,599 - WARNING - No coordinates found for: ул. Божко Божлов 1, БОТЕВГРАД, София - област, Bulgaria
+2025-10-27 00:14:45,659 - INFO - Geocoded БОТЕВГРАД, София - област, Bulgaria: (42.6996832, 23.2728183)
+2025-10-27 00:14:47,456 - WARNING - No coordinates found for: ул. Георг Бенковск 24, ПИРДОП, София - област, Bulgaria
+2025-10-27 00:14:48,462 - WARNING - No coordinates found for: ул. Георг Бенковск 24, ПИРДОП, София - област, Bulgaria
+2025-10-27 00:14:49,457 - WARNING - No coordinates found for: ул. Георг Бенковск 24, ПИРДОП, София - област, Bulgaria
+2025-10-27 00:14:50,557 - INFO - Geocoded ПИРДОП, София - област, Bulgaria: (42.7006838, 24.1803328)
+2025-10-27 00:14:52,540 - WARNING - No coordinates found for: ул. Македоня 49, САМОКОВ, София - област, Bulgaria
+2025-10-27 00:14:53,541 - WARNING - No coordinates found for: ул. Македоня 49, САМОКОВ, София - област, Bulgaria
+2025-10-27 00:14:54,580 - WARNING - No coordinates found for: ул. Македоня 49, САМОКОВ, София - област, Bulgaria
+2025-10-27 00:14:55,483 - INFO - Geocoded САМОКОВ, София - област, Bulgaria: (42.6689910, 23.3584667)
+2025-10-27 00:14:57,257 - WARNING - No coordinates found for: ул. Георг Бенковск 24, ПИРДОП, София - област, Bulgaria
+2025-10-27 00:14:58,258 - WARNING - No coordinates found for: ул. Георг Бенковск 24, ПИРДОП, София - област, Bulgaria
+2025-10-27 00:14:59,260 - WARNING - No coordinates found for: ул. Георг Бенковск 24, ПИРДОП, София - област, Bulgaria
+2025-10-27 00:15:00,358 - INFO - Geocoded ПИРДОП, София - област, Bulgaria: (42.7006838, 24.1803328)
+2025-10-27 00:15:02,286 - WARNING - No coordinates found for: ул. Първа 32, С.ДОГАНОВО, София - област, Bulgaria
+2025-10-27 00:15:03,279 - WARNING - No coordinates found for: ул. Първа 32, С.ДОГАНОВО, София - област, Bulgaria
+2025-10-27 00:15:04,391 - WARNING - No coordinates found for: ул. Първа 32, С.ДОГАНОВО, София - област, Bulgaria
+2025-10-27 00:15:05,249 - INFO - Geocoded С.ДОГАНОВО, София - област, Bulgaria: (42.6176980, 23.7035127)
+2025-10-27 00:15:07,101 - INFO - Geocoded ул. Здравец 15, ЕЛИН ПЕЛИН, София - област, Bulgaria: (42.6640700, 23.6006812)
+2025-10-27 00:15:08,852 - WARNING - No coordinates found for: ул. Коста Хаджпакев 7, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:15:09,856 - WARNING - No coordinates found for: ул. Коста Хаджпакев 7, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:15:10,852 - WARNING - No coordinates found for: ул. Коста Хаджпакев 7, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:15:11,900 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:15:13,795 - WARNING - No coordinates found for: парк Кайлъка местност Стражата, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:15:14,845 - WARNING - No coordinates found for: парк Кайлъка местност Стражата, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:15:15,811 - WARNING - No coordinates found for: парк Кайлъка местност Стражата, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:15:16,748 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:15:18,443 - WARNING - No coordinates found for: ул. Георг Бенковск 19, С.ТУЧЕНИЦА, Плевен, Bulgaria
+2025-10-27 00:15:19,446 - WARNING - No coordinates found for: ул. Георг Бенковск 19, С.ТУЧЕНИЦА, Плевен, Bulgaria
+2025-10-27 00:15:20,445 - WARNING - No coordinates found for: ул. Георг Бенковск 19, С.ТУЧЕНИЦА, Плевен, Bulgaria
+2025-10-27 00:15:21,509 - INFO - Geocoded С.ТУЧЕНИЦА, Плевен, Bulgaria: (43.3426582, 24.6940764)
+2025-10-27 00:15:23,216 - WARNING - No coordinates found for: ул. Радецк 30, ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:15:24,233 - WARNING - No coordinates found for: ул. Радецк 30, ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:15:25,187 - WARNING - No coordinates found for: ул. Радецк 30, ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:15:26,153 - INFO - Geocoded ТРОЯН, Ловеч, Bulgaria: (42.8910697, 24.7123534)
+2025-10-27 00:15:28,008 - INFO - Geocoded ул. Здравец 15, ЕЛИН ПЕЛИН, София - област, Bulgaria: (42.6640700, 23.6006812)
+2025-10-27 00:15:31,111 - WARNING - No coordinates found for: ул. Шпка 30, ИХТИМАН, София - област, Bulgaria
+2025-10-27 00:15:31,853 - WARNING - No coordinates found for: ул. Шпка 30, ИХТИМАН, София - област, Bulgaria
+2025-10-27 00:15:32,850 - WARNING - No coordinates found for: ул. Шпка 30, ИХТИМАН, София - област, Bulgaria
+2025-10-27 00:15:33,760 - INFO - Geocoded ИХТИМАН, София - област, Bulgaria: (42.4384955, 23.8143825)
+2025-10-27 00:15:35,578 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:15:36,558 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:15:37,558 - WARNING - No coordinates found for: ул. Васл Левск 36, КАВАРНА, Добрич, Bulgaria
+2025-10-27 00:15:38,603 - INFO - Geocoded КАВАРНА, Добрич, Bulgaria: (43.4332836, 28.3390066)
+2025-10-27 00:15:40,441 - WARNING - No coordinates found for: ул. Търновска 55, ОМУРТАГ, Търговище, Bulgaria
+2025-10-27 00:15:41,467 - WARNING - No coordinates found for: ул. Търновска 55, ОМУРТАГ, Търговище, Bulgaria
+2025-10-27 00:15:42,461 - WARNING - No coordinates found for: ул. Търновска 55, ОМУРТАГ, Търговище, Bulgaria
+2025-10-27 00:15:43,385 - INFO - Geocoded ОМУРТАГ, Търговище, Bulgaria: (43.1085755, 26.4174525)
+2025-10-27 00:15:45,404 - WARNING - No coordinates found for: ул. Прн 16, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:15:46,396 - WARNING - No coordinates found for: ул. Прн 16, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:15:48,171 - WARNING - No coordinates found for: ул. Прн 16, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:15:48,787 - INFO - Geocoded ТЪРГОВИЩЕ, Търговище, Bulgaria: (43.2511960, 26.5727944)
+2025-10-27 00:15:50,617 - WARNING - No coordinates found for: кв. Запад, ПОПОВО, Търговище, Bulgaria
+2025-10-27 00:15:51,648 - WARNING - No coordinates found for: кв. Запад, ПОПОВО, Търговище, Bulgaria
+2025-10-27 00:15:52,642 - WARNING - No coordinates found for: кв. Запад, ПОПОВО, Търговище, Bulgaria
+2025-10-27 00:15:53,625 - INFO - Geocoded ПОПОВО, Търговище, Bulgaria: (43.3481473, 26.2271967)
+2025-10-27 00:15:55,479 - WARNING - No coordinates found for: ул. Съйко Съев 27, ЛОВЕЧ, Ловеч, Bulgaria
+2025-10-27 00:15:56,508 - WARNING - No coordinates found for: ул. Съйко Съев 27, ЛОВЕЧ, Ловеч, Bulgaria
+2025-10-27 00:15:57,488 - WARNING - No coordinates found for: ул. Съйко Съев 27, ЛОВЕЧ, Ловеч, Bulgaria
+2025-10-27 00:15:58,459 - INFO - Geocoded ЛОВЕЧ, Ловеч, Bulgaria: (43.1349971, 24.7154310)
+2025-10-27 00:16:00,424 - WARNING - No coordinates found for: ул. Староселска 4, СВОГЕ, София - област, Bulgaria
+2025-10-27 00:16:01,431 - WARNING - No coordinates found for: ул. Староселска 4, СВОГЕ, София - област, Bulgaria
+2025-10-27 00:16:02,429 - WARNING - No coordinates found for: ул. Староселска 4, СВОГЕ, София - област, Bulgaria
+2025-10-27 00:16:03,327 - INFO - Geocoded СВОГЕ, София - област, Bulgaria: (42.7237679, 23.2657792)
+2025-10-27 00:16:05,245 - WARNING - No coordinates found for: кв. Запад, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:16:06,245 - WARNING - No coordinates found for: кв. Запад, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:16:07,225 - WARNING - No coordinates found for: кв. Запад, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:16:08,203 - INFO - Geocoded ТЪРГОВИЩЕ, Търговище, Bulgaria: (43.2511960, 26.5727944)
+2025-10-27 00:16:10,122 - WARNING - No coordinates found for: ул. Генерал Леонов 95 3, ВРАЦА, Враца, Bulgaria
+2025-10-27 00:16:11,893 - WARNING - No coordinates found for: ул. Генерал Леонов 95 3, ВРАЦА, Враца, Bulgaria
+2025-10-27 00:16:12,712 - WARNING - No coordinates found for: ул. Генерал Леонов 95 3, ВРАЦА, Враца, Bulgaria
+2025-10-27 00:16:13,540 - INFO - Geocoded ВРАЦА, Враца, Bulgaria: (43.2028209, 23.5480270)
+2025-10-27 00:16:15,740 - WARNING - No coordinates found for: ул. Хан Крум 5, ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria
+2025-10-27 00:16:16,497 - WARNING - No coordinates found for: ул. Хан Крум 5, ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria
+2025-10-27 00:16:17,456 - WARNING - No coordinates found for: ул. Хан Крум 5, ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria
+2025-10-27 00:16:18,348 - INFO - Geocoded ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria: (43.1222791, 25.6887918)
+2025-10-27 00:16:20,103 - WARNING - No coordinates found for: ул. Отец Пайсй 72, ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria
+2025-10-27 00:16:21,104 - WARNING - No coordinates found for: ул. Отец Пайсй 72, ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria
+2025-10-27 00:16:22,114 - WARNING - No coordinates found for: ул. Отец Пайсй 72, ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria
+2025-10-27 00:16:23,179 - INFO - Geocoded ГОРНА ОРЯХОВИЦА, Велико Търново, Bulgaria: (43.1222791, 25.6887918)
+2025-10-27 00:16:25,071 - WARNING - No coordinates found for: ул. Александровска 87, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:26,031 - WARNING - No coordinates found for: ул. Александровска 87, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:27,082 - WARNING - No coordinates found for: ул. Александровска 87, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:28,003 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:16:30,181 - WARNING - No coordinates found for: ж.к. Славейков ул. Георг Мнков 174, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:31,166 - WARNING - No coordinates found for: ж.к. Славейков ул. Георг Мнков 174, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:32,906 - WARNING - No coordinates found for: ж.к. Славейков ул. Георг Мнков 174, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:33,348 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:16:35,057 - WARNING - No coordinates found for: ул. Александровска 78, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:36,073 - WARNING - No coordinates found for: ул. Александровска 78, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:37,060 - WARNING - No coordinates found for: ул. Александровска 78, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:38,017 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:16:39,782 - WARNING - No coordinates found for: ул. Транспортна 33, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:40,809 - WARNING - No coordinates found for: ул. Транспортна 33, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:41,827 - WARNING - No coordinates found for: ул. Транспортна 33, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:16:42,738 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:16:44,730 - WARNING - No coordinates found for: ул. Иван Вазов 11, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:16:45,699 - WARNING - No coordinates found for: ул. Иван Вазов 11, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:16:46,754 - WARNING - No coordinates found for: ул. Иван Вазов 11, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:16:47,618 - INFO - Geocoded НЕСЕБЪР, Бургас, Bulgaria: (42.6607865, 27.7167464)
+2025-10-27 00:16:49,674 - WARNING - No coordinates found for: ул. Средна Гора 1, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:16:50,653 - WARNING - No coordinates found for: ул. Средна Гора 1, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:16:51,638 - WARNING - No coordinates found for: ул. Средна Гора 1, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:16:52,492 - INFO - Geocoded ХАСКОВО, Хасково, Bulgaria: (41.9345727, 25.5556639)
+2025-10-27 00:16:54,309 - WARNING - No coordinates found for: ул. Васл Левск 66, ХАРМАНЛИ, Хасково, Bulgaria
+2025-10-27 00:16:55,317 - WARNING - No coordinates found for: ул. Васл Левск 66, ХАРМАНЛИ, Хасково, Bulgaria
+2025-10-27 00:16:56,310 - WARNING - No coordinates found for: ул. Васл Левск 66, ХАРМАНЛИ, Хасково, Bulgaria
+2025-10-27 00:16:57,368 - INFO - Geocoded ХАРМАНЛИ, Хасково, Bulgaria: (41.9302645, 25.9015211)
+2025-10-27 00:16:59,142 - WARNING - No coordinates found for: ул. Хрсто Ботев 29, ДИМИТРОВГРАД, Хасково, Bulgaria
+2025-10-27 00:17:00,148 - WARNING - No coordinates found for: ул. Хрсто Ботев 29, ДИМИТРОВГРАД, Хасково, Bulgaria
+2025-10-27 00:17:01,140 - WARNING - No coordinates found for: ул. Хрсто Ботев 29, ДИМИТРОВГРАД, Хасково, Bulgaria
+2025-10-27 00:17:02,207 - INFO - Geocoded ДИМИТРОВГРАД, Хасково, Bulgaria: (42.0582493, 25.5916466)
+2025-10-27 00:17:03,978 - WARNING - No coordinates found for: бул. Стефан Стамболов 73 прземен етаж 1 част от 2 от Терапевтчен корпус /блок 3/, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:04,979 - WARNING - No coordinates found for: бул. Стефан Стамболов 73 прземен етаж 1 част от 2 от Терапевтчен корпус /блок 3/, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:05,991 - WARNING - No coordinates found for: бул. Стефан Стамболов 73 прземен етаж 1 част от 2 от Терапевтчен корпус /блок 3/, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:07,019 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:17:08,975 - WARNING - No coordinates found for: УПИ VII-842 кв.68 по плана на ПЗ Север, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:09,992 - WARNING - No coordinates found for: УПИ VII-842 кв.68 по плана на ПЗ Север, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:10,984 - WARNING - No coordinates found for: УПИ VII-842 кв.68 по плана на ПЗ Север, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:11,831 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:17:13,707 - WARNING - No coordinates found for: ул. Здраве 29, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:15,252 - WARNING - No coordinates found for: ул. Здраве 29, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:15,901 - WARNING - No coordinates found for: ул. Здраве 29, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:16,841 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:17:18,729 - WARNING - No coordinates found for: ул. Стефан Стамболов 2, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:17:19,721 - WARNING - No coordinates found for: ул. Стефан Стамболов 2, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:17:20,702 - WARNING - No coordinates found for: ул. Стефан Стамболов 2, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:17:21,631 - INFO - Geocoded ХАСКОВО, Хасково, Bulgaria: (41.9345727, 25.5556639)
+2025-10-27 00:17:23,384 - WARNING - No coordinates found for: ул. Тодор Нколов 10, СРЕДЕЦ, Бургас, Bulgaria
+2025-10-27 00:17:24,387 - WARNING - No coordinates found for: ул. Тодор Нколов 10, СРЕДЕЦ, Бургас, Bulgaria
+2025-10-27 00:17:25,391 - WARNING - No coordinates found for: ул. Тодор Нколов 10, СРЕДЕЦ, Бургас, Bulgaria
+2025-10-27 00:17:26,462 - INFO - Geocoded СРЕДЕЦ, Бургас, Bulgaria: (42.3458456, 27.1808724)
+2025-10-27 00:17:28,225 - WARNING - No coordinates found for: ж.к. Изгрев бул. Дмтър Дмов /Панорамен път/, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:29,234 - WARNING - No coordinates found for: ж.к. Изгрев бул. Дмтър Дмов /Панорамен път/, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:30,242 - WARNING - No coordinates found for: ж.к. Изгрев бул. Дмтър Дмов /Панорамен път/, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:31,283 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:17:33,287 - WARNING - No coordinates found for: ул. Ивайло 11А, СВЕТИ ВЛАС, Бургас, Bulgaria
+2025-10-27 00:17:34,245 - WARNING - No coordinates found for: ул. Ивайло 11А, СВЕТИ ВЛАС, Бургас, Bulgaria
+2025-10-27 00:17:35,259 - WARNING - No coordinates found for: ул. Ивайло 11А, СВЕТИ ВЛАС, Бургас, Bulgaria
+2025-10-27 00:17:36,107 - INFO - Geocoded СВЕТИ ВЛАС, Бургас, Bulgaria: (42.7138408, 27.7588044)
+2025-10-27 00:17:38,077 - WARNING - No coordinates found for: ул. Сан Стефано 1, СВИЛЕНГРАД, Хасково, Bulgaria
+2025-10-27 00:17:40,072 - WARNING - No coordinates found for: ул. Сан Стефано 1, СВИЛЕНГРАД, Хасково, Bulgaria
+2025-10-27 00:17:40,766 - WARNING - No coordinates found for: ул. Сан Стефано 1, СВИЛЕНГРАД, Хасково, Bulgaria
+2025-10-27 00:17:41,696 - INFO - Geocoded СВИЛЕНГРАД, Хасково, Bulgaria: (41.7681668, 26.1978704)
+2025-10-27 00:17:43,474 - WARNING - No coordinates found for: бул. Съеднене 49, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:17:44,463 - WARNING - No coordinates found for: бул. Съеднене 49, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:17:45,463 - WARNING - No coordinates found for: бул. Съеднене 49, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:17:46,546 - INFO - Geocoded ХАСКОВО, Хасково, Bulgaria: (41.9345727, 25.5556639)
+2025-10-27 00:17:48,307 - WARNING - No coordinates found for: ж.к. Зорнца срещу бл.15, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:49,303 - WARNING - No coordinates found for: ж.к. Зорнца срещу бл.15, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:50,319 - WARNING - No coordinates found for: ж.к. Зорнца срещу бл.15, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:17:51,346 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:17:53,321 - WARNING - No coordinates found for: ул. Стара планна 180, КАРНОБАТ, Бургас, Bulgaria
+2025-10-27 00:17:54,298 - WARNING - No coordinates found for: ул. Стара планна 180, КАРНОБАТ, Бургас, Bulgaria
+2025-10-27 00:17:55,267 - WARNING - No coordinates found for: ул. Стара планна 180, КАРНОБАТ, Бургас, Bulgaria
+2025-10-27 00:17:56,173 - INFO - Geocoded КАРНОБАТ, Бургас, Bulgaria: (42.6498554, 26.9823125)
+2025-10-27 00:17:58,041 - WARNING - No coordinates found for: ул. Шейново 4, АЙТОС, Бургас, Bulgaria
+2025-10-27 00:17:59,047 - WARNING - No coordinates found for: ул. Шейново 4, АЙТОС, Бургас, Bulgaria
+2025-10-27 00:18:00,020 - WARNING - No coordinates found for: ул. Шейново 4, АЙТОС, Бургас, Bulgaria
+2025-10-27 00:18:00,979 - INFO - Geocoded АЙТОС, Бургас, Bulgaria: (42.7018865, 27.2520386)
+2025-10-27 00:18:02,743 - WARNING - No coordinates found for: ж.к. Меден Руднк зона А, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:18:03,743 - WARNING - No coordinates found for: ж.к. Меден Руднк зона А, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:18:04,738 - WARNING - No coordinates found for: ж.к. Меден Руднк зона А, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:18:05,796 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:18:07,638 - WARNING - No coordinates found for: ул. Проф.Парашкев Стоянов 1, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:18:08,645 - WARNING - No coordinates found for: ул. Проф.Парашкев Стоянов 1, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:18:09,648 - WARNING - No coordinates found for: ул. Проф.Парашкев Стоянов 1, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:18:10,603 - INFO - Geocoded ПОМОРИЕ, Бургас, Bulgaria: (42.5684133, 27.6167754)
+2025-10-27 00:18:12,612 - WARNING - No coordinates found for: ул. Д-р Зл. Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:18:13,627 - WARNING - No coordinates found for: ул. Д-р Зл. Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:18:14,576 - WARNING - No coordinates found for: ул. Д-р Зл. Петков 1, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:18:15,455 - INFO - Geocoded БАЛЧИК, Добрич, Bulgaria: (43.4259186, 28.1602967)
+2025-10-27 00:18:17,549 - WARNING - No coordinates found for: бул. Мзя 5, ЛОВЕЧ, Ловеч, Bulgaria
+2025-10-27 00:18:18,524 - WARNING - No coordinates found for: бул. Мзя 5, ЛОВЕЧ, Ловеч, Bulgaria
+2025-10-27 00:18:19,550 - WARNING - No coordinates found for: бул. Мзя 5, ЛОВЕЧ, Ловеч, Bulgaria
+2025-10-27 00:18:20,299 - INFO - Geocoded ЛОВЕЧ, Ловеч, Bulgaria: (43.1349971, 24.7154310)
+2025-10-27 00:18:22,132 - WARNING - No coordinates found for: Северна промшлена зона бул. Янко Комтов 7, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:18:23,127 - WARNING - No coordinates found for: Северна промшлена зона бул. Янко Комтов 7, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:18:24,131 - WARNING - No coordinates found for: Северна промшлена зона бул. Янко Комтов 7, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:18:25,174 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:18:26,944 - WARNING - No coordinates found for: ул. Георг Крков 24, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:27,953 - WARNING - No coordinates found for: ул. Георг Крков 24, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:28,954 - WARNING - No coordinates found for: ул. Георг Крков 24, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:30,032 - INFO - Geocoded ХАСКОВО, Хасково, Bulgaria: (41.9345727, 25.5556639)
+2025-10-27 00:18:31,806 - WARNING - No coordinates found for: ул. Хадж Дмтър 2 партер кабнет 1, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:32,816 - WARNING - No coordinates found for: ул. Хадж Дмтър 2 партер кабнет 1, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:33,812 - WARNING - No coordinates found for: ул. Хадж Дмтър 2 партер кабнет 1, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:34,857 - INFO - Geocoded ХАСКОВО, Хасково, Bulgaria: (41.9345727, 25.5556639)
+2025-10-27 00:18:36,648 - WARNING - No coordinates found for: ул. П. Евтмй 1 нула-партер, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:37,607 - WARNING - No coordinates found for: ул. П. Евтмй 1 нула-партер, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:38,623 - WARNING - No coordinates found for: ул. П. Евтмй 1 нула-партер, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:18:39,680 - INFO - Geocoded ХАСКОВО, Хасково, Bulgaria: (41.9345727, 25.5556639)
+2025-10-27 00:18:41,755 - WARNING - No coordinates found for: бул. Българя 2, ДИМИТРОВГРАД, Хасково, Bulgaria
+2025-10-27 00:18:42,680 - WARNING - No coordinates found for: бул. Българя 2, ДИМИТРОВГРАД, Хасково, Bulgaria
+2025-10-27 00:18:43,691 - WARNING - No coordinates found for: бул. Българя 2, ДИМИТРОВГРАД, Хасково, Bulgaria
+2025-10-27 00:18:44,501 - INFO - Geocoded ДИМИТРОВГРАД, Хасково, Bulgaria: (42.0582493, 25.5916466)
+2025-10-27 00:18:46,282 - WARNING - No coordinates found for: ул. Васл Левск 253, ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:18:47,291 - WARNING - No coordinates found for: ул. Васл Левск 253, ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:18:47,955 - ERROR - Attempt 3/3: Status 403 for ул. Васл Левск 253, ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:18:50,959 - ERROR - Attempt 1/3: Status 403 for ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:18:54,583 - ERROR - Attempt 2/3: Status 403 for ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:18:58,133 - ERROR - Attempt 3/3: Status 403 for ТРОЯН, Ловеч, Bulgaria
+2025-10-27 00:18:58,133 - ERROR - Failed after 3 attempts for all queries: ул. Васл Левск 253, ТРОЯН, Ловеч
+2025-10-27 00:19:01,141 - ERROR - Attempt 1/3: Status 403 for Бул. Столетов 67, СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:04,679 - ERROR - Attempt 2/3: Status 403 for Бул. Столетов 67, СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:08,212 - ERROR - Attempt 3/3: Status 403 for Бул. Столетов 67, СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:11,215 - ERROR - Attempt 1/3: Status 403 for СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:14,809 - ERROR - Attempt 2/3: Status 403 for СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:18,344 - ERROR - Attempt 3/3: Status 403 for СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:18,344 - ERROR - Failed after 3 attempts for all queries: Бул. Столетов 67, СОФИЯ, София (столица)
+2025-10-27 00:19:21,350 - ERROR - Attempt 1/3: Status 403 for бул. Слвнца 309, СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:24,898 - ERROR - Attempt 2/3: Status 403 for бул. Слвнца 309, СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:28,439 - ERROR - Attempt 3/3: Status 403 for бул. Слвнца 309, СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:31,442 - ERROR - Attempt 1/3: Status 403 for СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:34,828 - ERROR - Attempt 2/3: Status 403 for СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:38,223 - ERROR - Attempt 3/3: Status 403 for СОФИЯ, София (столица), Bulgaria
+2025-10-27 00:19:38,223 - ERROR - Failed after 3 attempts for all queries: бул. Слвнца 309, СОФИЯ, София (столица)
+2025-10-27 00:19:41,228 - ERROR - Attempt 1/3: Status 403 for ул. Царградско шосе 56, КОСТЕНЕЦ, София - област, Bulgaria
+2025-10-27 00:19:44,616 - ERROR - Attempt 2/3: Status 403 for ул. Царградско шосе 56, КОСТЕНЕЦ, София - област, Bulgaria
+2025-10-27 00:19:47,994 - ERROR - Attempt 3/3: Status 403 for ул. Царградско шосе 56, КОСТЕНЕЦ, София - област, Bulgaria
+2025-10-27 00:19:50,998 - ERROR - Attempt 1/3: Status 403 for КОСТЕНЕЦ, София - област, Bulgaria
+2025-10-27 00:19:54,385 - ERROR - Attempt 2/3: Status 403 for КОСТЕНЕЦ, София - област, Bulgaria
+2025-10-27 00:19:57,774 - ERROR - Attempt 3/3: Status 403 for КОСТЕНЕЦ, София - област, Bulgaria
+2025-10-27 00:19:57,774 - ERROR - Failed after 3 attempts for all queries: ул. Царградско шосе 56, КОСТЕНЕЦ, София - област
+2025-10-27 00:20:00,775 - ERROR - Attempt 1/3: Status 403 for кв. Санаторума, С.ИСКРЕЦ, София - област, Bulgaria
+2025-10-27 00:20:04,162 - ERROR - Attempt 2/3: Status 403 for кв. Санаторума, С.ИСКРЕЦ, София - област, Bulgaria
+2025-10-27 00:20:07,539 - ERROR - Attempt 3/3: Status 403 for кв. Санаторума, С.ИСКРЕЦ, София - област, Bulgaria
+2025-10-27 00:20:10,547 - ERROR - Attempt 1/3: Status 403 for С.ИСКРЕЦ, София - област, Bulgaria
+2025-10-27 00:20:13,948 - ERROR - Attempt 2/3: Status 403 for С.ИСКРЕЦ, София - област, Bulgaria
+2025-10-27 00:20:17,337 - ERROR - Attempt 3/3: Status 403 for С.ИСКРЕЦ, София - област, Bulgaria
+2025-10-27 00:20:17,337 - ERROR - Failed after 3 attempts for all queries: кв. Санаторума, С.ИСКРЕЦ, София - област
+2025-10-27 00:20:20,341 - ERROR - Attempt 1/3: Status 403 for ул. Хрсто Ботев 6, МОМИН ПРОХОД, София - област, Bulgaria
+2025-10-27 00:20:23,734 - ERROR - Attempt 2/3: Status 403 for ул. Хрсто Ботев 6, МОМИН ПРОХОД, София - област, Bulgaria
+2025-10-27 00:20:27,113 - ERROR - Attempt 3/3: Status 403 for ул. Хрсто Ботев 6, МОМИН ПРОХОД, София - област, Bulgaria
+2025-10-27 00:20:30,119 - ERROR - Attempt 1/3: Status 403 for МОМИН ПРОХОД, София - област, Bulgaria
+2025-10-27 00:20:33,488 - ERROR - Attempt 2/3: Status 403 for МОМИН ПРОХОД, София - област, Bulgaria
+2025-10-27 00:20:36,877 - ERROR - Attempt 3/3: Status 403 for МОМИН ПРОХОД, София - област, Bulgaria
+2025-10-27 00:20:36,878 - ERROR - Failed after 3 attempts for all queries: ул. Хрсто Ботев 6, МОМИН ПРОХОД, София - област
+2025-10-27 00:20:39,881 - ERROR - Attempt 1/3: Status 403 for местност Тузлата, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:20:43,267 - ERROR - Attempt 2/3: Status 403 for местност Тузлата, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:20:46,663 - ERROR - Attempt 3/3: Status 403 for местност Тузлата, БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:20:49,668 - ERROR - Attempt 1/3: Status 403 for БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:20:53,064 - ERROR - Attempt 2/3: Status 403 for БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:20:56,453 - ERROR - Attempt 3/3: Status 403 for БАЛЧИК, Добрич, Bulgaria
+2025-10-27 00:20:56,453 - ERROR - Failed after 3 attempts for all queries: местност Тузлата, БАЛЧИК, Добрич
+2025-10-27 00:20:59,454 - ERROR - Attempt 1/3: Status 403 for ул. Александър Стамболйск 25, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:21:02,839 - ERROR - Attempt 2/3: Status 403 for ул. Александър Стамболйск 25, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:21:06,213 - ERROR - Attempt 3/3: Status 403 for ул. Александър Стамболйск 25, ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:21:09,220 - ERROR - Attempt 1/3: Status 403 for ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:21:12,842 - ERROR - Attempt 2/3: Status 403 for ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:21:16,390 - ERROR - Attempt 3/3: Status 403 for ТЪРГОВИЩЕ, Търговище, Bulgaria
+2025-10-27 00:21:16,390 - ERROR - Failed after 3 attempts for all queries: ул. Александър Стамболйск 25, ТЪРГОВИЩЕ, Търговище
+2025-10-27 00:21:19,391 - ERROR - Attempt 1/3: Status 403 for кв. Болярово ул. Перущца 2, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:21:22,929 - ERROR - Attempt 2/3: Status 403 for кв. Болярово ул. Перущца 2, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:21:26,496 - ERROR - Attempt 3/3: Status 403 for кв. Болярово ул. Перущца 2, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:21:29,503 - ERROR - Attempt 1/3: Status 403 for ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:21:33,051 - ERROR - Attempt 2/3: Status 403 for ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:21:36,577 - ERROR - Attempt 3/3: Status 403 for ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:21:36,578 - ERROR - Failed after 3 attempts for all queries: кв. Болярово ул. Перущца 2, ХАСКОВО, Хасково
+2025-10-27 00:21:39,577 - ERROR - Attempt 1/3: Status 403 for ул. Генерал Гурко 64, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:21:43,100 - ERROR - Attempt 2/3: Status 403 for ул. Генерал Гурко 64, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:21:46,650 - ERROR - Attempt 3/3: Status 403 for ул. Генерал Гурко 64, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:21:49,655 - ERROR - Attempt 1/3: Status 403 for БУРГАС, Бургас, Bulgaria
+2025-10-27 00:21:53,046 - ERROR - Attempt 2/3: Status 403 for БУРГАС, Бургас, Bulgaria
+2025-10-27 00:21:56,447 - ERROR - Attempt 3/3: Status 403 for БУРГАС, Бургас, Bulgaria
+2025-10-27 00:21:56,447 - ERROR - Failed after 3 attempts for all queries: ул. Генерал Гурко 64, БУРГАС, Бургас
+2025-10-27 00:21:59,452 - ERROR - Attempt 1/3: Status 403 for ул. Мусала 1, ТОПОЛОВГРАД, Хасково, Bulgaria
+2025-10-27 00:22:02,837 - ERROR - Attempt 2/3: Status 403 for ул. Мусала 1, ТОПОЛОВГРАД, Хасково, Bulgaria
+2025-10-27 00:22:06,223 - ERROR - Attempt 3/3: Status 403 for ул. Мусала 1, ТОПОЛОВГРАД, Хасково, Bulgaria
+2025-10-27 00:22:09,227 - ERROR - Attempt 1/3: Status 403 for ТОПОЛОВГРАД, Хасково, Bulgaria
+2025-10-27 00:22:12,596 - ERROR - Attempt 2/3: Status 403 for ТОПОЛОВГРАД, Хасково, Bulgaria
+2025-10-27 00:22:15,976 - ERROR - Attempt 3/3: Status 403 for ТОПОЛОВГРАД, Хасково, Bulgaria
+2025-10-27 00:22:15,976 - ERROR - Failed after 3 attempts for all queries: ул. Мусала 1, ТОПОЛОВГРАД, Хасково
+2025-10-27 00:22:18,978 - ERROR - Attempt 1/3: Status 403 for бул. Съеднене 49, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:22:22,364 - ERROR - Attempt 2/3: Status 403 for бул. Съеднене 49, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:22:25,743 - ERROR - Attempt 3/3: Status 403 for бул. Съеднене 49, ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:22:28,748 - ERROR - Attempt 1/3: Status 403 for ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:22:32,134 - ERROR - Attempt 2/3: Status 403 for ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:22:35,514 - ERROR - Attempt 3/3: Status 403 for ХАСКОВО, Хасково, Bulgaria
+2025-10-27 00:22:35,514 - ERROR - Failed after 3 attempts for all queries: бул. Съеднене 49, ХАСКОВО, Хасково
+2025-10-27 00:22:38,515 - ERROR - Attempt 1/3: Status 403 for ул. Републканска 38, ЛЮБИМЕЦ, Хасково, Bulgaria
+2025-10-27 00:22:41,892 - ERROR - Attempt 2/3: Status 403 for ул. Републканска 38, ЛЮБИМЕЦ, Хасково, Bulgaria
+2025-10-27 00:22:45,278 - ERROR - Attempt 3/3: Status 403 for ул. Републканска 38, ЛЮБИМЕЦ, Хасково, Bulgaria
+2025-10-27 00:22:48,283 - ERROR - Attempt 1/3: Status 403 for ЛЮБИМЕЦ, Хасково, Bulgaria
+2025-10-27 00:22:51,665 - ERROR - Attempt 2/3: Status 403 for ЛЮБИМЕЦ, Хасково, Bulgaria
+2025-10-27 00:22:55,040 - ERROR - Attempt 3/3: Status 403 for ЛЮБИМЕЦ, Хасково, Bulgaria
+2025-10-27 00:22:55,041 - ERROR - Failed after 3 attempts for all queries: ул. Републканска 38, ЛЮБИМЕЦ, Хасково
+2025-10-27 00:22:58,041 - ERROR - Attempt 1/3: Status 403 for ул. Хан Крум 31, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:01,451 - ERROR - Attempt 2/3: Status 403 for ул. Хан Крум 31, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:04,834 - ERROR - Attempt 3/3: Status 403 for ул. Хан Крум 31, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:07,839 - ERROR - Attempt 1/3: Status 403 for НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:11,227 - ERROR - Attempt 2/3: Status 403 for НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:14,620 - ERROR - Attempt 3/3: Status 403 for НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:14,621 - ERROR - Failed after 3 attempts for all queries: ул. Хан Крум 31, НЕСЕБЪР, Бургас
+2025-10-27 00:23:17,625 - ERROR - Attempt 1/3: Status 403 for кв. Перла 20, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:21,014 - ERROR - Attempt 2/3: Status 403 for кв. Перла 20, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:24,399 - ERROR - Attempt 3/3: Status 403 for кв. Перла 20, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:27,408 - ERROR - Attempt 1/3: Status 403 for НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:31,015 - ERROR - Attempt 2/3: Status 403 for НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:34,575 - ERROR - Attempt 3/3: Status 403 for НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:34,576 - ERROR - Failed after 3 attempts for all queries: кв. Перла 20, НЕСЕБЪР, Бургас
+2025-10-27 00:23:37,580 - ERROR - Attempt 1/3: Status 403 for ул. Иван Вазов 11 Здравна къща Несебър, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:41,122 - ERROR - Attempt 2/3: Status 403 for ул. Иван Вазов 11 Здравна къща Несебър, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:44,597 - ERROR - Attempt 3/3: Status 403 for ул. Иван Вазов 11 Здравна къща Несебър, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:47,600 - ERROR - Attempt 1/3: Status 403 for НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:51,142 - INFO - Geocoded НЕСЕБЪР, Бургас, Bulgaria: (42.6607865, 27.7167464)
+2025-10-27 00:23:52,848 - WARNING - No coordinates found for: ул. Проф. Парашкев Стоянов 7, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:23:54,855 - WARNING - No coordinates found for: ул. Проф. Парашкев Стоянов 7, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:23:55,319 - WARNING - No coordinates found for: ул. Проф. Парашкев Стоянов 7, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:23:56,296 - INFO - Geocoded ПОМОРИЕ, Бургас, Bulgaria: (42.5684133, 27.6167754)
+2025-10-27 00:23:57,883 - WARNING - No coordinates found for: местност Кокалу ул. Кпарс 8, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:58,887 - WARNING - No coordinates found for: местност Кокалу ул. Кпарс 8, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:23:59,895 - WARNING - No coordinates found for: местност Кокалу ул. Кпарс 8, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:24:00,984 - INFO - Geocoded НЕСЕБЪР, Бургас, Bulgaria: (42.6607865, 27.7167464)
+2025-10-27 00:24:02,681 - WARNING - No coordinates found for: к.к. Слънчев бряг хотел Средец, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:24:03,661 - WARNING - No coordinates found for: к.к. Слънчев бряг хотел Средец, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:24:04,670 - WARNING - No coordinates found for: к.к. Слънчев бряг хотел Средец, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:24:05,628 - INFO - Geocoded НЕСЕБЪР, Бургас, Bulgaria: (42.6607865, 27.7167464)
+2025-10-27 00:24:07,386 - WARNING - No coordinates found for: ул. Любен Каравелов 8, С.МИНЕРАЛНИ БАНИ, Хасково, Bulgaria
+2025-10-27 00:24:08,402 - WARNING - No coordinates found for: ул. Любен Каравелов 8, С.МИНЕРАЛНИ БАНИ, Хасково, Bulgaria
+2025-10-27 00:24:09,372 - WARNING - No coordinates found for: ул. Любен Каравелов 8, С.МИНЕРАЛНИ БАНИ, Хасково, Bulgaria
+2025-10-27 00:24:10,287 - INFO - Geocoded С.МИНЕРАЛНИ БАНИ, Хасково, Bulgaria: (41.9067682, 25.4509929)
+2025-10-27 00:24:12,211 - WARNING - No coordinates found for: ж.к. П. Р. Славейков ул. Георг Мнков 174 до спортна зала Младост, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:13,201 - WARNING - No coordinates found for: ж.к. П. Р. Славейков ул. Георг Мнков 174 до спортна зала Младост, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:14,255 - WARNING - No coordinates found for: ж.к. П. Р. Славейков ул. Георг Мнков 174 до спортна зала Младост, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:14,939 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:24:16,755 - WARNING - No coordinates found for: ул. Проф. П. Стоянов 12, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:24:17,674 - WARNING - No coordinates found for: ул. Проф. П. Стоянов 12, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:24:18,676 - WARNING - No coordinates found for: ул. Проф. П. Стоянов 12, ПОМОРИЕ, Бургас, Bulgaria
+2025-10-27 00:24:19,614 - INFO - Geocoded ПОМОРИЕ, Бургас, Bulgaria: (42.5684133, 27.6167754)
+2025-10-27 00:24:21,227 - WARNING - No coordinates found for: ул. Гео Млев 14, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:22,228 - WARNING - No coordinates found for: ул. Гео Млев 14, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:23,228 - WARNING - No coordinates found for: ул. Гео Млев 14, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:24,277 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:24:25,877 - WARNING - No coordinates found for: ул. Цар Смеон 23, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:26,875 - WARNING - No coordinates found for: ул. Цар Смеон 23, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:27,876 - WARNING - No coordinates found for: ул. Цар Смеон 23, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:28,978 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:24:31,124 - WARNING - No coordinates found for: ж.к Дружба ул. Трте бора 24, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:32,140 - WARNING - No coordinates found for: ж.к Дружба ул. Трте бора 24, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:33,090 - WARNING - No coordinates found for: ж.к Дружба ул. Трте бора 24, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:33,856 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:24:35,766 - WARNING - No coordinates found for: Местност Русково бърдо, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:36,743 - WARNING - No coordinates found for: Местност Русково бърдо, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:37,738 - WARNING - No coordinates found for: Местност Русково бърдо, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:24:38,698 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:24:40,675 - WARNING - No coordinates found for: ул. Стефан Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:41,720 - WARNING - No coordinates found for: ул. Стефан Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:42,626 - WARNING - No coordinates found for: ул. Стефан Стамболов 73, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:43,549 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:24:45,313 - WARNING - No coordinates found for: ул. Александър Стамболйск 32 корпус 1 2, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:46,314 - WARNING - No coordinates found for: ул. Александър Стамболйск 32 корпус 1 2, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:47,323 - WARNING - No coordinates found for: ул. Александър Стамболйск 32 корпус 1 2, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:48,347 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:24:50,107 - WARNING - No coordinates found for: ул. Ванче Мхайлов 1, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:51,114 - WARNING - No coordinates found for: ул. Ванче Мхайлов 1, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:52,106 - WARNING - No coordinates found for: ул. Ванче Мхайлов 1, БУРГАС, Бургас, Bulgaria
+2025-10-27 00:24:53,159 - INFO - Geocoded БУРГАС, Бургас, Bulgaria: (42.4936616, 27.4721276)
+2025-10-27 00:24:55,059 - WARNING - No coordinates found for: ул. Бузлуджа 1, ВЕЛИКО ТЪРНОВО, Велико Търново, Bulgaria
+2025-10-27 00:24:56,106 - WARNING - No coordinates found for: ул. Бузлуджа 1, ВЕЛИКО ТЪРНОВО, Велико Търново, Bulgaria
+2025-10-27 00:24:57,050 - WARNING - No coordinates found for: ул. Бузлуджа 1, ВЕЛИКО ТЪРНОВО, Велико Търново, Bulgaria
+2025-10-27 00:24:57,985 - INFO - Geocoded ВЕЛИКО ТЪРНОВО, Велико Търново, Bulgaria: (43.0820584, 25.6321312)
+2025-10-27 00:24:59,733 - WARNING - No coordinates found for: ул. Колхда продължене МТБ Пловдв Стацонар 2  3, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:25:00,741 - WARNING - No coordinates found for: ул. Колхда продължене МТБ Пловдв Стацонар 2  3, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:25:01,753 - WARNING - No coordinates found for: ул. Колхда продължене МТБ Пловдв Стацонар 2  3, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:25:02,809 - INFO - Geocoded ПЛОВДИВ, Пловдив, Bulgaria: (42.1418541, 24.7499297)
+2025-10-27 00:25:04,792 - WARNING - No coordinates found for: ул. Гоце Делчев 38, ВЕЛИНГРАД, Пазарджик, Bulgaria
+2025-10-27 00:25:05,798 - WARNING - No coordinates found for: ул. Гоце Делчев 38, ВЕЛИНГРАД, Пазарджик, Bulgaria
+2025-10-27 00:25:06,890 - WARNING - No coordinates found for: ул. Гоце Делчев 38, ВЕЛИНГРАД, Пазарджик, Bulgaria
+2025-10-27 00:25:07,651 - INFO - Geocoded ВЕЛИНГРАД, Пазарджик, Bulgaria: (42.0283589, 23.9944408)
+2025-10-27 00:25:09,581 - WARNING - No coordinates found for: ул. М. Ташев 2, СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица), Bulgaria
+2025-10-27 00:25:10,596 - WARNING - No coordinates found for: ул. М. Ташев 2, СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица), Bulgaria
+2025-10-27 00:25:11,575 - WARNING - No coordinates found for: ул. М. Ташев 2, СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица), Bulgaria
+2025-10-27 00:25:12,728 - WARNING - No coordinates found for: СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица), Bulgaria
+2025-10-27 00:25:13,724 - WARNING - No coordinates found for: СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица), Bulgaria
+2025-10-27 00:25:14,721 - WARNING - No coordinates found for: СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица), Bulgaria
+2025-10-27 00:25:14,721 - ERROR - Failed after 3 attempts for all queries: ул. М. Ташев 2, СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица)
+2025-10-27 00:25:16,819 - WARNING - No coordinates found for: бул. Македоня 38, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица), Bulgaria
+2025-10-27 00:25:17,889 - WARNING - No coordinates found for: бул. Македоня 38, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица), Bulgaria
+2025-10-27 00:25:18,800 - WARNING - No coordinates found for: бул. Македоня 38, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица), Bulgaria
+2025-10-27 00:25:19,750 - WARNING - No coordinates found for: СОФИЯ 02 рн КРАСНО СЕЛО, София (столица), Bulgaria
+2025-10-27 00:25:20,727 - WARNING - No coordinates found for: СОФИЯ 02 рн КРАСНО СЕЛО, София (столица), Bulgaria
+2025-10-27 00:25:21,732 - WARNING - No coordinates found for: СОФИЯ 02 рн КРАСНО СЕЛО, София (столица), Bulgaria
+2025-10-27 00:25:21,732 - ERROR - Failed after 3 attempts for all queries: бул. Македоня 38, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 00:25:23,548 - WARNING - No coordinates found for: бул. Хрсто Ботев 120, СОФИЯ 05 рн СЕРДИКА, София (столица), Bulgaria
+2025-10-27 00:25:24,545 - WARNING - No coordinates found for: бул. Хрсто Ботев 120, СОФИЯ 05 рн СЕРДИКА, София (столица), Bulgaria
+2025-10-27 00:25:25,556 - WARNING - No coordinates found for: бул. Хрсто Ботев 120, СОФИЯ 05 рн СЕРДИКА, София (столица), Bulgaria
+2025-10-27 00:25:26,769 - WARNING - No coordinates found for: СОФИЯ 05 рн СЕРДИКА, София (столица), Bulgaria
+2025-10-27 00:25:27,735 - WARNING - No coordinates found for: СОФИЯ 05 рн СЕРДИКА, София (столица), Bulgaria
+2025-10-27 00:25:28,786 - WARNING - No coordinates found for: СОФИЯ 05 рн СЕРДИКА, София (столица), Bulgaria
+2025-10-27 00:25:28,787 - ERROR - Failed after 3 attempts for all queries: бул. Хрсто Ботев 120, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 00:25:30,763 - WARNING - No coordinates found for: ул. Околовръстен път 127, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:31,884 - WARNING - No coordinates found for: ул. Околовръстен път 127, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:32,754 - WARNING - No coordinates found for: ул. Околовръстен път 127, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:33,805 - WARNING - No coordinates found for: СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:34,765 - WARNING - No coordinates found for: СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:35,792 - WARNING - No coordinates found for: СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:35,792 - ERROR - Failed after 3 attempts for all queries: ул. Околовръстен път 127, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 00:25:37,618 - WARNING - No coordinates found for: бул. Царградско шосе 66А, СОФИЯ 15 рн МЛАДОСТ, София (столица), Bulgaria
+2025-10-27 00:25:38,616 - WARNING - No coordinates found for: бул. Царградско шосе 66А, СОФИЯ 15 рн МЛАДОСТ, София (столица), Bulgaria
+2025-10-27 00:25:39,625 - WARNING - No coordinates found for: бул. Царградско шосе 66А, СОФИЯ 15 рн МЛАДОСТ, София (столица), Bulgaria
+2025-10-27 00:25:41,668 - WARNING - No coordinates found for: СОФИЯ 15 рн МЛАДОСТ, София (столица), Bulgaria
+2025-10-27 00:25:42,568 - WARNING - No coordinates found for: СОФИЯ 15 рн МЛАДОСТ, София (столица), Bulgaria
+2025-10-27 00:25:43,608 - WARNING - No coordinates found for: СОФИЯ 15 рн МЛАДОСТ, София (столица), Bulgaria
+2025-10-27 00:25:43,608 - ERROR - Failed after 3 attempts for all queries: бул. Царградско шосе 66А, СОФИЯ 15 рн МЛАДОСТ, София (столица)
+2025-10-27 00:25:45,402 - WARNING - No coordinates found for: ул. Константн Помянов-1, СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица), Bulgaria
+2025-10-27 00:25:46,399 - WARNING - No coordinates found for: ул. Константн Помянов-1, СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица), Bulgaria
+2025-10-27 00:25:47,400 - WARNING - No coordinates found for: ул. Константн Помянов-1, СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица), Bulgaria
+2025-10-27 00:25:48,542 - WARNING - No coordinates found for: СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица), Bulgaria
+2025-10-27 00:25:49,444 - WARNING - No coordinates found for: СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица), Bulgaria
+2025-10-27 00:25:50,441 - WARNING - No coordinates found for: СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица), Bulgaria
+2025-10-27 00:25:50,442 - ERROR - Failed after 3 attempts for all queries: ул. Константн Помянов-1, СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица)
+2025-10-27 00:25:52,407 - WARNING - No coordinates found for: бул. Н. Й. Вапцаров 51Б, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:53,416 - WARNING - No coordinates found for: бул. Н. Й. Вапцаров 51Б, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:54,368 - WARNING - No coordinates found for: бул. Н. Й. Вапцаров 51Б, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:55,425 - WARNING - No coordinates found for: СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:56,442 - WARNING - No coordinates found for: СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:57,418 - WARNING - No coordinates found for: СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица), Bulgaria
+2025-10-27 00:25:57,418 - ERROR - Failed after 3 attempts for all queries: бул. Н. Й. Вапцаров 51Б, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 00:25:59,249 - WARNING - No coordinates found for: ул. Брегалнца 47, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица), Bulgaria
+2025-10-27 00:26:00,251 - WARNING - No coordinates found for: ул. Брегалнца 47, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица), Bulgaria
+2025-10-27 00:26:01,253 - WARNING - No coordinates found for: ул. Брегалнца 47, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица), Bulgaria
+2025-10-27 00:26:02,531 - WARNING - No coordinates found for: СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица), Bulgaria
+2025-10-27 00:26:03,475 - WARNING - No coordinates found for: СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица), Bulgaria
+2025-10-27 00:26:04,512 - WARNING - No coordinates found for: СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица), Bulgaria
+2025-10-27 00:26:04,512 - ERROR - Failed after 3 attempts for all queries: ул. Брегалнца 47, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица)
+2025-10-27 00:26:06,348 - WARNING - No coordinates found for: ул. Александър Стамболйск 31, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:26:07,342 - WARNING - No coordinates found for: ул. Александър Стамболйск 31, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:26:08,350 - WARNING - No coordinates found for: ул. Александър Стамболйск 31, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:26:09,419 - INFO - Geocoded ПЛОВДИВ, Пловдив, Bulgaria: (42.1418541, 24.7499297)
+2025-10-27 00:26:11,312 - WARNING - No coordinates found for: ул. Ген. Стефан Тошев 36А, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:12,319 - WARNING - No coordinates found for: ул. Ген. Стефан Тошев 36А, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:13,315 - WARNING - No coordinates found for: ул. Ген. Стефан Тошев 36А, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:14,365 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:26:16,075 - WARNING - No coordinates found for: ул. Хан Кардам 2, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:26:17,086 - WARNING - No coordinates found for: ул. Хан Кардам 2, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:26:18,101 - WARNING - No coordinates found for: ул. Хан Кардам 2, ДОБРИЧ, Добрич, Bulgaria
+2025-10-27 00:26:19,014 - INFO - Geocoded ДОБРИЧ, Добрич, Bulgaria: (43.5688397, 27.8297415)
+2025-10-27 00:26:20,604 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:21,612 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:22,610 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:23,719 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:26:25,454 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:26,463 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:27,421 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:28,445 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:26:30,383 - WARNING - No coordinates found for: ул. Цар Иван Александър 110А, ШУМЕН, Шумен, Bulgaria
+2025-10-27 00:26:31,355 - WARNING - No coordinates found for: ул. Цар Иван Александър 110А, ШУМЕН, Шумен, Bulgaria
+2025-10-27 00:26:32,364 - WARNING - No coordinates found for: ул. Цар Иван Александър 110А, ШУМЕН, Шумен, Bulgaria
+2025-10-27 00:26:33,337 - INFO - Geocoded ШУМЕН, Шумен, Bulgaria: (43.2703797, 26.9247362)
+2025-10-27 00:26:35,257 - INFO - Geocoded бул. Даме Груев 2, БУРГАС, Бургас, Bulgaria: (42.5114202, 27.4595817)
+2025-10-27 00:26:37,209 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:38,189 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:39,198 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:40,137 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:26:41,971 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:42,965 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:43,970 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:45,051 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:26:46,830 - WARNING - No coordinates found for: бул. Слвнца 40, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:47,867 - WARNING - No coordinates found for: бул. Слвнца 40, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:48,833 - WARNING - No coordinates found for: бул. Слвнца 40, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:49,912 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:26:51,867 - WARNING - No coordinates found for: ул. Иван Драсов 10А, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:52,864 - WARNING - No coordinates found for: ул. Иван Драсов 10А, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:53,890 - WARNING - No coordinates found for: ул. Иван Драсов 10А, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:54,793 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:26:56,754 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:57,758 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:58,751 - WARNING - No coordinates found for: ул. Иван Драсов 12, ВАРНА, Варна, Bulgaria
+2025-10-27 00:26:59,720 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:27:01,532 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:02,531 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:03,530 - WARNING - No coordinates found for: ул. Проф. д-р Георг Георгев 4, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:04,596 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:27:06,602 - WARNING - No coordinates found for: ул. Коматевско шосе 79 партер 1  2, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:27:08,282 - WARNING - No coordinates found for: ул. Коматевско шосе 79 партер 1  2, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:27:09,091 - WARNING - No coordinates found for: ул. Коматевско шосе 79 партер 1  2, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:27:09,969 - INFO - Geocoded ПЛОВДИВ, Пловдив, Bulgaria: (42.1418541, 24.7499297)
+2025-10-27 00:27:11,809 - WARNING - No coordinates found for: ул. Колхда-продължене 1 каб. 1 2 манпулацонна, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:27:12,805 - WARNING - No coordinates found for: ул. Колхда-продължене 1 каб. 1 2 манпулацонна, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:27:13,802 - WARNING - No coordinates found for: ул. Колхда-продължене 1 каб. 1 2 манпулацонна, ПЛОВДИВ, Пловдив, Bulgaria
+2025-10-27 00:27:14,856 - INFO - Geocoded ПЛОВДИВ, Пловдив, Bulgaria: (42.1418541, 24.7499297)
+2025-10-27 00:27:16,668 - WARNING - No coordinates found for: ул. Васл Левск 124, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:27:17,680 - WARNING - No coordinates found for: ул. Васл Левск 124, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:27:18,678 - WARNING - No coordinates found for: ул. Васл Левск 124, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:27:19,726 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:27:21,568 - WARNING - No coordinates found for: ул. П. Евтмй 5, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:27:22,568 - WARNING - No coordinates found for: ул. П. Евтмй 5, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:27:23,578 - WARNING - No coordinates found for: ул. П. Евтмй 5, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:27:24,617 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:27:26,442 - WARNING - No coordinates found for: ул. Алеко Константнов 3-5, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:27,466 - WARNING - No coordinates found for: ул. Алеко Константнов 3-5, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:28,448 - WARNING - No coordinates found for: ул. Алеко Константнов 3-5, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:29,535 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:27:31,311 - WARNING - No coordinates found for: ул. Брегалнца 1, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:32,310 - WARNING - No coordinates found for: ул. Брегалнца 1, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:33,312 - WARNING - No coordinates found for: ул. Брегалнца 1, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:34,428 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:27:36,025 - WARNING - No coordinates found for: к.к. Свет Константн Елена, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:37,036 - WARNING - No coordinates found for: к.к. Свет Константн Елена, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:38,043 - WARNING - No coordinates found for: к.к. Свет Константн Елена, ВАРНА, Варна, Bulgaria
+2025-10-27 00:27:39,123 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:27:41,013 - WARNING - No coordinates found for: ул. Иван Вазов 5, СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:41,994 - WARNING - No coordinates found for: ул. Иван Вазов 5, СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:43,013 - WARNING - No coordinates found for: ул. Иван Вазов 5, СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:44,208 - WARNING - No coordinates found for: СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:45,065 - WARNING - No coordinates found for: СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:46,192 - WARNING - No coordinates found for: СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:46,192 - ERROR - Failed after 3 attempts for all queries: ул. Иван Вазов 5, СОФИЯ 24 рн БАНКЯ, София (столица)
+2025-10-27 00:27:49,223 - WARNING - No coordinates found for: ул. Хсар 2, СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:50,140 - WARNING - No coordinates found for: ул. Хсар 2, СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:51,249 - WARNING - No coordinates found for: ул. Хсар 2, СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:52,092 - WARNING - No coordinates found for: СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:53,120 - WARNING - No coordinates found for: СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:54,128 - WARNING - No coordinates found for: СОФИЯ 24 рн БАНКЯ, София (столица), Bulgaria
+2025-10-27 00:27:54,128 - ERROR - Failed after 3 attempts for all queries: ул. Хсар 2, СОФИЯ 24 рн БАНКЯ, София (столица)
+2025-10-27 00:27:56,053 - INFO - Geocoded Бул. Иван Вазов 2, ХИСАРЯ, Пловдив, Bulgaria: (42.4906832, 24.7090289)
+2025-10-27 00:27:57,986 - WARNING - No coordinates found for: ул. Илн Паунов 1, ХИСАРЯ, Пловдив, Bulgaria
+2025-10-27 00:27:59,000 - WARNING - No coordinates found for: ул. Илн Паунов 1, ХИСАРЯ, Пловдив, Bulgaria
+2025-10-27 00:28:00,024 - WARNING - No coordinates found for: ул. Илн Паунов 1, ХИСАРЯ, Пловдив, Bulgaria
+2025-10-27 00:28:00,919 - INFO - Geocoded ХИСАРЯ, Пловдив, Bulgaria: (42.5132789, 24.6948452)
+2025-10-27 00:28:03,006 - WARNING - No coordinates found for: ул. Г. Кочев 6, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:28:03,932 - WARNING - No coordinates found for: ул. Г. Кочев 6, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:28:05,031 - WARNING - No coordinates found for: ул. Г. Кочев 6, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:28:05,797 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:28:07,621 - WARNING - No coordinates found for: ул. Св. Георг Софйск 3, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:08,642 - WARNING - No coordinates found for: ул. Св. Георг Софйск 3, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:09,621 - WARNING - No coordinates found for: ул. Св. Георг Софйск 3, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:10,848 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:11,881 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:13,694 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:13,694 - ERROR - Failed after 3 attempts for all queries: ул. Св. Георг Софйск 3, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:28:15,570 - WARNING - No coordinates found for: ул. Шейново 19, СОФИЯ 01 рн СРЕДЕЦ, София (столица), Bulgaria
+2025-10-27 00:28:16,618 - WARNING - No coordinates found for: ул. Шейново 19, СОФИЯ 01 рн СРЕДЕЦ, София (столица), Bulgaria
+2025-10-27 00:28:17,636 - WARNING - No coordinates found for: ул. Шейново 19, СОФИЯ 01 рн СРЕДЕЦ, София (столица), Bulgaria
+2025-10-27 00:28:18,645 - WARNING - No coordinates found for: СОФИЯ 01 рн СРЕДЕЦ, София (столица), Bulgaria
+2025-10-27 00:28:19,623 - WARNING - No coordinates found for: СОФИЯ 01 рн СРЕДЕЦ, София (столица), Bulgaria
+2025-10-27 00:28:21,506 - WARNING - No coordinates found for: СОФИЯ 01 рн СРЕДЕЦ, София (столица), Bulgaria
+2025-10-27 00:28:21,506 - ERROR - Failed after 3 attempts for all queries: ул. Шейново 19, СОФИЯ 01 рн СРЕДЕЦ, София (столица)
+2025-10-27 00:28:23,318 - WARNING - No coordinates found for: ул. Хрсто Смрненск 2, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:24,322 - WARNING - No coordinates found for: ул. Хрсто Смрненск 2, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:25,322 - WARNING - No coordinates found for: ул. Хрсто Смрненск 2, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:26,366 - INFO - Geocoded ЯМБОЛ, Ямбол, Bulgaria: (42.4839350, 26.5105553)
+2025-10-27 00:28:28,239 - WARNING - No coordinates found for: ул. Ивайло 1, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:29,262 - WARNING - No coordinates found for: ул. Ивайло 1, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:30,275 - WARNING - No coordinates found for: ул. Ивайло 1, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:31,191 - INFO - Geocoded ЯМБОЛ, Ямбол, Bulgaria: (42.4839350, 26.5105553)
+2025-10-27 00:28:33,031 - WARNING - No coordinates found for: ул. Българка 2, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:34,051 - WARNING - No coordinates found for: ул. Българка 2, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:35,077 - WARNING - No coordinates found for: ул. Българка 2, ЯМБОЛ, Ямбол, Bulgaria
+2025-10-27 00:28:35,989 - INFO - Geocoded ЯМБОЛ, Ямбол, Bulgaria: (42.4839350, 26.5105553)
+2025-10-27 00:28:37,789 - WARNING - No coordinates found for: ул. Иван Вазов 11 Общнска здравна къща - Несебър, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:28:38,808 - WARNING - No coordinates found for: ул. Иван Вазов 11 Общнска здравна къща - Несебър, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:28:39,786 - WARNING - No coordinates found for: ул. Иван Вазов 11 Общнска здравна къща - Несебър, НЕСЕБЪР, Бургас, Bulgaria
+2025-10-27 00:28:40,856 - INFO - Geocoded НЕСЕБЪР, Бургас, Bulgaria: (42.6607865, 27.7167464)
+2025-10-27 00:28:42,799 - WARNING - No coordinates found for: ул. Найчо Цанов 12, ВИДИН, Видин, Bulgaria
+2025-10-27 00:28:43,793 - WARNING - No coordinates found for: ул. Найчо Цанов 12, ВИДИН, Видин, Bulgaria
+2025-10-27 00:28:44,840 - WARNING - No coordinates found for: ул. Найчо Цанов 12, ВИДИН, Видин, Bulgaria
+2025-10-27 00:28:45,774 - INFO - Geocoded ВИДИН, Видин, Bulgaria: (43.9857242, 22.8772194)
+2025-10-27 00:28:47,542 - WARNING - No coordinates found for: ул. Херман Шкорпл 6, ВАРНА, Варна, Bulgaria
+2025-10-27 00:28:48,541 - WARNING - No coordinates found for: ул. Херман Шкорпл 6, ВАРНА, Варна, Bulgaria
+2025-10-27 00:28:49,550 - WARNING - No coordinates found for: ул. Херман Шкорпл 6, ВАРНА, Варна, Bulgaria
+2025-10-27 00:28:50,625 - INFO - Geocoded ВАРНА, Варна, Bulgaria: (43.2073873, 27.9166653)
+2025-10-27 00:28:52,883 - WARNING - No coordinates found for: бул. Българя 104, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:53,772 - WARNING - No coordinates found for: бул. Българя 104, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:54,762 - WARNING - No coordinates found for: бул. Българя 104, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:55,671 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:56,713 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:57,763 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:28:57,763 - ERROR - Failed after 3 attempts for all queries: бул. Българя 104, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:28:59,772 - WARNING - No coordinates found for: ул. Сан Стефано 1, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:00,808 - WARNING - No coordinates found for: ул. Сан Стефано 1, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:01,810 - WARNING - No coordinates found for: ул. Сан Стефано 1, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:02,597 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:29:04,392 - WARNING - No coordinates found for: ж.к. Дружба бл 112 вх.В ет 1, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:05,388 - WARNING - No coordinates found for: ж.к. Дружба бл 112 вх.В ет 1, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:06,395 - WARNING - No coordinates found for: ж.к. Дружба бл 112 вх.В ет 1, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:07,283 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:29:09,018 - WARNING - No coordinates found for: бул. Петко Ю. Тодоров 20, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:10,014 - WARNING - No coordinates found for: бул. Петко Ю. Тодоров 20, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:11,004 - WARNING - No coordinates found for: бул. Петко Ю. Тодоров 20, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:12,072 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:13,086 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:14,170 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:14,170 - ERROR - Failed after 3 attempts for all queries: бул. Петко Ю. Тодоров 20, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:29:16,163 - WARNING - No coordinates found for: ул. Хан Крум 2, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:17,153 - WARNING - No coordinates found for: ул. Хан Крум 2, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:18,175 - WARNING - No coordinates found for: ул. Хан Крум 2, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:19,067 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:29:21,138 - WARNING - No coordinates found for: ж.к. Дружба ул. Трте бора 24, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:22,190 - WARNING - No coordinates found for: ж.к. Дружба ул. Трте бора 24, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:23,132 - WARNING - No coordinates found for: ж.к. Дружба ул. Трте бора 24, ПЛЕВЕН, Плевен, Bulgaria
+2025-10-27 00:29:23,911 - INFO - Geocoded ПЛЕВЕН, Плевен, Bulgaria: (43.4090220, 24.6180123)
+2025-10-27 00:29:25,798 - WARNING - No coordinates found for: ул. Стефан Сарафов 7, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:26,805 - WARNING - No coordinates found for: ул. Стефан Сарафов 7, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:27,796 - WARNING - No coordinates found for: ул. Стефан Сарафов 7, СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:28,860 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:29,872 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:30,869 - WARNING - No coordinates found for: СОФИЯ 10 рн ТРИАДИЦА, София (столица), Bulgaria
+2025-10-27 00:29:30,869 - ERROR - Failed after 3 attempts for all queries: ул. Стефан Сарафов 7, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 00:29:32,083 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
