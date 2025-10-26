@@ -94,7 +94,7 @@ def geocode_with_nominatim(street, city, oblast, name_hint=None, limit=5, retrie
             data = resp.json()
             if not data:
                 logging.info(f"Nominatim: no results for {params}")
-                return None, None
+                return None, None, None
 
             # Score candidates and pick best
             best = None
@@ -108,9 +108,10 @@ def geocode_with_nominatim(street, city, oblast, name_hint=None, limit=5, retrie
             if best:
                 lat = best.get('lat')
                 lon = best.get('lon')
-                logging.info(f"Nominatim chosen candidate (score={best_score}): {best.get('display_name')}")
-                return float(lat), float(lon)
-            return None, None
+                display = best.get('display_name')
+                logging.info(f"Nominatim chosen candidate (score={best_score}): {display}")
+                return float(lat), float(lon), display
+            return None, None, None
         except Exception as e:
             logging.error(f"Nominatim attempt {attempt+1} error for {params}: {e}")
             time.sleep(1 + attempt)
@@ -140,7 +141,7 @@ def geocode_with_google(street, city, oblast, name_hint=None, api_key=None):
         data = resp.json()
         if data.get('status') != 'OK' or not data.get('results'):
             logging.info(f"Google no results for {address}: {data.get('status')}")
-            return None, None
+            return None, None, None
 
         # Prefer ROOFTOP or RANGE_INTERPOLATED location types
         preferred = None
@@ -157,17 +158,134 @@ def geocode_with_google(street, city, oblast, name_hint=None, api_key=None):
         lat = preferred.get('geometry', {}).get('location', {}).get('lat')
         lon = preferred.get('geometry', {}).get('location', {}).get('lng')
         logging.info(f"Google chosen: {formatted} (type={preferred.get('geometry', {}).get('location_type')})")
-        return float(lat), float(lon)
+        return float(lat), float(lon), formatted
     except Exception as e:
         logging.error(f"Google geocode error for {address}: {e}")
-        return None, None
+        return None, None, None
+
+
+def get_city_bbox(city, oblast):
+    """Return bbox tuple (south, west, north, east) for a city using Nominatim, or None."""
+    if not city:
+        return None
+    try:
+        params = {'format': 'json', 'limit': 1, 'city': city, 'county': oblast, 'country': 'Bulgaria'}
+        headers = {'User-Agent': 'GeocodeHospitals/1.0 (contact@example.com)'}
+        resp = requests.get('https://nominatim.openstreetmap.org/search', params=params, headers=headers, timeout=10)
+        if resp.status_code != 200:
+            return None
+        data = resp.json()
+        if not data:
+            return None
+        bb = data[0].get('boundingbox')
+        if bb and len(bb) == 4:
+            # boundingbox is [south, north, west, east] as strings
+            south = float(bb[0])
+            north = float(bb[1])
+            west = float(bb[2])
+            east = float(bb[3])
+            return (south, west, north, east)
+    except Exception as e:
+        logging.warning(f"Could not get bbox for {city}, {oblast}: {e}")
+    return None
+
+
+def nominatim_free_text_search(address, city, oblast, limit=10):
+    """Run a free-text Nominatim search for 'address, city, oblast, Bulgaria'."""
+    try:
+        q = f"{address}, {city}, {oblast}, Bulgaria"
+        resp = requests.get('https://nominatim.openstreetmap.org/search', params={'format':'json','addressdetails':1,'limit':limit,'q':q}, headers={'User-Agent':'GeocodeHospitals/1.0 (contact@example.com)'}, timeout=15)
+        if resp.status_code != 200:
+            return []
+        return resp.json()
+    except Exception as e:
+        logging.warning(f"Free-text Nominatim error for {address}, {city}: {e}")
+        return []
+
+
+def geocode_with_overpass(name, city, oblast):
+    """Search OSM (Overpass) for matching named hospitals/clinics within the city's bbox.
+    Returns (lat, lon, display_name) or (None, None, None).
+    """
+    if not name:
+        return None, None, None
+    bbox = get_city_bbox(city, oblast)
+    if not bbox:
+        # If we can't get a bbox, don't run a wide Overpass query to avoid overload.
+        return None, None, None
+
+    south, west, north, east = bbox
+    # Escape name for regex: simple escape of quotes and slashes
+    import re
+    regex_name = re.escape(name)
+
+    query = (
+        '[out:json][timeout:25];'
+        f'(node["name"~"{regex_name}",i]({south},{west},{north},{east});'
+        f'way["name"~"{regex_name}",i]({south},{west},{north},{east});'
+        f'relation["name"~"{regex_name}",i]({south},{west},{north},{east});'
+        f'node[amenity~"hospital|clinic|doctors|healthcare"]({south},{west},{north},{east});'
+        f'way[amenity~"hospital|clinic|doctors|healthcare"]({south},{west},{north},{east});'
+        f'relation[amenity~"hospital|clinic|doctors|healthcare"]({south},{west},{north},{east}););out center;'
+    )
+
+    try:
+        resp = requests.post('https://overpass-api.de/api/interpreter', data={'data': query}, timeout=30)
+        if resp.status_code != 200:
+            logging.warning(f"Overpass status {resp.status_code} for {name} in {city}")
+            return None, None, None
+        data = resp.json()
+        elements = data.get('elements', [])
+        if not elements:
+            return None, None, None
+
+        best = None
+        best_score = -999
+        for el in elements:
+            tags = el.get('tags', {}) or {}
+            el_name = tags.get('name', '')
+            score = 0
+            if el_name and el_name.strip().lower() == name.strip().lower():
+                score += 50
+            elif name.strip().lower() in el_name.lower():
+                score += 20
+
+            amenity = tags.get('amenity', '')
+            if amenity in ('hospital', 'clinic'):
+                score += 30
+
+            # geometry
+            if el.get('lat') and el.get('lon'):
+                lat = float(el['lat'])
+                lon = float(el['lon'])
+            else:
+                center = el.get('center') or {}
+                lat = center.get('lat')
+                lon = center.get('lon')
+
+            # small city match heuristic
+            addr_city = tags.get('addr:city', '')
+            if city and addr_city and city.strip().lower() == addr_city.strip().lower():
+                score += 10
+
+            if lat and lon and score > best_score:
+                best_score = score
+                best = (lat, lon, el_name or tags.get('ref') or amenity)
+
+        if best:
+            logging.info(f"Overpass best for {name} in {city}: score={best_score} -> {best[2]}")
+            return float(best[0]), float(best[1]), best[2]
+    except Exception as e:
+        logging.error(f"Overpass query error for {name} in {city}: {e}")
+    return None, None, None
 
 
 def geocode_address(address, city, oblast, name_hint=None):
     # Normalize
     street = address or ''
     if isinstance(street, str):
-        street = street.replace('ет.', '').replace('ГР.', '').replace('№', '').replace('и', '').replace('\t', ' ').replace('  ', ' ').strip()
+        # normalize common tokens but preserve Bulgarian letters (don't remove 'и')
+        street = street.replace('ет.', '').replace('ГР.', '').replace('№', '').replace('\t', ' ').replace('  ', ' ').strip()
     city = city.replace('ГР.', '').strip() if isinstance(city, str) and city.strip() != '' else (oblast if isinstance(oblast, str) else '')
     oblast = oblast or ''
 
@@ -176,34 +294,96 @@ def geocode_address(address, city, oblast, name_hint=None):
     if cache_key in cache:
         logging.info(f"Cache hit for {cache_key}")
         val = cache[cache_key]
-        return val.get('lat'), val.get('lng')
+        return val.get('lat'), val.get('lng'), val.get('provider'), val.get('display_name')
 
-    # Try Google first if api key present
-    gkey = os.environ.get('GOOGLE_API_KEY')
-    if gkey:
-        lat, lng = geocode_with_google(street, city, oblast, name_hint=name_hint, api_key=gkey)
+    # Mode: force Nominatim only if environment variable set
+    force_nominatim = os.environ.get('FORCE_NOMINATIM', '').lower() in ('1', 'true', 'yes')
+
+    # Try Google first if api key present and not forcing Nominatim-only
+    if not force_nominatim:
+        gkey = os.environ.get('GOOGLE_API_KEY')
+        if gkey:
+            res = geocode_with_google(street, city, oblast, name_hint=name_hint, api_key=gkey)
+            if res and res[0] and res[1]:
+                lat, lng, display = res
+                cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google', 'display_name': display}
+                save_cache(cache)
+                return lat, lng, 'google', display
+    # If the street contains a housenumber, try free-text Nominatim first and prefer exact housenumber matches
+    import re
+    m = re.search(r"(.*)\b(?:№|No\.?|n\.|#)?\s*([0-9]+[A-Za-z0-9/-]*)\s*$", street)
+    if m:
+        housenumber = m.group(2)
+        ft = nominatim_free_text_search(street, city, oblast, limit=8)
+        for cand in ft:
+            disp = cand.get('display_name','')
+            if housenumber and housenumber in disp:
+                try:
+                    lat = float(cand.get('lat'))
+                    lng = float(cand.get('lon'))
+                    display = disp
+                    logging.info(f"Using free-text Nominatim candidate for housenumber {housenumber}: {display}")
+                    cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
+                    save_cache(cache)
+                    return lat, lng, 'nominatim_free', display
+                except Exception:
+                    pass
+
+    # If not forcing Nominatim-only, try Overpass (OSM) by name
+    if not force_nominatim:
+        try:
+            res = geocode_with_overpass(name_hint or street, city, oblast)
+            if res and res[0] and res[1]:
+                lat, lng, info = res
+            else:
+                lat, lng, info = None, None, None
+        except NameError:
+            lat, lng, info = None, None, None
+
         if lat and lng:
-            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google'}
+            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'overpass', 'display_name': info}
             save_cache(cache)
-            return lat, lng
+            return lat, lng, 'overpass', info
 
-    # Fallback to Nominatim
-    lat, lng = geocode_with_nominatim(street, city, oblast, name_hint=name_hint)
-    if lat and lng:
-        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim'}
+    # Finally, use structured Nominatim
+    res = geocode_with_nominatim(street, city, oblast, name_hint=name_hint)
+    if res and res[0] and res[1]:
+        lat, lng, display = res
+        # Prefer free-text candidate that contains exact housenumber when available
+        # Try free-text only if street contains a housenumber
+        import re
+        m = re.search(r"(.*)\b(?:№|No\.?|n\.|#)?\s*([0-9]+[A-Za-z0-9/-]*)\s*$", street)
+        if m:
+            housenumber = m.group(2)
+            ft = nominatim_free_text_search(street, city, oblast, limit=8)
+            for cand in ft:
+                disp = cand.get('display_name','')
+                if housenumber in disp:
+                    try:
+                        lat = float(cand.get('lat'))
+                        lng = float(cand.get('lon'))
+                        display = disp
+                        logging.info(f"Preferred free-text Nominatim candidate with housenumber {housenumber}: {display}")
+                        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
+                        save_cache(cache)
+                        return lat, lng, 'nominatim_free', display
+                    except Exception:
+                        pass
+        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim', 'display_name': display}
         save_cache(cache)
-        return lat, lng
+        return lat, lng, 'nominatim', display
 
     # As a last resort, try a looser query (city-level)
     if city:
-        lat, lng = geocode_with_nominatim('', city, oblast, name_hint=name_hint, limit=3)
-        if lat and lng:
-            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_city'}
+        res = geocode_with_nominatim('', city, oblast, name_hint=name_hint, limit=3)
+        if res and res[0] and res[1]:
+            lat, lng, display = res
+            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_city', 'display_name': display}
             save_cache(cache)
-            return lat, lng
+            return lat, lng, 'nominatim_city', display
 
     logging.error(f"Failed to geocode: {street}, {city}, {oblast}")
-    return None, None
+    return None, None, None, None
 
 def main():
     input_file = 'hospitals.csv'
@@ -232,17 +412,22 @@ def main():
         print(f"Error: Missing columns in CSV: {missing_columns}")
         return
 
-    # Initialize lat and lng columns
+    # Initialize lat, lng and QA columns
     df['lat'] = None
     df['lng'] = None
+    df['provider'] = None
+    df['display_name'] = None
 
     # Geocode each address
     for i, row in df.iterrows():
         city = row['Населено място'] if pd.notna(row['Населено място']) and row['Населено място'].strip() != '' else row['Област']
-        lat, lng = geocode_address(row['Адрес'], city, row['Област'])
+        name = row['Наименование'] if 'Наименование' in row else None
+        lat, lng, provider, display = geocode_address(row['Адрес'], city, row['Област'], name_hint=name)
         df.at[i, 'lat'] = lat
         df.at[i, 'lng'] = lng
-        print(f"Geocoded {row['Наименование']} at {row['Адрес']}, {city}, {row['Област']}: ({lat}, {lng})")
+        df.at[i, 'provider'] = provider
+        df.at[i, 'display_name'] = display
+        print(f"Geocoded {row['Наименование']} at {row['Адрес']}, {city}, {row['Област']}: ({lat}, {lng}) provider={provider}")
         time.sleep(1.2)  # Slightly longer delay to avoid rate limits
 
     # Save to output file
