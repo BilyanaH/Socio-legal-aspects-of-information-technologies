@@ -539,7 +539,7 @@ def geocode_address(address, city, oblast, name_hint=None):
     return None, None, None, None
 
 def main():
-    input_file = 'hospitals.csv'
+    input_file = 'hospitals_cleaned.csv'
     output_file = 'hospitals_with_coords.csv'
 
     # Check if input file exists
@@ -581,7 +581,7 @@ def main():
         df.at[i, 'provider'] = provider
         df.at[i, 'display_name'] = display
         print(f"Geocoded {row['Наименование']} at {row['Адрес']}, {city}, {row['Област']}: ({lat}, {lng}) provider={provider}")
-        time.sleep(1.2)  # Slightly longer delay to avoid rate limits
+        time.sleep(1.0)  # Required: Nominatim rate limit is 1 request/second
 
     # Second pass: try to refine rows that are missing coords or have low-confidence / duplicated coords
     def needs_refine(r):

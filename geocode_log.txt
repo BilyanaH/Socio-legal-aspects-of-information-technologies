@@ -1413,3 +1413,507 @@
 2025-10-27 03:45:52,215 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ Авис Медика ООД, С.ТУЧЕНИЦА', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
 2025-10-27 03:45:54,236 - INFO - Nominatim chosen candidate (score=25.533962973983368): Тученица, Брестовец, Плевен, 5800, България
 2025-10-27 03:47:21,177 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
+2025-10-27 03:48:18,430 - INFO - Using free-text Nominatim: Лазур, Китен, Приморско, Бургас, 8183, България
+2025-10-27 03:48:21,756 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 03:48:21,758 - INFO - Overpass result for ул. Васил Левски 36||КАВАРНА||Добрич considered ambiguous (display=МБАЛ Каварна, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:48:22,233 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васил Левски 36', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:23,205 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Васил Левски', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:24,229 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, КАВАРНА', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:25,207 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:25,209 - ERROR - Failed to geocode: ул. Васил Левски 36, КАВАРНА, Добрич
+2025-10-27 03:48:28,621 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 03:48:28,623 - WARNING - City validation failed: expected 'БАЛЧИК' not found in 'СБЗ "Тузлата"'
+2025-10-27 03:48:28,624 - INFO - Overpass result for ул. Д-р Златко Пков 1||БАЛЧИК||Добрич considered ambiguous (display=СБЗ "Тузлата", dup_count=0, city_match=False); will try other methods
+2025-10-27 03:48:29,130 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков 1', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:30,153 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:32,239 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, БАЛЧИК', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:32,694 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:32,696 - ERROR - Failed to geocode: ул. Д-р Златко Пков 1, БАЛЧИК, Добрич
+2025-10-27 03:48:36,265 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:37,275 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:38,298 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:39,319 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:39,320 - ERROR - Failed to geocode: Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 03:48:40,904 - INFO - Using free-text Nominatim with housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 03:48:44,444 - INFO - Overpass best for ДКЦ-I-Добрич ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 03:48:44,446 - WARNING - City validation failed: expected 'ДОБРИЧ' not found in 'hospital'
+2025-10-27 03:48:44,447 - INFO - Overpass result for ул. Димитър Пков 3||ДОБРИЧ||Добрич considered ambiguous (display=hospital, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:48:44,917 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков 3', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:45,879 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:48:46,907 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-I-Добрич ЕООД, ДОБРИЧ', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:55:48,016 - INFO - Using free-text Nominatim: Лазур, Китен, Приморско, Бургас, 8183, България
+2025-10-27 03:55:50,856 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 03:55:50,858 - INFO - Overpass result for ул. Васил Левски 36||КАВАРНА||Добрич considered ambiguous (display=МБАЛ Каварна, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:55:51,285 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васил Левски 36', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:55:52,274 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Васил Левски', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:55:53,311 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, КАВАРНА', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:55:54,298 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:55:54,300 - ERROR - Failed to geocode: ул. Васил Левски 36, КАВАРНА, Добрич
+2025-10-27 03:56:00,330 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 03:56:00,332 - WARNING - City validation failed: expected 'БАЛЧИК' not found in 'СБЗ "Тузлата"'
+2025-10-27 03:56:00,332 - INFO - Overpass result for ул. Д-р Златко Пков 1||БАЛЧИК||Добрич considered ambiguous (display=СБЗ "Тузлата", dup_count=0, city_match=False); will try other methods
+2025-10-27 03:56:00,798 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков 1', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:01,800 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:02,761 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, БАЛЧИК', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:03,751 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:03,753 - ERROR - Failed to geocode: ул. Д-р Златко Пков 1, БАЛЧИК, Добрич
+2025-10-27 03:56:06,978 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:07,973 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:09,076 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:10,049 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:10,050 - ERROR - Failed to geocode: Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 03:56:11,348 - INFO - Using free-text Nominatim with housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 03:56:14,299 - INFO - Overpass best for ДКЦ-I-Добрич ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 03:56:14,300 - WARNING - City validation failed: expected 'ДОБРИЧ' not found in 'hospital'
+2025-10-27 03:56:14,300 - INFO - Overpass result for ул. Димитър Пков 3||ДОБРИЧ||Добрич considered ambiguous (display=hospital, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:56:14,738 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков 3', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:15,714 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:16,721 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-I-Добрич ЕООД, ДОБРИЧ', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:17,705 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:56:17,708 - ERROR - Failed to geocode: ул. Димитър Пков 3, ДОБРИЧ, Добрич
+2025-10-27 03:56:19,055 - INFO - Using free-text Nominatim: 25-ти септември, Каварна, Добрич, 9650, България
+2025-10-27 03:56:22,295 - INFO - Overpass best for Диализен център Руриком ООД in РУСЕ: score=40 -> ЦМИ.ТПЦ
+2025-10-27 03:56:22,298 - WARNING - City validation failed: expected 'РУСЕ' not found in 'ЦМИ.ТПЦ'
+2025-10-27 03:56:22,298 - INFO - Overpass result for ул. Славянска 2А 2||РУСЕ||Русе considered ambiguous (display=ЦМИ.ТПЦ, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:56:22,823 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А 2', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 03:56:23,740 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 03:56:24,703 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Диализен център Руриком ООД, РУСЕ', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 03:56:25,776 - INFO - Nominatim chosen candidate (score=8.5504985430751): Русенски университет "Ангел Кънчев", 8, Студентска, ж.к. Здравец-север 1, Студентски град, Русе, 7017, България
+2025-10-27 03:56:27,061 - INFO - Using free-text Nominatim: бул. Демокрация, ж.к. Братя Миладинови, Бургас, 8001, България
+2025-10-27 03:56:29,929 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 03:56:29,930 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 03:56:29,930 - INFO - Overpass result for ул. Стефан Стамболов 73||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:56:30,365 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов 73', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 03:56:31,370 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 03:56:32,352 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 03:56:33,369 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 03:56:36,284 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 03:56:36,285 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 03:56:36,285 - INFO - Overpass result for ул. Доц.д-р Константин Кънчев||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:56:36,745 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Доц.д-р Константин Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 03:56:37,725 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Доц.д-р Константин Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 03:56:38,685 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 03:56:39,706 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 03:56:42,548 - INFO - Overpass best for МБАЛ Проф. д-р Александър Герчев Етрополе ЕООД in ЕТРОПОЛЕ: score=30 -> МБАЛ „Проф.д-р Ал.Герчев” Етрополе
+2025-10-27 03:56:45,438 - INFO - Overpass best for МБАЛ - Ботевград ЕООД in БОТЕВГРАД: score=40 -> МБАЛ
+2025-10-27 03:56:45,440 - WARNING - City validation failed: expected 'БОТЕВГРАД' not found in 'МБАЛ'
+2025-10-27 03:56:45,440 - INFO - Overpass result for ул. Боо Божилов 1||БОТЕВГРАД||София - област considered ambiguous (display=МБАЛ, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:56:45,865 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Боо Божилов 1', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:46,850 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Боо Божилов', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:47,877 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Ботевград ЕООД, БОТЕВГРАД', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:48,881 - INFO - Nominatim chosen candidate (score=20.534022499427785): Ботевград, кв. Факултета, София, Красна поляна, Столична, София-град, 1373, България
+2025-10-27 03:56:51,737 - INFO - Overpass best for МБАЛ - Пирдоп АД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 03:56:51,739 - INFO - Overpass result for ул. Георги Бенковски 24||ПИРДОП||София - област considered ambiguous (display=МБАЛ Пирдоп, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:56:52,146 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:53,144 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:54,160 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Пирдоп АД, ПИРДОП', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:55,141 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:55,143 - ERROR - Failed to geocode: ул. Георги Бенковски 24, ПИРДОП, София - област
+2025-10-27 03:56:58,123 - INFO - Overpass best for МБАЛ - Самоков ЕООД in САМОКОВ: score=30 -> clinic
+2025-10-27 03:56:58,124 - WARNING - City validation failed: expected 'САМОКОВ' not found in 'clinic'
+2025-10-27 03:56:58,124 - INFO - Overpass result for ул. Македония 49||САМОКОВ||София - област considered ambiguous (display=clinic, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:56:58,548 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Македония 49', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:56:59,521 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Македония', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:00,505 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Самоков ЕООД, САМОКОВ', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:01,551 - INFO - Nominatim chosen candidate (score=20.534022499427785): Самоков, ж.к. Изток, София, Изгрев, Столична, София-град, 1113, България
+2025-10-27 03:57:04,559 - INFO - Overpass best for МБАЛ - Скин Системс ООД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 03:57:04,561 - INFO - Overpass result for ул. Георги Бенковски 24||ПИРДОП||София - област considered ambiguous (display=МБАЛ Пирдоп, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:57:04,995 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:05,966 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:06,966 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Скин Системс ООД, ПИРДОП', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:07,959 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:07,961 - ERROR - Failed to geocode: ул. Георги Бенковски 24, ПИРДОП, София - област
+2025-10-27 03:57:11,177 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:12,237 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Първа', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:13,197 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Скин Системс ООД, С.ДОГАНОВО', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:14,176 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:14,178 - ERROR - Failed to geocode: ул. Първа 32, С.ДОГАНОВО, София - област
+2025-10-27 03:57:15,449 - INFO - Using free-text Nominatim with housenumber 15: МБАЛ Елин Пелин, 15, улица Здравец, Елин Пелин, Софийска, 2100, България
+2025-10-27 03:57:18,418 - INFO - Overpass best for МБАЛ Авис Медика ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 03:57:18,420 - WARNING - City validation failed: expected 'ПЛЕВЕН' not found in 'Психолог Даниела Кръстева'
+2025-10-27 03:57:18,421 - INFO - Overpass result for ул. Коста Хаджипакев 7||ПЛЕВЕН||Плевен considered ambiguous (display=Психолог Даниела Кръстева, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:57:18,866 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Коста Хаджипакев 7', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:19,821 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Коста Хаджипакев', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:20,864 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ Авис Медика ООД, ПЛЕВЕН', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:21,843 - INFO - Nominatim chosen candidate (score=25.533962973983368): Плевен, Подем, Долна Митрополия, Плевен, България
+2025-10-27 03:57:24,864 - INFO - Overpass best for МБАЛ Авис Медика ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 03:57:24,865 - WARNING - City validation failed: expected 'ПЛЕВЕН' not found in 'Психолог Даниела Кръстева'
+2025-10-27 03:57:24,866 - INFO - Overpass result for парк Кайлъка местност Стражата||ПЛЕВЕН||Плевен considered ambiguous (display=Психолог Даниела Кръстева, dup_count=0, city_match=False); will try other methods
+2025-10-27 03:57:25,292 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'парк Кайлъка местност Стражата', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:26,287 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'парк Кайлъка местност Стражата', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:27,295 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ Авис Медика ООД, ПЛЕВЕН', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:28,323 - INFO - Nominatim chosen candidate (score=25.533962973983368): Плевен, Подем, Долна Митрополия, Плевен, България
+2025-10-27 03:57:31,563 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 19', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:32,548 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:33,565 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ Авис Медика ООД, С.ТУЧЕНИЦА', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 03:57:34,608 - INFO - Nominatim chosen candidate (score=25.533962973983368): Тученица, Брестовец, Плевен, 5800, България
+2025-10-27 03:57:37,763 - INFO - Overpass best for МБАЛ-Д-р Георги Стоев-Шварц-Троян-ЕООД in ТРОЯН: score=40 -> Специализирана болница за активно лечение на белодробни болести - Троян
+2025-10-27 03:57:38,566 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 03:57:41,485 - INFO - Overpass best for МБАЛ-Ихтиман-Д-р Станю Янков ЕООД in ИХТИМАН: score=30 -> МБАЛ Ихтиман
+2025-10-27 03:57:41,488 - INFO - Overpass result for ул. Шипка 30||ИХТИМАН||София - област considered ambiguous (display=МБАЛ Ихтиман, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:57:41,907 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Шипка 30', 'city': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:42,895 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Шипка', 'city': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:43,925 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-Ихтиман-Д-р Станю Янков ЕООД, ИХТИМАН', 'city': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:44,901 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 03:57:44,904 - ERROR - Failed to geocode: ул. Шипка 30, ИХТИМАН, София - област
+2025-10-27 03:57:47,839 - INFO - Overpass best for МБАЛ-Каварна ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 03:57:47,841 - INFO - Overpass result for ул. Васил Левски 36||КАВАРНА||Добрич considered ambiguous (display=МБАЛ Каварна, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:57:48,254 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васил Левски 36', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:57:49,255 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Васил Левски', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:57:50,241 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-Каварна ЕООД, КАВАРНА', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:57:51,242 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 03:57:51,243 - ERROR - Failed to geocode: ул. Васил Левски 36, КАВАРНА, Добрич
+2025-10-27 03:57:54,202 - INFO - Overpass best for МБАЛ-ОМУРТАГ ЕАД in ОМУРТАГ: score=30 -> МБАЛ Омуртаг
+2025-10-27 03:57:54,203 - INFO - Overpass result for ул. Търновска 55||ОМУРТАГ||Търговище considered ambiguous (display=МБАЛ Омуртаг, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:57:54,622 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Търновска 55', 'city': 'ОМУРТАГ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 03:57:55,602 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Търновска', 'city': 'ОМУРТАГ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 03:57:56,595 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-ОМУРТАГ ЕАД, ОМУРТАГ', 'city': 'ОМУРТАГ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 03:57:57,608 - INFO - Nominatim chosen candidate (score=25.533888387884335): Омуртаг, Търговище, 7900, България
+2025-10-27 03:57:58,869 - INFO - Using free-text Nominatim: ул. Пирин Планина, Съединение, Търговище, България
+2025-10-27 03:58:01,824 - INFO - Overpass best for МБАЛ-ПОПОВО ЕООД in ПОПОВО: score=30 -> МБАЛ Попово
+2025-10-27 03:58:01,826 - INFO - Overpass result for Зад||ПОПОВО||Търговище considered ambiguous (display=МБАЛ Попово, dup_count=0, city_match=True); will try other methods
+2025-10-27 03:58:02,280 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Зад', 'city': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 03:58:03,266 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Зад', 'city': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 03:58:04,277 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-ПОПОВО ЕООД, ПОПОВО', 'city': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 03:58:05,280 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 03:58:05,281 - ERROR - Failed to geocode: Зад, ПОПОВО, Търговище
+2025-10-27 03:58:08,390 - INFO - Overpass best for МБАЛ-Проф. Д-р Параскев Стоянов-АД Ловеч in ЛОВЕЧ: score=40 -> Многопрофилна болница за активно лечение Проф. Д-р. Параскев Стоянов - Ловеч
+2025-10-27 04:01:00,135 - INFO - Using free-text Nominatim: Лазур, Китен, Приморско, Бургас, 8183, България
+2025-10-27 04:01:03,105 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 04:01:03,106 - INFO - Overpass result for ул. Васил Левски 36||КАВАРНА||Добрич considered ambiguous (display=МБАЛ Каварна, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:01:03,607 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васил Левски 36', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:04,585 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Васил Левски', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:05,592 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, КАВАРНА', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:06,601 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:06,603 - ERROR - Failed to geocode: ул. Васил Левски 36, КАВАРНА, Добрич
+2025-10-27 04:01:09,598 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 04:01:09,600 - WARNING - City validation failed: expected 'БАЛЧИК' not found in 'СБЗ "Тузлата"'
+2025-10-27 04:01:09,601 - INFO - Overpass result for ул. Д-р Златко Пков 1||БАЛЧИК||Добрич considered ambiguous (display=СБЗ "Тузлата", dup_count=0, city_match=False); will try other methods
+2025-10-27 04:01:10,080 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков 1', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:11,067 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:12,081 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, БАЛЧИК', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:13,044 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:13,046 - ERROR - Failed to geocode: ул. Д-р Златко Пков 1, БАЛЧИК, Добрич
+2025-10-27 04:01:14,298 - INFO - Using free-text Nominatim: Албена, Дамбата, Албена, Оброчище, Балчик, Добрич, 9343, България
+2025-10-27 04:01:15,598 - INFO - Using free-text Nominatim with housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 04:01:18,639 - INFO - Overpass best for ДКЦ-I-Добрич ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 04:01:18,641 - WARNING - City validation failed: expected 'ДОБРИЧ' not found in 'hospital'
+2025-10-27 04:01:18,641 - INFO - Overpass result for ул. Димитър Пков 3||ДОБРИЧ||Добрич considered ambiguous (display=hospital, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:01:19,142 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков 3', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:20,098 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:21,129 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-I-Добрич ЕООД, ДОБРИЧ', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:22,113 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:01:22,114 - ERROR - Failed to geocode: ул. Димитър Пков 3, ДОБРИЧ, Добрич
+2025-10-27 04:01:24,689 - INFO - Using free-text Nominatim with housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 04:01:29,283 - INFO - Overpass best for Диализен център Руриком ООД in РУСЕ: score=40 -> ЦМИ.ТПЦ
+2025-10-27 04:01:29,285 - WARNING - City validation failed: expected 'РУСЕ' not found in 'ЦМИ.ТПЦ'
+2025-10-27 04:01:29,286 - INFO - Overpass result for ул. Славянска 2А||РУСЕ||Русе considered ambiguous (display=ЦМИ.ТПЦ, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:01:29,765 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 04:01:30,786 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 04:01:31,741 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Диализен център Руриком ООД, РУСЕ', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 04:01:32,815 - INFO - Nominatim chosen candidate (score=8.5504985430751): Русенски университет "Ангел Кънчев", 8, Студентска, ж.к. Здравец-север 1, ж.к. Възраждане - Юг, Русе, 7017, България
+2025-10-27 04:01:34,140 - INFO - Using free-text Nominatim: бул. Демокрация, ж.к. Братя Миладинови, Бургас, 8001, България
+2025-10-27 04:01:37,104 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:01:37,107 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:01:37,107 - INFO - Overpass result for ул. Стефан Стамболов 73||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:01:37,590 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов 73', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:01:38,564 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:01:39,565 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:01:40,598 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:01:43,657 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:01:43,658 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:01:43,658 - INFO - Overpass result for ул. Константин Кънчев||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:01:44,086 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Константин Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:01:45,080 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Константин Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:01:46,092 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:01:47,103 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:01:50,089 - INFO - Overpass best for МБАЛ Проф. д-р Александър Герчев Етрополе ЕООД in ЕТРОПОЛЕ: score=30 -> МБАЛ „Проф.д-р Ал.Герчев” Етрополе
+2025-10-27 04:01:53,220 - INFO - Overpass best for МБАЛ - Ботевград ЕООД in БОТЕВГРАД: score=40 -> МБАЛ
+2025-10-27 04:01:53,222 - WARNING - City validation failed: expected 'БОТЕВГРАД' not found in 'МБАЛ'
+2025-10-27 04:01:53,222 - INFO - Overpass result for ул. Боо Божилов 1||БОТЕВГРАД||София - област considered ambiguous (display=МБАЛ, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:01:53,706 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Боо Божилов 1', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:01:54,694 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Боо Божилов', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:01:55,730 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Ботевград ЕООД, БОТЕВГРАД', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:01:56,700 - INFO - Nominatim chosen candidate (score=20.534022499427785): Ботевград, кв. Факултета, София, Красна поляна, Столична, София-град, 1373, България
+2025-10-27 04:01:59,623 - INFO - Overpass best for МБАЛ - Пирдоп АД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 04:01:59,625 - INFO - Overpass result for ул. Георги Бенковски 24||ПИРДОП||София - област considered ambiguous (display=МБАЛ Пирдоп, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:02:00,087 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:01,085 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:02,090 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Пирдоп АД, ПИРДОП', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:03,082 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:03,083 - ERROR - Failed to geocode: ул. Георги Бенковски 24, ПИРДОП, София - област
+2025-10-27 04:02:06,358 - INFO - Overpass best for МБАЛ - Самоков ЕООД in САМОКОВ: score=30 -> clinic
+2025-10-27 04:02:06,360 - WARNING - City validation failed: expected 'САМОКОВ' not found in 'clinic'
+2025-10-27 04:02:06,360 - INFO - Overpass result for ул. Македония 49||САМОКОВ||София - област considered ambiguous (display=clinic, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:02:06,881 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Македония 49', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:07,821 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Македония', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:08,790 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Самоков ЕООД, САМОКОВ', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:09,817 - INFO - Nominatim chosen candidate (score=20.534022499427785): Самоков, ж.к. Изток, София, Изгрев, Столична, София-град, 1113, България
+2025-10-27 04:02:12,778 - INFO - Overpass best for МБАЛ - Скин Системс ООД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 04:02:12,780 - INFO - Overpass result for ул. Георги Бенковски 24||ПИРДОП||София - област considered ambiguous (display=МБАЛ Пирдоп, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:02:13,256 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:14,245 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:15,236 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Скин Системс ООД, ПИРДОП', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:16,239 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:16,241 - ERROR - Failed to geocode: ул. Георги Бенковски 24, ПИРДОП, София - област
+2025-10-27 04:02:22,221 - INFO - Overpass best for МБАЛ - Скин Системс ООД in ДОГАНОВО: score=40 -> Специализирана хирургична болница „Скин Системс”
+2025-10-27 04:02:22,224 - WARNING - City validation failed: expected 'ДОГАНОВО' not found in 'Специализирана хирургична болница „Скин Системс”'
+2025-10-27 04:02:22,225 - INFO - Overpass result for ул. Първа 32||ДОГАНОВО||София - област considered ambiguous (display=Специализирана хирургична болница „Скин Системс”, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:02:22,666 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:23,677 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Първа', 'city': 'ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:02:28,370 - WARNING - Could not read cache geocode_cache.json: Expecting value: line 1 column 1 (char 0)
+2025-10-27 04:02:29,072 - INFO - Using free-text Nominatim: Лазур, Китен, Приморско, Бургас, 8183, България
+2025-10-27 04:02:32,011 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 04:02:32,012 - INFO - Overpass result for ул. Васил Левски 36||КАВАРНА||Добрич considered ambiguous (display=МБАЛ Каварна, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:02:32,490 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васил Левски 36', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:33,471 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Васил Левски', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:34,478 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, КАВАРНА', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:35,478 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:35,481 - ERROR - Failed to geocode: ул. Васил Левски 36, КАВАРНА, Добрич
+2025-10-27 04:02:38,468 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 04:02:38,470 - WARNING - City validation failed: expected 'БАЛЧИК' not found in 'СБЗ "Тузлата"'
+2025-10-27 04:02:38,470 - INFO - Overpass result for ул. Д-р Златко Пков 1||БАЛЧИК||Добрич considered ambiguous (display=СБЗ "Тузлата", dup_count=0, city_match=False); will try other methods
+2025-10-27 04:02:38,943 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков 1', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:39,949 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Д-р Златко Пков', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:40,925 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-2-Добрич ЕООД, БАЛЧИК', 'city': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:41,907 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'БАЛЧИК', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:41,909 - ERROR - Failed to geocode: ул. Д-р Златко Пков 1, БАЛЧИК, Добрич
+2025-10-27 04:02:43,225 - INFO - Using free-text Nominatim: Албена, Дамбата, Албена, Оброчище, Балчик, Добрич, 9343, България
+2025-10-27 04:02:44,547 - INFO - Using free-text Nominatim with housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 04:02:47,588 - INFO - Overpass best for ДКЦ-I-Добрич ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 04:02:47,591 - WARNING - City validation failed: expected 'ДОБРИЧ' not found in 'hospital'
+2025-10-27 04:02:47,591 - INFO - Overpass result for ул. Димитър Пков 3||ДОБРИЧ||Добрич considered ambiguous (display=hospital, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:02:48,070 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков 3', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:49,042 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Димитър Пков', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:50,070 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДКЦ-I-Добрич ЕООД, ДОБРИЧ', 'city': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:51,044 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДОБРИЧ', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:02:51,046 - ERROR - Failed to geocode: ул. Димитър Пков 3, ДОБРИЧ, Добрич
+2025-10-27 04:02:52,494 - INFO - Using free-text Nominatim with housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 04:02:56,142 - INFO - Overpass best for Диализен център Руриком ООД in РУСЕ: score=40 -> ЦМИ.ТПЦ
+2025-10-27 04:02:56,144 - WARNING - City validation failed: expected 'РУСЕ' not found in 'ЦМИ.ТПЦ'
+2025-10-27 04:02:56,144 - INFO - Overpass result for ул. Славянска 2А||РУСЕ||Русе considered ambiguous (display=ЦМИ.ТПЦ, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:02:56,585 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 04:02:57,600 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 04:02:58,575 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Диализен център Руриком ООД, РУСЕ', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 04:02:59,625 - INFO - Nominatim chosen candidate (score=8.5504985430751): Русенски университет "Ангел Кънчев", 8, Студентска, ж.к. Здравец-север 1, ж.к. Възраждане - Юг, Русе, 7017, България
+2025-10-27 04:03:00,950 - INFO - Using free-text Nominatim: бул. Демокрация, ж.к. Братя Миладинови, Бургас, 8001, България
+2025-10-27 04:03:08,267 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:03:08,268 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:03:08,268 - INFO - Overpass result for ул. Стефан Стамболов 73||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:03:08,709 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов 73', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:03:09,694 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:03:10,694 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:03:11,721 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:03:14,630 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:03:14,632 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:03:14,632 - INFO - Overpass result for ул. Константин Кънчев||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:03:15,088 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Константин Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:03:16,107 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Константин Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:03:17,084 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:03:18,108 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:03:21,009 - INFO - Overpass best for МБАЛ Проф. д-р Александър Герчев Етрополе ЕООД in ЕТРОПОЛЕ: score=30 -> МБАЛ „Проф.д-р Ал.Герчев” Етрополе
+2025-10-27 04:03:24,321 - INFO - Overpass best for МБАЛ - Ботевград ЕООД in БОТЕВГРАД: score=40 -> МБАЛ
+2025-10-27 04:03:24,324 - WARNING - City validation failed: expected 'БОТЕВГРАД' not found in 'МБАЛ'
+2025-10-27 04:03:24,324 - INFO - Overpass result for ул. Боо Божилов 1||БОТЕВГРАД||София - област considered ambiguous (display=МБАЛ, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:03:24,767 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Боо Божилов 1', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:25,754 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Боо Божилов', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:26,794 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Ботевград ЕООД, БОТЕВГРАД', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:27,773 - INFO - Nominatim chosen candidate (score=20.534022499427785): Ботевград, кв. Факултета, София, Красна поляна, Столична, София-град, 1373, България
+2025-10-27 04:03:30,728 - INFO - Overpass best for МБАЛ - Пирдоп АД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 04:03:30,731 - INFO - Overpass result for ул. Георги Бенковски 24||ПИРДОП||София - област considered ambiguous (display=МБАЛ Пирдоп, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:03:31,183 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:32,178 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:33,194 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Пирдоп АД, ПИРДОП', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:34,176 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:34,178 - ERROR - Failed to geocode: ул. Георги Бенковски 24, ПИРДОП, София - област
+2025-10-27 04:03:37,267 - INFO - Overpass best for МБАЛ - Самоков ЕООД in САМОКОВ: score=30 -> clinic
+2025-10-27 04:03:37,269 - WARNING - City validation failed: expected 'САМОКОВ' not found in 'clinic'
+2025-10-27 04:03:37,269 - INFO - Overpass result for ул. Македония 49||САМОКОВ||София - област considered ambiguous (display=clinic, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:03:37,726 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Македония 49', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:38,707 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Македония', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:39,699 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Самоков ЕООД, САМОКОВ', 'city': 'САМОКОВ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:40,713 - INFO - Nominatim chosen candidate (score=20.534022499427785): Самоков, ж.к. Изток, София, Изгрев, Столична, София-град, 1113, България
+2025-10-27 04:03:43,635 - INFO - Overpass best for МБАЛ - Скин Системс ООД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 04:03:43,637 - INFO - Overpass result for ул. Георги Бенковски 24||ПИРДОП||София - област considered ambiguous (display=МБАЛ Пирдоп, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:03:44,103 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:45,093 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:46,096 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Скин Системс ООД, ПИРДОП', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:47,089 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:47,092 - ERROR - Failed to geocode: ул. Георги Бенковски 24, ПИРДОП, София - област
+2025-10-27 04:03:50,181 - INFO - Overpass best for МБАЛ - Скин Системс ООД in ДОГАНОВО: score=40 -> Специализирана хирургична болница „Скин Системс”
+2025-10-27 04:03:50,184 - WARNING - City validation failed: expected 'ДОГАНОВО' not found in 'Специализирана хирургична болница „Скин Системс”'
+2025-10-27 04:03:50,184 - INFO - Overpass result for ул. Първа 32||ДОГАНОВО||София - област considered ambiguous (display=Специализирана хирургична болница „Скин Системс”, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:03:50,646 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:51,647 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Първа', 'city': 'ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:52,644 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ - Скин Системс ООД, ДОГАНОВО', 'city': 'ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:53,631 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:03:53,632 - ERROR - Failed to geocode: ул. Първа 32, ДОГАНОВО, София - област
+2025-10-27 04:03:54,943 - INFO - Using free-text Nominatim with housenumber 15: МБАЛ Елин Пелин, 15, улица Здравец, Елин Пелин, Софийска, 2100, България
+2025-10-27 04:03:58,249 - INFO - Overpass best for МБАЛ Авис Медика ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 04:03:58,250 - WARNING - City validation failed: expected 'ПЛЕВЕН' not found in 'Психолог Даниела Кръстева'
+2025-10-27 04:03:58,250 - INFO - Overpass result for ул. Коста Хаджипакев 7||ПЛЕВЕН||Плевен considered ambiguous (display=Психолог Даниела Кръстева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:03:58,704 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Коста Хаджипакев 7', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 04:03:59,694 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Коста Хаджипакев', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 04:04:00,716 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ Авис Медика ООД, ПЛЕВЕН', 'city': 'ПЛЕВЕН', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 04:04:01,744 - INFO - Nominatim chosen candidate (score=25.533962973983368): Плевен, Подем, Долна Митрополия, Плевен, България
+2025-10-27 04:04:03,022 - INFO - Using free-text Nominatim: Парк Хотел Кайлъка, 35, Кайлъка, Плевен, 5800, България
+2025-10-27 04:04:06,382 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 19', 'city': 'ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 04:04:07,376 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски', 'city': 'ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 04:04:08,382 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ Авис Медика ООД, ТУЧЕНИЦА', 'city': 'ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 04:04:09,379 - INFO - Nominatim chosen candidate (score=25.533962973983368): Тученица, Брестовец, Плевен, 5800, България
+2025-10-27 04:04:17,055 - INFO - Overpass best for МБАЛ-Д-р Георги Стоев-Шварц-Троян-ЕООД in ТРОЯН: score=40 -> Специализирана болница за активно лечение на белодробни болести - Троян
+2025-10-27 04:04:17,859 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 04:04:20,762 - INFO - Overpass best for МБАЛ-Ихтиман-Д-р Станю Янков ЕООД in ИХТИМАН: score=30 -> МБАЛ Ихтиман
+2025-10-27 04:04:20,765 - INFO - Overpass result for ул. Шипка 30||ИХТИМАН||София - област considered ambiguous (display=МБАЛ Ихтиман, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:04:21,248 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Шипка 30', 'city': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:04:22,231 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Шипка', 'city': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:04:23,259 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-Ихтиман-Д-р Станю Янков ЕООД, ИХТИМАН', 'city': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:04:24,232 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ИХТИМАН', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:04:24,235 - ERROR - Failed to geocode: ул. Шипка 30, ИХТИМАН, София - област
+2025-10-27 04:04:27,240 - INFO - Overpass best for МБАЛ-Каварна ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 04:04:27,242 - INFO - Overpass result for ул. Васил Левски 36||КАВАРНА||Добрич considered ambiguous (display=МБАЛ Каварна, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:04:27,695 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васил Левски 36', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:04:28,683 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Васил Левски', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:04:29,677 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-Каварна ЕООД, КАВАРНА', 'city': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:04:30,688 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'КАВАРНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 04:04:30,691 - ERROR - Failed to geocode: ул. Васил Левски 36, КАВАРНА, Добрич
+2025-10-27 04:04:33,605 - INFO - Overpass best for МБАЛ-ОМУРТАГ ЕАД in ОМУРТАГ: score=30 -> МБАЛ Омуртаг
+2025-10-27 04:04:33,606 - INFO - Overpass result for ул. Търновска 55||ОМУРТАГ||Търговище considered ambiguous (display=МБАЛ Омуртаг, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:04:34,089 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Търновска 55', 'city': 'ОМУРТАГ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 04:04:35,053 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Търновска', 'city': 'ОМУРТАГ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 04:04:36,052 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-ОМУРТАГ ЕАД, ОМУРТАГ', 'city': 'ОМУРТАГ', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 04:04:37,054 - INFO - Nominatim chosen candidate (score=25.533888387884335): Омуртаг, Търговище, 7900, България
+2025-10-27 04:04:38,377 - INFO - Using free-text Nominatim: ул. Пирин Планина, Съединение, Търговище, България
+2025-10-27 04:04:41,375 - INFO - Overpass best for МБАЛ-ПОПОВО ЕООД in ПОПОВО: score=30 -> МБАЛ Попово
+2025-10-27 04:04:41,376 - INFO - Overpass result for ул. Христо Ботев 1||ПОПОВО||Търговище considered ambiguous (display=МБАЛ Попово, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:04:41,841 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Христо Ботев 1', 'city': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 04:04:42,840 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Христо Ботев', 'city': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 04:04:43,840 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-ПОПОВО ЕООД, ПОПОВО', 'city': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 04:04:44,823 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ПОПОВО', 'county': 'Търговище', 'country': 'Bulgaria'}
+2025-10-27 04:04:44,825 - ERROR - Failed to geocode: ул. Христо Ботев 1, ПОПОВО, Търговище
+2025-10-27 04:04:47,809 - INFO - Overpass best for МБАЛ-Проф. Д-р Параскев Стоянов-АД Ловеч in ЛОВЕЧ: score=40 -> Многопрофилна болница за активно лечение Проф. Д-р. Параскев Стоянов - Ловеч
+2025-10-27 04:04:50,735 - INFO - Overpass best for МБАЛ-Своге ЕООД in СВОГЕ: score=30 -> Здравен център "ОЛИМП"
+2025-10-27 04:04:50,737 - WARNING - City validation failed: expected 'СВОГЕ' not found in 'Здравен център "ОЛИМП"'
+2025-10-27 04:04:50,737 - INFO - Overpass result for ул. Староселска 4||СВОГЕ||София - област considered ambiguous (display=Здравен център "ОЛИМП", dup_count=0, city_match=False); will try other methods
+2025-10-27 04:04:51,223 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Староселска 4', 'city': 'СВОГЕ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:04:52,191 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Староселска', 'city': 'СВОГЕ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:04:53,176 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МБАЛ-Своге ЕООД, СВОГЕ', 'city': 'СВОГЕ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 04:04:54,177 - INFO - Nominatim chosen candidate (score=20.534022499427785): Своге, ж.к. Люлин 8, ж.к. Люлин, София, Люлин, Столична, София-град, 1360, България
+2025-10-27 04:04:55,545 - INFO - Using free-text Nominatim: ул. Христо Ботев, Съединение, Търговище, България
+2025-10-27 04:04:58,812 - INFO - Overpass best for МЕДИКО - ДЕНТАЛЕН ЦЕНТЪР ТРИО ЕООД in ВРАЦА: score=40 -> Първа частна МБАЛ - Враца
+2025-10-27 04:05:01,765 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД in ГОРНА ОРЯХОВИЦА: score=30 -> МБАЛ Св. Иван Рилски
+2025-10-27 04:05:01,768 - WARNING - City validation failed: expected 'ГОРНА ОРЯХОВИЦА' not found in 'МБАЛ Св. Иван Рилски'
+2025-10-27 04:05:01,768 - INFO - Overpass result for ул. Хан Крум 5||ГОРНА ОРЯХОВИЦА||Велико Търново considered ambiguous (display=МБАЛ Св. Иван Рилски, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:02,250 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хан Крум 5', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:03,233 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Хан Крум', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:04,248 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД, ГОРНА ОРЯХОВИЦА', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:05,221 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:05,224 - ERROR - Failed to geocode: ул. Хан Крум 5, ГОРНА ОРЯХОВИЦА, Велико Търново
+2025-10-27 04:05:08,197 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД in ГОРНА ОРЯХОВИЦА: score=30 -> МБАЛ Св. Иван Рилски
+2025-10-27 04:05:08,199 - WARNING - City validation failed: expected 'ГОРНА ОРЯХОВИЦА' not found in 'МБАЛ Св. Иван Рилски'
+2025-10-27 04:05:08,199 - INFO - Overpass result for ул. Отец Пайсий 72||ГОРНА ОРЯХОВИЦА||Велико Търново considered ambiguous (display=МБАЛ Св. Иван Рилски, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:08,662 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Отец Пайсий 72', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:09,636 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Отец Пайсий', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:10,672 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД, ГОРНА ОРЯХОВИЦА', 'city': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:11,645 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ГОРНА ОРЯХОВИЦА', 'county': 'Велико Търново', 'country': 'Bulgaria'}
+2025-10-27 04:05:11,647 - ERROR - Failed to geocode: ул. Отец Пайсий 72, ГОРНА ОРЯХОВИЦА, Велико Търново
+2025-10-27 04:05:14,623 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:05:14,625 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:05:14,626 - INFO - Overpass result for ул. Александровска 87||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:15,080 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александровска 87', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:16,064 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Александровска', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:17,127 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:18,082 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:05:21,086 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:05:21,087 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:05:21,087 - INFO - Overpass result for Славейков ул. Георги Минков 174||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:21,645 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Славейков ул. Георги Минков 174', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:22,542 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Славейков ул. Георги Минков', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:23,606 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:24,596 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:05:27,653 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:05:27,654 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:05:27,654 - INFO - Overpass result for ул. Александровска 78||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:28,114 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Александровска 78', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:29,105 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Александровска', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:30,162 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:31,151 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:05:34,136 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:05:34,138 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:05:34,138 - INFO - Overpass result for ул. Транспортна 33||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:34,606 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Транспортна 33', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:35,584 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Транспортна', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:36,660 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:37,609 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:05:40,589 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 04:05:40,591 - WARNING - City validation failed: expected 'НЕСЕБЪР' not found in 'Специализирана болница за рехабилитация Мари'
+2025-10-27 04:05:40,591 - INFO - Overpass result for ул. Иван Вазов 11||НЕСЕБЪР||Бургас considered ambiguous (display=Специализирана болница за рехабилитация Мари, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:41,062 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов 11', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:42,049 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:43,074 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД, НЕСЕБЪР', 'city': 'НЕСЕБЪР', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:05:44,038 - INFO - Nominatim chosen candidate (score=25.53393645380331): Несебър, Равда, Несебър, Бургас, 8238, България
+2025-10-27 04:05:46,660 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР УРОЛОДЖИЯ ЕООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 04:05:46,662 - WARNING - City validation failed: expected 'ХАСКОВО' not found in 'Даймонд Клиник'
+2025-10-27 04:05:46,662 - INFO - Overpass result for ул. Средна Гора 1||ХАСКОВО||Хасково considered ambiguous (display=Даймонд Клиник, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:05:47,156 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Средна Гора 1', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:05:48,118 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Средна Гора', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:05:49,074 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МЕДИЦИНСКИ ЦЕНТЪР УРОЛОДЖИЯ ЕООД, ХАСКОВО', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:05:50,128 - INFO - Nominatim chosen candidate (score=5.0006072709239335): Хасково, 20, Васил Друмев, Хасково център, Хасково, 6300, България
+2025-10-27 04:05:52,930 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ХАРМАНЛИ ЕООД in ХАРМАНЛИ: score=30 -> МБАЛ-Харманли
+2025-10-27 04:05:52,932 - INFO - Overpass result for ул. Васил Левски 66||ХАРМАНЛИ||Хасково considered ambiguous (display=МБАЛ-Харманли, dup_count=0, city_match=True); will try other methods
+2025-10-27 04:05:53,386 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Васил Левски 66', 'city': 'ХАРМАНЛИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:05:54,391 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Васил Левски', 'city': 'ХАРМАНЛИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:05:55,405 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ХАРМАНЛИ ЕООД, ХАРМАНЛИ', 'city': 'ХАРМАНЛИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:05:56,356 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ХАРМАНЛИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:05:56,359 - ERROR - Failed to geocode: ул. Васил Левски 66, ХАРМАНЛИ, Хасково
+2025-10-27 04:05:57,950 - INFO - Using free-text Nominatim: Сервизна улица Иван Вазов 17, ж.к. Дружба 3, Димитровград, Хасково, 6400, България
+2025-10-27 04:06:00,799 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:06:00,801 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:06:00,801 - INFO - Overpass result for бул. Стефан Стамболов 73 приземен аж и част от от Теревтичен корпус /блок 3/||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:06:01,343 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Стефан Стамболов 73 приземен аж и част от от Теревтичен корпус /блок 3/', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:02,323 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'бул. Стефан Стамболов 73 приземен аж и част от от Теревтичен корпус /блок', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:03,364 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:04,348 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:06:07,282 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:06:07,284 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:06:07,285 - INFO - Overpass result for УПИ VII-842 68 по плана на ПЗ Север||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:06:07,786 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'УПИ VII-842 68 по плана на ПЗ Север', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:08,802 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'УПИ VII-842 68 по плана на ПЗ Север', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:09,743 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:10,734 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:06:13,698 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:06:13,700 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:06:13,700 - INFO - Overpass result for ул. Здраве 29||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:06:14,133 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Здраве 29', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:15,124 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Здраве', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:16,150 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:17,169 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:06:19,999 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ ХИГИЯ ООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 04:06:20,001 - WARNING - City validation failed: expected 'ХАСКОВО' not found in 'Даймонд Клиник'
+2025-10-27 04:06:20,001 - INFO - Overpass result for ул. Стефан Стамболов 2||ХАСКОВО||Хасково considered ambiguous (display=Даймонд Клиник, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:06:20,435 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов 2', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:06:21,413 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Стефан Стамболов', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:06:22,434 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ ХИГИЯ ООД, ХАСКОВО', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 04:06:23,415 - INFO - Nominatim chosen candidate (score=5.0006072709239335): Хасково, 20, Васил Друмев, Хасково център, Хасково, 6300, България
+2025-10-27 04:06:26,308 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ГР. СРЕДЕЦ in СРЕДЕЦ: score=30 -> hospital
+2025-10-27 04:06:26,310 - WARNING - City validation failed: expected 'СРЕДЕЦ' not found in 'hospital'
+2025-10-27 04:06:26,311 - INFO - Overpass result for ул. Тодор Николов 10||СРЕДЕЦ||Бургас considered ambiguous (display=hospital, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:06:26,740 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Тодор Николов 10', 'city': 'СРЕДЕЦ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:27,715 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Тодор Николов', 'city': 'СРЕДЕЦ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:28,744 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ГР. СРЕДЕЦ, СРЕДЕЦ', 'city': 'СРЕДЕЦ', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:29,733 - INFO - Nominatim chosen candidate (score=25.533994575417715): Средец, кв. Горно Езерово, Бургас, 8009, България
+2025-10-27 04:06:32,630 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 04:06:32,632 - WARNING - City validation failed: expected 'БУРГАС' not found in 'Педиатър - Златинка Радева'
+2025-10-27 04:06:32,633 - INFO - Overpass result for Изгрев бул. Димитър Димов /Панорамен път/||БУРГАС||Бургас considered ambiguous (display=Педиатър - Златинка Радева, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:06:33,026 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Изгрев бул. Димитър Димов /Панорамен път/', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:34,031 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'Изгрев бул. Димитър Димов /Панорамен път/', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:35,072 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД, БУРГАС', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:36,058 - INFO - Nominatim chosen candidate (score=27.607444718330377): Бургас Централна гара, 1, Иван Вазов, Централна градска част, Бургас, 8000, България
+2025-10-27 04:06:38,910 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in СВЕТИ ВЛАС: score=30 -> Лайф хоспитал
+2025-10-27 04:06:38,913 - WARNING - City validation failed: expected 'СВЕТИ ВЛАС' not found in 'Лайф хоспитал'
+2025-10-27 04:06:38,913 - INFO - Overpass result for ул. Ивайло 11А||СВЕТИ ВЛАС||Бургас considered ambiguous (display=Лайф хоспитал, dup_count=0, city_match=False); will try other methods
+2025-10-27 04:06:39,448 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Ивайло 11А', 'city': 'СВЕТИ ВЛАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:40,444 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'ул. Ивайло 11А', 'city': 'СВЕТИ ВЛАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:41,349 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД, СВЕТИ ВЛАС', 'city': 'СВЕТИ ВЛАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:42,360 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'street': 'СВЕТИ ВЛАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 04:06:42,362 - ERROR - Failed to geocode: ул. Ивайло 11А, СВЕТИ ВЛАС, Бургас

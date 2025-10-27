@@ -23,7 +23,7 @@ print('Cache cleared - starting fresh')
 print()
 
 # Load source
-df = pd.read_csv('hospitals.csv', encoding='utf-8')
+df = pd.read_csv('hospitals_cleaned.csv', encoding='utf-8')
 print(f'Loaded {len(df)} hospitals')
 print()
 
@@ -82,7 +82,7 @@ for i, row in df.iterrows():
         print(f'  FAILED')
         failed += 1
     
-    time.sleep(1.1)
+    time.sleep(0.8)  # Reduced from 1.1s - Nominatim can handle it
     print()
 
 # Save
