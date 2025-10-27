@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Карта на лечебни заведения в България</title>
+    <title>Data Modeling: Национален регистър на лечебните заведения</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -21,11 +21,68 @@
             height: 100vh;
         }
         .sidebar {
-            width: 250px;
+            width: 320px;
             background-color: #ffffff;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
             overflow-y: auto;
+        }
+        .project-info {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+        .project-info h3 {
+            font-size: 11pt;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        .project-info p {
+            margin: 5px 0;
+        }
+        .project-info strong {
+            color: #2c3e50;
+        }
+        .project-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .project-info a:hover {
+            text-decoration: underline;
+        }
+        .stats-box {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #fff;
+            border-left: 4px solid #3498db;
+            font-size: 9pt;
+        }
+        .stats-box div {
+            margin: 3px 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 8pt;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .badge-success {
+            background-color: #27ae60;
+            color: white;
+        }
+        .badge-info {
+            background-color: #3498db;
+            color: white;
+        }
+        .badge-warning {
+            background-color: #f39c12;
+            color: white;
         }
         .sidebar h2 {
             font-size: 16pt;
@@ -133,9 +190,32 @@
     </style>
 </head>
 <body>
-    <h1>Карта на лечебни заведения за болнична помощ в България</h1>
+    <h1>Data Modeling: Национален регистър на лечебните заведения в България</h1>
     <div class="container">
         <div class="sidebar">
+            <div class="project-info">
+                <h3>📊 За проекта</h3>
+                <p><strong>Регистър:</strong> Лечебни заведения с договор с НЗОК</p>
+                <p><strong>Източник:</strong> <a href="https://services.nhif.bg/references/lists/hospital.xhtm" target="_blank">НЗОК</a></p>
+                <p><strong>Формат:</strong> CSV (UTF-8) - Open Data</p>
+                <p><strong>Записи:</strong> 468 болници</p>
+                <p><strong>Геокодирани:</strong> 305 (65.2%)</p>
+                
+                <div class="stats-box">
+                    <div><span class="badge badge-success">129</span> Отлично (80-100)</div>
+                    <div><span class="badge badge-warning">32</span> Добро (60-79)</div>
+                    <div><span class="badge badge-info">144</span> Приемливо (40-59)</div>
+                </div>
+                
+                <p style="margin-top: 10px; font-size: 8pt; color: #7f8c8d;">
+                    <strong>Технологии:</strong> Python, Nominatim API, OpenStreetMap, Leaflet.js
+                </p>
+                
+                <p style="font-size: 8pt; color: #7f8c8d;">
+                    <strong>Документация:</strong> README.md, DATA_SCHEMA.md, NORMATIVE_ANALYSIS.md
+                </p>
+            </div>
+            
             <h2>Филтри</h2>
             <select id="oblast-filter">
                 <option value="">Всички области</option>
@@ -260,14 +340,29 @@
                                                             qualityScore >= 40 ? '#e67e22' : '#c0392b';
                                         
                                         marker.bindPopup(`
-                                            <b>${hospital.Наименование || 'N/A'}</b><br>
-                                            Област: ${hospital.Област || 'N/A'}<br>
-                                            Община: ${hospital.Община || 'N/A'}<br>
-                                            Населено място: ${hospital['Населено място'] || hospital.Населено_място || 'N/A'}<br>
-                                            Адрес: ${hospital.Адрес || 'N/A'}<br>
-                                            Управител: ${hospital.Управител || 'N/A'}<br>
-                                            Телефон: ${hospital.Телефон || 'N/A'}<br>
-                                            ${qualityScore > 0 ? `<br><span style="color: ${qualityColor}; font-weight: bold;">Качество: ${qualityLabel} (${qualityScore}/100)</span><br>Източник: ${hospital.provider || 'N/A'}` : ''}
+                                            <div style="min-width: 250px;">
+                                                <b>${hospital.Наименование || 'N/A'}</b><br>
+                                                <hr style="margin: 8px 0; border: none; border-top: 1px solid #ddd;">
+                                                <b>📍 Локация:</b><br>
+                                                Област: ${hospital.Област || 'N/A'}<br>
+                                                Община: ${hospital.Община || 'N/A'}<br>
+                                                Населено място: ${hospital['Населено място'] || hospital.Naseleno_miasto || 'N/A'}<br>
+                                                Адрес: ${hospital.Адрес || 'N/A'}<br>
+                                                <br>
+                                                <b>👤 Контакти:</b><br>
+                                                Управител: ${hospital.Управител || 'N/A'}<br>
+                                                Телефон: ${hospital.Телефон || 'N/A'}<br>
+                                                ${qualityScore > 0 ? `
+                                                    <hr style="margin: 8px 0; border: none; border-top: 1px solid #ddd;">
+                                                    <b>📊 Качество на данните:</b><br>
+                                                    <span style="color: ${qualityColor}; font-weight: bold; font-size: 11pt;">
+                                                        ${qualityLabel}
+                                                    </span><br>
+                                                    Score: ${qualityScore}/100<br>
+                                                    Източник: ${hospital.provider || 'N/A'}<br>
+                                                    Координати: ${parseFloat(hospital.lat).toFixed(6)}, ${parseFloat(hospital.lng).toFixed(6)}
+                                                ` : ''}
+                                            </div>
                                         `);
                                         markers.addLayer(marker);
                                     }
@@ -285,19 +380,38 @@
                             updateMarkers(this.value);
                         });
 
+                        // Update statistics in sidebar
+                        const totalHospitals = hospitals.length;
+                        const withCoords = hospitals.filter(h => h.lat && h.lng && !isNaN(h.lat) && !isNaN(h.lng)).length;
+                        const excellent = hospitals.filter(h => parseFloat(h.quality_score) >= 80).length;
+                        const good = hospitals.filter(h => parseFloat(h.quality_score) >= 60 && parseFloat(h.quality_score) < 80).length;
+                        const fair = hospitals.filter(h => parseFloat(h.quality_score) >= 40 && parseFloat(h.quality_score) < 60).length;
+                        
+                        console.log(`📊 Статистика: ${totalHospitals} общо, ${withCoords} с координати (${(withCoords/totalHospitals*100).toFixed(1)}%)`);
+                        console.log(`⭐ Качество: ${excellent} отлични, ${good} добри, ${fair} приемливи`);
+
                         document.getElementById('loading').style.display = 'none';
                         document.getElementById('map').style.display = 'block';
                     },
                     error: function(error) {
                         console.error('Грешка при парсинг на CSV:', error);
-                        document.getElementById('loading').innerHTML = 'Грешка при зареждане на CSV: ' + error.message;
+                        document.getElementById('loading').innerHTML = '<div style="color: #e74c3c;">Грешка при зареждане на CSV: ' + error.message + '</div>';
                     }
                 });
             })
             .catch(error => {
                 console.error('Грешка при fetch на CSV:', error);
-                document.getElementById('loading').innerHTML = 'Грешка: ' + error.message + '<br>Уверете се, че hospitals_with_coords.csv е в репозиториото.';
+                document.getElementById('loading').innerHTML = '<div style="color: #e74c3c;"><b>Грешка:</b> ' + error.message + '<br><br>Уверете се, че <code>hospitals_ultimate_coords.csv</code> е в същата папка.</div>';
             });
     </script>
+    
+    <!-- Project Footer Info -->
+    <div style="position: fixed; bottom: 10px; right: 10px; background: rgba(255,255,255,0.9); padding: 8px 12px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size: 9pt; max-width: 300px;">
+        <b>Data Modeling Project</b><br>
+        <span style="font-size: 8pt; color: #7f8c8d;">
+            Източник: НЗОК | Формат: CSV (Open Data) | Геокодиране: Nominatim/OSM<br>
+            Дата: октомври 2025 | Документация: README.md
+        </span>
+    </div>
 </body>
 </html>
