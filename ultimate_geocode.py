@@ -54,45 +54,105 @@ class UltimateGeocoder:
         return addr
     
     def _score_result(self, result, address, city, street_number):
-        """Score geocoding result quality (0-100)"""
+        """Score geocoding result quality (0-100) with enhanced precision"""
         score = 0
         display = result.get('display_name', '').lower()
+        addr_data = result.get('address', {})
         
-        # 1. City match (30 points)
-        if city.lower() in display:
+        # 1. Exact city match (30 points) - STRICT
+        city_lower = city.lower()
+        result_city = (addr_data.get('city') or addr_data.get('town') or addr_data.get('village') or '').lower()
+        
+        if result_city == city_lower:
             score += 30
+        elif city_lower in display:
+            score += 20  # Partial match in display name
+        else:
+            # Wrong city = major penalty
+            score -= 30
         
         # 2. Street number match (40 points) - CRITICAL
-        if street_number and street_number in display:
-            score += 40
+        result_number = addr_data.get('house_number', '')
+        if street_number and result_number:
+            # Exact match
+            if street_number == result_number:
+                score += 40
+            # Normalize and compare (remove letters, slashes)
+            elif re.sub(r'[^\d]', '', street_number) == re.sub(r'[^\d]', '', result_number):
+                score += 35
+            # Number appears in display
+            elif street_number in display:
+                score += 25
+        elif street_number and street_number in display:
+            score += 20
         elif street_number:
-            # Partial number match
-            num_base = re.sub(r'[А-Яа-яA-Za-z/-]', '', street_number)
-            if num_base and num_base in display:
-                score += 20
+            # Has number but not found = penalty
+            score -= 10
         
-        # 3. Street name match (20 points)
+        # 3. Street name match (25 points) - ENHANCED
         street_name = self._extract_street_name(address)
+        result_road = (addr_data.get('road') or addr_data.get('street') or '').lower()
+        
         if street_name and len(street_name) > 3:
-            # Check if key words from street name appear
-            words = [w for w in street_name.split() if len(w) > 3]
-            matches = sum(1 for w in words if w.lower() in display)
-            score += min(20, matches * 10)
+            street_lower = street_name.lower()
+            
+            # Exact match in road field
+            if street_lower in result_road or result_road in street_lower:
+                score += 25
+            # Match in display name
+            elif street_lower in display:
+                score += 15
+            else:
+                # Check word-by-word match
+                words = [w for w in street_name.split() if len(w) > 3]
+                matches = sum(1 for w in words if w.lower() in display or w.lower() in result_road)
+                score += min(15, matches * 7)
         
-        # 4. Address type quality (10 points)
-        addr_data = result.get('address', {})
+        # 4. Address type quality (15 points)
         if addr_data.get('house_number'):
-            score += 5
-        if addr_data.get('road'):
+            score += 8
+        if addr_data.get('road') or addr_data.get('street'):
+            score += 7
+        
+        # 5. Coordinate precision check (10 points)
+        lat_str = str(result.get('lat', ''))
+        lon_str = str(result.get('lon', ''))
+        # More decimal places = more precise
+        lat_precision = len(lat_str.split('.')[-1]) if '.' in lat_str else 0
+        lon_precision = len(lon_str.split('.')[-1]) if '.' in lon_str else 0
+        avg_precision = (lat_precision + lon_precision) / 2
+        
+        if avg_precision >= 7:
+            score += 10
+        elif avg_precision >= 5:
             score += 5
         
-        return score
+        # 6. OSM type quality bonus (5 points)
+        osm_type = result.get('osm_type', '')
+        if osm_type == 'node':  # Exact point
+            score += 5
+        elif osm_type == 'way':  # Building outline
+            score += 3
+        
+        # 7. Class/type validation (5 points)
+        result_class = result.get('class', '')
+        result_type = result.get('type', '')
+        
+        if result_class == 'building' or result_type == 'house':
+            score += 5
+        elif result_class == 'amenity' and result_type in ['hospital', 'clinic', 'doctors']:
+            score += 5
+        elif result_class == 'place':  # City-level result = bad
+            score -= 20
+        
+        # Ensure score is in valid range
+        return max(0, min(100, score))
     
     def _nominatim_search(self, query, limit=10):
         """Enhanced Nominatim search with multiple strategies"""
         results = []
         
-        # Strategy 1: Exact query
+        # Strategy 1: Exact query with enhanced parameters
         try:
             resp = self.session.get(
                 'https://nominatim.openstreetmap.org/search',
@@ -101,7 +161,10 @@ class UltimateGeocoder:
                     'format': 'json',
                     'addressdetails': 1,
                     'limit': limit,
-                    'countrycodes': 'bg'
+                    'countrycodes': 'bg',
+                    'extratags': 1,  # Get OSM tags
+                    'namedetails': 1,  # Get name variations
+                    'dedupe': 0  # Don't merge similar results
                 },
                 timeout=15
             )
@@ -113,22 +176,27 @@ class UltimateGeocoder:
         return results
     
     def _nominatim_structured(self, street, city, house_number=None):
-        """Structured Nominatim query"""
+        """Structured Nominatim query with enhanced precision"""
+        results = []
+        
         try:
+            # Variation 1: Full structured query
             params = {
                 'format': 'json',
                 'addressdetails': 1,
-                'limit': 5,
+                'limit': 10,
                 'country': 'Bulgaria',
-                'countrycodes': 'bg'
+                'countrycodes': 'bg',
+                'extratags': 1,
+                'namedetails': 1
             }
             
             if city:
                 params['city'] = city
-            if street:
-                params['street'] = street
-            if house_number:
+            if street and house_number:
                 params['street'] = f"{street} {house_number}"
+            elif street:
+                params['street'] = street
             
             resp = self.session.get(
                 'https://nominatim.openstreetmap.org/search',
@@ -137,11 +205,30 @@ class UltimateGeocoder:
             )
             
             if resp.status_code == 200:
-                return resp.json()
+                results.extend(resp.json())
+            
+            # Variation 2: If we have house number, try separate field
+            if house_number and len(results) < 3:
+                time.sleep(1.0)
+                params2 = params.copy()
+                params2['street'] = street
+                params2.pop('city', None)
+                params2['city'] = city
+                
+                # Try adding postal code search variation
+                resp2 = self.session.get(
+                    'https://nominatim.openstreetmap.org/search',
+                    params=params2,
+                    timeout=15
+                )
+                
+                if resp2.status_code == 200:
+                    results.extend(resp2.json())
+                    
         except Exception as e:
             logging.error(f"Nominatim structured error: {e}")
         
-        return []
+        return results
     
     def _overpass_search(self, name, city):
         """Search OpenStreetMap for hospital/clinic by name"""
@@ -206,7 +293,7 @@ class UltimateGeocoder:
         
         return None
     
-    def geocode(self, address, city, oblast, name=None):
+    def geocode(self, address, city, oblast, name=None, street_number_hint=None, street_name_hint=None):
         """
         Ultimate geocoding with multi-strategy approach
         Returns: (lat, lng, provider, display_name, quality_score)
@@ -219,36 +306,53 @@ class UltimateGeocoder:
             return (cached['lat'], cached['lng'], cached['provider'], 
                    cached['display'], cached.get('score', 50))
         
-        # Extract components
-        street_number = self._extract_street_number(address)
-        street_name = self._extract_street_name(address)
+        # Extract components - use hints if provided
+        street_number = street_number_hint if street_number_hint else self._extract_street_number(address)
+        street_name = street_name_hint if street_name_hint else self._extract_street_name(address)
         
         logging.info(f"Geocoding: {address} | {city} | Number={street_number}")
         
         candidates = []
         
-        # === STRATEGY 1: Free-text search with variations ===
+        # === STRATEGY 1: Free-text search with enhanced variations ===
         queries = [
             f"{address}, {city}, България",
-            f"{street_name} {street_number}, {city}, България" if street_number else None,
+            f"{street_name} {street_number}, {city}, България" if street_number and street_name else None,
             f"{address}, {city}, {oblast}, България",
+            f"{street_number} {street_name}, {city}" if street_number and street_name else None,
+            # Try without country to get more OSM results
+            f"{address}, {city}, {oblast}" if oblast else None,
         ]
         
         for query in queries:
             if not query:
                 continue
             
-            results = self._nominatim_search(query, limit=10)
+            results = self._nominatim_search(query, limit=15)
+            
+            # Filter and score each result
             for r in results:
                 score = self._score_result(r, address, city, street_number)
-                if score >= 40:  # Minimum acceptable score
-                    candidates.append({
-                        'lat': float(r['lat']),
-                        'lng': float(r['lon']),
-                        'display': r['display_name'],
-                        'provider': 'nominatim_free',
-                        'score': score
-                    })
+                
+                # Lower threshold but track all candidates
+                if score >= 30:  # Accept more candidates for comparison
+                    # Check for duplicates (same coordinates)
+                    is_duplicate = any(
+                        abs(float(r['lat']) - c['lat']) < 0.0001 and 
+                        abs(float(r['lon']) - c['lng']) < 0.0001
+                        for c in candidates
+                    )
+                    
+                    if not is_duplicate:
+                        candidates.append({
+                            'lat': float(r['lat']),
+                            'lng': float(r['lon']),
+                            'display': r['display_name'],
+                            'provider': 'nominatim_free',
+                            'score': score,
+                            'osm_type': r.get('osm_type', ''),
+                            'osm_id': r.get('osm_id', '')
+                        })
             
             time.sleep(1.0)  # Rate limiting
         
@@ -257,14 +361,25 @@ class UltimateGeocoder:
             results = self._nominatim_structured(street_name, city, street_number)
             for r in results:
                 score = self._score_result(r, address, city, street_number)
-                if score >= 40:
-                    candidates.append({
-                        'lat': float(r['lat']),
-                        'lng': float(r['lon']),
-                        'display': r['display_name'],
-                        'provider': 'nominatim_structured',
-                        'score': score
-                    })
+                
+                if score >= 30:
+                    # Check for duplicates
+                    is_duplicate = any(
+                        abs(float(r['lat']) - c['lat']) < 0.0001 and 
+                        abs(float(r['lon']) - c['lng']) < 0.0001
+                        for c in candidates
+                    )
+                    
+                    if not is_duplicate:
+                        candidates.append({
+                            'lat': float(r['lat']),
+                            'lng': float(r['lon']),
+                            'display': r['display_name'],
+                            'provider': 'nominatim_structured',
+                            'score': score,
+                            'osm_type': r.get('osm_type', ''),
+                            'osm_id': r.get('osm_id', '')
+                        })
             
             time.sleep(1.0)
         
@@ -282,24 +397,38 @@ class UltimateGeocoder:
             
             time.sleep(1.0)
         
-        # === SELECT BEST CANDIDATE ===
+        # === SELECT BEST CANDIDATE with enhanced filtering ===
         if candidates:
             # Sort by score (highest first)
             candidates.sort(key=lambda x: x['score'], reverse=True)
-            best = candidates[0]
             
-            # Cache result
-            self.cache[cache_key] = {
-                'lat': best['lat'],
-                'lng': best['lng'],
-                'provider': best['provider'],
-                'display': best['display'],
-                'score': best['score']
-            }
-            self._save_cache()
+            # Apply stricter quality threshold
+            top_candidates = [c for c in candidates if c['score'] >= 50]
             
-            logging.info(f"✓ Found: {best['display']} (score={best['score']}, provider={best['provider']})")
-            return (best['lat'], best['lng'], best['provider'], best['display'], best['score'])
+            if top_candidates:
+                best = top_candidates[0]
+                
+                # Additional validation: reject if top score is too low
+                if best['score'] < 40:
+                    logging.warning(f"✗ Best score too low ({best['score']}): {address}, {city}")
+                    return (None, None, None, None, 0)
+                
+                # Cache result
+                self.cache[cache_key] = {
+                    'lat': best['lat'],
+                    'lng': best['lng'],
+                    'provider': best['provider'],
+                    'display': best['display'],
+                    'score': best['score']
+                }
+                self._save_cache()
+                
+                logging.info(f"✓ Found: {best['display'][:80]} (score={best['score']}, provider={best['provider']})")
+                return (best['lat'], best['lng'], best['provider'], best['display'], best['score'])
+            else:
+                # All candidates below quality threshold
+                logging.warning(f"✗ No high-quality candidates: {address}, {city} (best score={candidates[0]['score']})")
+                return (None, None, None, None, 0)
         
         # No acceptable result found
         logging.warning(f"✗ Failed to geocode: {address}, {city}")
@@ -308,14 +437,28 @@ class UltimateGeocoder:
 
 def main():
     print("="*70)
-    print("ULTIMATE GEOCODING SOLUTION")
+    print("ULTIMATE GEOCODING SOLUTION v2.0 - ENHANCED PRECISION")
     print("="*70)
     print()
+    print("Enhancements:")
+    print("  - Stricter city validation (exact match required)")
+    print("  - Enhanced street number matching")
+    print("  - Coordinate precision scoring")
+    print("  - OSM type validation (building/amenity)")
+    print("  - Duplicate filtering")
+    print("  - Quality threshold: minimum score 50")
+    print()
     
-    # Load data
-    df = pd.read_csv('hospitals_official_cleaned.csv', encoding='utf-8')
-    print(f"Loaded {len(df)} hospitals")
-    print(f"Estimated time: ~{len(df) * 2.5 / 60:.1f} minutes (multi-strategy approach)")
+    # Load data - use improved version if available
+    if os.path.exists('hospitals_official_improved.csv'):
+        df = pd.read_csv('hospitals_official_improved.csv', encoding='utf-8')
+        print(f"Loaded {len(df)} hospitals (IMPROVED DATA)")
+        print("Using extracted metadata: street_number, street_name_clean")
+    else:
+        df = pd.read_csv('hospitals_official_cleaned.csv', encoding='utf-8')
+        print(f"Loaded {len(df)} hospitals")
+    
+    print(f"Estimated time: ~{len(df) * 3 / 60:.1f} minutes (enhanced multi-strategy)")
     print()
     
     # Initialize geocoder
@@ -343,6 +486,16 @@ def main():
         oblast = str(row.get('Област') or '').strip()
         name = str(row.get('Наименование') or '').strip()
         
+        # Use pre-extracted metadata if available
+        street_number = row.get('street_number') if 'street_number' in row and pd.notna(row.get('street_number')) else None
+        street_name = row.get('street_name_clean') if 'street_name_clean' in row and pd.notna(row.get('street_name_clean')) else None
+        
+        # Override extraction if we have better data
+        if not street_number:
+            street_number = geocoder._extract_street_number(addr)
+        if not street_name:
+            street_name = geocoder._extract_street_name(addr)
+        
         # Progress
         if (i + 1) % 20 == 0 or i == 0:
             elapsed = time.time() - start
@@ -354,8 +507,12 @@ def main():
             print(f"  Quality: Excellent={stats['excellent']} Good={stats['good']} "
                   f"Fair={stats['fair']} Failed={stats['failed']}")
         
-        # Geocode
-        lat, lng, provider, display, score = geocoder.geocode(addr, city, oblast, name)
+        # Geocode - pass extracted metadata for better precision
+        lat, lng, provider, display, score = geocoder.geocode(
+            addr, city, oblast, name, 
+            street_number_hint=street_number,
+            street_name_hint=street_name
+        )
         
         df.at[i, 'lat'] = lat
         df.at[i, 'lng'] = lng
