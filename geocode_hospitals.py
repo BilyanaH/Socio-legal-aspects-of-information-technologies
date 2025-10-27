@@ -45,6 +45,40 @@ def save_cache(cache, cache_file=CACHE_FILE):
 CACHE = load_cache()
 
 
+def _count_cache_same_coord(lat, lng, eps=1e-6):
+    """Count how many cache entries share the same coordinates (within eps)."""
+    if lat is None or lng is None:
+        return 0
+    cnt = 0
+    for v in CACHE.values():
+        try:
+            vlat = float(v.get('lat'))
+            vlon = float(v.get('lng'))
+            if abs(vlat - float(lat)) < eps and abs(vlon - float(lng)) < eps:
+                cnt += 1
+        except Exception:
+            continue
+    return cnt
+
+
+def _is_generic_display(display):
+    """Return True if display looks generic (no real place name) — treat as low-confidence."""
+    if not display:
+        return True
+    d = str(display).strip().lower()
+    # common short/generic tokens (English + Bulgarian fragments)
+    generic_tokens = ['hospital', 'clinic', 'medical', 'health', 'дкц', 'мбал', 'болниц', 'мц', 'clinic', 'center', 'център']
+    # if display is very short and contains a generic token, consider it generic
+    if any(tok in d for tok in generic_tokens):
+        parts = d.split()
+        if len(parts) <= 3:
+            return True
+    # if display is exactly a single generic word
+    if d in generic_tokens:
+        return True
+    return False
+
+
 def _score_nominatim_candidate(candidate, wanted_city, wanted_oblast, name_hint=None):
     score = 0.0
     importance = float(candidate.get('importance', 0) or 0)
@@ -353,9 +387,18 @@ def geocode_address(address, city, oblast, name_hint=None):
         lat, lng, info = None, None, None
 
     if lat and lng:
-        CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'overpass', 'display_name': info}
-        save_cache(CACHE)
-        return lat, lng, 'overpass', info
+        # If Overpass returns a very generic display (e.g. just 'hospital'/'clinic')
+        # or the same coordinates are already used for many cache entries, treat
+        # this result as low-confidence/ambiguous and try other providers
+        dup_count = _count_cache_same_coord(lat, lng)
+        if _is_generic_display(info) or dup_count >= 3:
+            logging.info(f"Overpass result for {cache_key} considered ambiguous (display={info}, dup_count={dup_count}); will try other methods")
+            # do not cache ambiguous Overpass results as definitive — fall through
+            pass
+        else:
+            CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'overpass', 'display_name': info}
+            save_cache(CACHE)
+            return lat, lng, 'overpass', info
 
     # Try structured Nominatim
     res = geocode_with_nominatim(street, city, oblast, name_hint=name_hint)
@@ -529,10 +572,17 @@ def main():
                         if o_lat and o_lon:
                             df.at[i, 'lat'] = o_lat
                             df.at[i, 'lng'] = o_lon
-                            df.at[i, 'provider'] = 'overpass_refined'
-                            df.at[i, 'display_name'] = o_disp
-                            CACHE[f"{addr}||{city}||{row['Област']}"] = {'lat': o_lat, 'lng': o_lon, 'provider': 'overpass_refined', 'display_name': o_disp}
-                            save_cache(CACHE)
+                            # check for generic/duplicated overpass result
+                            dup_count = _count_cache_same_coord(o_lat, o_lon)
+                            if _is_generic_display(o_disp) or dup_count >= 3:
+                                logging.info(f"Overpass refined result for {row['Наименование']} considered ambiguous (display={o_disp}, dup_count={dup_count}); not caching as definitive")
+                                df.at[i, 'provider'] = 'overpass_refined_ambiguous'
+                                df.at[i, 'display_name'] = o_disp
+                            else:
+                                df.at[i, 'provider'] = 'overpass_refined'
+                                df.at[i, 'display_name'] = o_disp
+                                CACHE[f"{addr}||{city}||{row['Област']}"] = {'lat': o_lat, 'lng': o_lon, 'provider': 'overpass_refined', 'display_name': o_disp}
+                                save_cache(CACHE)
                             found = True
                             logging.info(f"Refined via Overpass for {row['Наименование']}: {o_disp}")
                     except Exception as e:
