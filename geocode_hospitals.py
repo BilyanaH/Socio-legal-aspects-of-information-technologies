@@ -41,6 +41,10 @@ def save_cache(cache, cache_file=CACHE_FILE):
         logging.warning(f"Could not save cache {cache_file}: {e}")
 
 
+# Load cache once globally
+CACHE = load_cache()
+
+
 def _score_nominatim_candidate(candidate, wanted_city, wanted_oblast, name_hint=None):
     score = 0.0
     importance = float(candidate.get('importance', 0) or 0)
@@ -115,12 +119,12 @@ def geocode_with_nominatim(street, city, oblast, name_hint=None, limit=5, retrie
         except Exception as e:
             logging.error(f"Nominatim attempt {attempt+1} error for {params}: {e}")
             time.sleep(1 + attempt)
-    return None, None
+    return None, None, None
 
 
 def geocode_with_google(street, city, oblast, name_hint=None, api_key=None):
     if not api_key:
-        return None, None
+        return None, None, None
     base = 'https://maps.googleapis.com/maps/api/geocode/json'
     address_parts = []
     if street:
@@ -137,7 +141,7 @@ def geocode_with_google(street, city, oblast, name_hint=None, api_key=None):
         resp = requests.get(base, params=params, timeout=15)
         if resp.status_code != 200:
             logging.warning(f"Google geocode status {resp.status_code} for {address}")
-            return None, None
+            return None, None, None
         data = resp.json()
         if data.get('status') != 'OK' or not data.get('results'):
             logging.info(f"Google no results for {address}: {data.get('status')}")
@@ -195,6 +199,13 @@ def nominatim_free_text_search(address, city, oblast, limit=10):
     try:
         q = f"{address}, {city}, {oblast}, Bulgaria"
         resp = requests.get('https://nominatim.openstreetmap.org/search', params={'format':'json','addressdetails':1,'limit':limit,'q':q}, headers={'User-Agent':'GeocodeHospitals/1.0 (contact@example.com)'}, timeout=15)
+        if resp.status_code != 200:
+            return []
+        return resp.json()
+    except Exception as e:
+        logging.warning(f"Free-text Nominatim error for {address}, {city}: {e}")
+        return []
+        return None, None, None
         if resp.status_code != 200:
             return []
         return resp.json()
@@ -285,15 +296,21 @@ def geocode_address(address, city, oblast, name_hint=None):
     street = address or ''
     if isinstance(street, str):
         # normalize common tokens but preserve Bulgarian letters (don't remove 'и')
-        street = street.replace('ет.', '').replace('ГР.', '').replace('№', '').replace('\t', ' ').replace('  ', ' ').strip()
+        street = street.replace('\t', ' ').replace('  ', ' ').strip()
+        # remove common apartment/entrance tokens that confuse geocoders
+        for tok in ['ет.', 'ет', 'вх.', 'вх', 'партер', 'каб.', 'каб', 'ап.', 'ап', 'корп.', 'кв.', 'ж.к.', 'ж.к', 'жк', 'к.к.', 'к.к', '№']:
+            street = street.replace(tok, '')
+        # normalize prefixes
+        street = street.replace('ГР.', '').replace('гр.', '').replace('Гр.', '')
+        street = street.strip().strip(',')
     city = city.replace('ГР.', '').strip() if isinstance(city, str) and city.strip() != '' else (oblast if isinstance(oblast, str) else '')
     oblast = oblast or ''
 
     cache_key = f"{street}||{city}||{oblast}"
-    cache = load_cache()
-    if cache_key in cache:
+    global CACHE
+    if cache_key in CACHE:
         logging.info(f"Cache hit for {cache_key}")
-        val = cache[cache_key]
+        val = CACHE[cache_key]
         return val.get('lat'), val.get('lng'), val.get('provider'), val.get('display_name')
 
     # Try Google first if api key present
@@ -302,8 +319,8 @@ def geocode_address(address, city, oblast, name_hint=None):
         res = geocode_with_google(street, city, oblast, name_hint=name_hint, api_key=gkey)
         if res and res[0] and res[1]:
             lat, lng, display = res
-            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google', 'display_name': display}
-            save_cache(cache)
+            CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google', 'display_name': display}
+            save_cache(CACHE)
             return lat, lng, 'google', display
     # If the street contains a housenumber, try free-text Nominatim first and prefer exact housenumber matches
     import re
@@ -319,8 +336,8 @@ def geocode_address(address, city, oblast, name_hint=None):
                     lng = float(cand.get('lon'))
                     display = disp
                     logging.info(f"Using free-text Nominatim hibit for housenumber {housenumber}: {display}")
-                    cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
-                    save_cache(cache)
+                    CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
+                    save_cache(CACHE)
                     return lat, lng, 'nominatim_free', display
                 except Exception:
                     pass
@@ -336,10 +353,11 @@ def geocode_address(address, city, oblast, name_hint=None):
         lat, lng, info = None, None, None
 
     if lat and lng:
-        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'overpass', 'display_name': info}
-        save_cache(cache)
+        CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'overpass', 'display_name': info}
+        save_cache(CACHE)
         return lat, lng, 'overpass', info
 
+    # Try structured Nominatim
     res = geocode_with_nominatim(street, city, oblast, name_hint=name_hint)
     if res and res[0] and res[1]:
         lat, lng, display = res
@@ -358,22 +376,36 @@ def geocode_address(address, city, oblast, name_hint=None):
                         lng = float(cand.get('lon'))
                         display = disp
                         logging.info(f"Preferred free-text Nominatim candidate with housenumber {housenumber}: {display}")
-                        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
-                        save_cache(cache)
+                        CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
+                        save_cache(CACHE)
                         return lat, lng, 'nominatim_free', display
                     except Exception:
                         pass
-        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim', 'display_name': display}
-        save_cache(cache)
+        CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim', 'display_name': display}
+        save_cache(CACHE)
         return lat, lng, 'nominatim', display
 
     # As a last resort, try a looser query (city-level)
+    # As a last resort, try looser queries / variants
+    variants = []
+    # remove street number
+    import re as _re
+    variants.append(_re.sub(r"\s+[0-9A-Za-z\-/]+$", '', street).strip())
+    # try only name_hint + city
+    if name_hint:
+        variants.append(f"{name_hint}, {city}")
+    # try city-only
     if city:
-        res = geocode_with_nominatim('', city, oblast, name_hint=name_hint, limit=3)
+        variants.append(city)
+
+    for v in variants:
+        if not v:
+            continue
+        res = geocode_with_nominatim(v, city if v != city else '', oblast, name_hint=name_hint, limit=3)
         if res and res[0] and res[1]:
             lat, lng, display = res
-            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_city', 'display_name': display}
-            save_cache(cache)
+            CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_city', 'display_name': display}
+            save_cache(CACHE)
             return lat, lng, 'nominatim_city', display
 
     logging.error(f"Failed to geocode: {street}, {city}, {oblast}")
@@ -423,6 +455,114 @@ def main():
         df.at[i, 'display_name'] = display
         print(f"Geocoded {row['Наименование']} at {row['Адрес']}, {city}, {row['Област']}: ({lat}, {lng}) provider={provider}")
         time.sleep(1.2)  # Slightly longer delay to avoid rate limits
+
+    # Second pass: try to refine rows that are missing coords or have low-confidence / duplicated coords
+    def needs_refine(r):
+        # missing coords
+        if r['lat'] is None or r['lng'] is None:
+            return True
+        # provider indicates city-level or low confidence
+        if isinstance(r.get('provider'), str) and r.get('provider') in ('nominatim_city', 'nominatim_free'):
+            return True
+        return False
+
+    # find duplicated coordinates assigned to many different addresses
+    dup_coords = df[df['lat'].notnull() & df['lng'].notnull()].groupby(['lat', 'lng']).size()
+    dup_coords = dup_coords[dup_coords > 1]
+    dup_set = set(dup_coords.index.tolist())
+
+    for i, row in df.iterrows():
+        city = row['Населено място'] if pd.notna(row['Населено място']) and row['Населено място'].strip() != '' else row['Област']
+        name = row['Наименование'] if 'Наименование' in row else None
+        lat = row['lat']
+        lng = row['lng']
+        provider = row.get('provider')
+
+        if needs_refine(row) or ((lat, lng) in dup_set and (pd.notna(row['Адрес']) and str(row['Адрес']).strip() != '')):
+            # try more aggressive variants: name + address free-text, Overpass by name, and Google forced
+            variants = []
+            addr = row['Адрес'] or ''
+            if name:
+                variants.append(f"{name}, {addr}, {city}")
+                variants.append(f"{name}, {city}")
+            variants.append(f"{addr}, {city}")
+            tried = set()
+            found = False
+            for q in variants:
+                if not q or q in tried:
+                    continue
+                tried.add(q)
+                # run free-text nominatim
+                try:
+                    res_list = nominatim_free_text_search(q, city, row['Област'], limit=6)
+                    for cand in res_list:
+                        try:
+                            cand_lat = float(cand.get('lat'))
+                            cand_lon = float(cand.get('lon'))
+                        except Exception:
+                            continue
+                        # ensure city matches somewhat
+                        disp = cand.get('display_name','')
+                        if city and city.lower() not in disp.lower() and name and name.lower() not in disp.lower():
+                            # still accept if name matches
+                            pass
+                        # accept candidate
+                        df.at[i, 'lat'] = cand_lat
+                        df.at[i, 'lng'] = cand_lon
+                        df.at[i, 'provider'] = 'nominatim_free_refined'
+                        df.at[i, 'display_name'] = disp
+                        CACHE[f"{addr}||{city}||{row['Област']}"] = {'lat': cand_lat, 'lng': cand_lon, 'provider': 'nominatim_free_refined', 'display_name': disp}
+                        save_cache(CACHE)
+                        found = True
+                        logging.info(f"Refined via free-text Nominatim for {row['Наименование']}: {disp}")
+                        break
+                    if found:
+                        break
+                except Exception as e:
+                    logging.warning(f"Refine free-text Nominatim error for {q}: {e}")
+                time.sleep(1.0)
+
+                # try Overpass by name
+                if name and not found:
+                    try:
+                        o_lat, o_lon, o_disp = geocode_with_overpass(name, city, row['Област'])
+                        if o_lat and o_lon:
+                            df.at[i, 'lat'] = o_lat
+                            df.at[i, 'lng'] = o_lon
+                            df.at[i, 'provider'] = 'overpass_refined'
+                            df.at[i, 'display_name'] = o_disp
+                            CACHE[f"{addr}||{city}||{row['Област']}"] = {'lat': o_lat, 'lng': o_lon, 'provider': 'overpass_refined', 'display_name': o_disp}
+                            save_cache(CACHE)
+                            found = True
+                            logging.info(f"Refined via Overpass for {row['Наименование']}: {o_disp}")
+                    except Exception as e:
+                        logging.warning(f"Refine Overpass error for {name}: {e}")
+                    time.sleep(1.0)
+
+                # try Google forced if key available
+                gkey = os.environ.get('GOOGLE_API_KEY')
+                if gkey and not found:
+                    try:
+                        g_lat, g_lon, g_display = geocode_with_google(addr or name, city, row['Област'], name_hint=name, api_key=gkey)
+                        if g_lat and g_lon:
+                            df.at[i, 'lat'] = g_lat
+                            df.at[i, 'lng'] = g_lon
+                            df.at[i, 'provider'] = 'google_refined'
+                            df.at[i, 'display_name'] = g_display
+                            CACHE[f"{addr}||{city}||{row['Област']}"] = {'lat': g_lat, 'lng': g_lon, 'provider': 'google_refined', 'display_name': g_display}
+                            save_cache(CACHE)
+                            found = True
+                            logging.info(f"Refined via Google for {row['Наименование']}: {g_display}")
+                    except Exception as e:
+                        logging.warning(f"Refine Google error for {row['Наименование']}: {e}")
+                    time.sleep(0.8)
+
+            if found:
+                print(f"Refined {row['Наименование']} -> ({df.at[i,'lat']}, {df.at[i,'lng']}) provider={df.at[i,'provider']}")
+            else:
+                print(f"Could not refine {row['Наименование']} (still provider={provider})")
+            # be polite
+            time.sleep(0.8)
 
     # Save to output file
     try:
