@@ -79,6 +79,68 @@ def _is_generic_display(display):
     return False
 
 
+def _validate_result_city_match(display_name, expected_city):
+    """
+    Validate that the geocoding result's display_name contains the expected city.
+    Returns True if city is found in display, False otherwise.
+    This helps reject results from completely wrong cities.
+    """
+    if not display_name or not expected_city:
+        return False  # Cannot validate without both
+    
+    display_lower = display_name.lower()
+    city_clean = expected_city.replace('ГР.', '').replace('С.', '').replace('К.К.', '').strip()
+    
+    # If city is too short, skip validation (common abbreviations might cause false negatives)
+    if len(city_clean) < 4:
+        return True  # Cannot reliably validate very short city names
+    
+    city_lower = city_clean.lower()
+    
+    # Check if city name appears in display
+    if city_lower in display_lower:
+        return True
+    
+    # Handle common transliteration variants (е.g., София/Sofia, Пловдив/Plovdiv)
+    transliteration_map = {
+        'софия': 'sofia',
+        'пловдив': 'plovdiv',
+        'варна': 'varna',
+        'бургас': 'burgas',
+        'русе': 'ruse',
+        'плевен': 'pleven',
+        'стара загора': 'stara zagora',
+        'добрич': 'dobrich',
+        'сливен': 'sliven',
+        'шумен': 'shumen',
+        'пазарджик': 'pazardzhik',
+        'ямбол': 'yambol',
+        'хасково': 'haskovo',
+        'габрово': 'gabrovo',
+        'асеновград': 'asenovgrad',
+        'кърджали': 'kardzhali',
+        'кюстендил': 'kyustendil',
+        'перник': 'pernik',
+        'враца': 'vratsa',
+        'видин': 'vidin',
+        'монтана': 'montana',
+        'ловеч': 'lovech',
+        'велико търново': 'veliko tarnovo',
+        'търговище': 'targovishte'
+    }
+    
+    # Check transliteration
+    for bg, latin in transliteration_map.items():
+        if city_lower == bg and latin in display_lower:
+            return True
+        if city_lower == latin and bg in display_lower:
+            return True
+    
+    # If we reach here, city was NOT found in display
+    logging.warning(f"City validation failed: expected '{expected_city}' not found in '{display_name}'")
+    return False
+
+
 def _score_nominatim_candidate(candidate, wanted_city, wanted_oblast, name_hint=None):
     score = 0.0
     importance = float(candidate.get('importance', 0) or 0)
@@ -239,13 +301,6 @@ def nominatim_free_text_search(address, city, oblast, limit=10):
     except Exception as e:
         logging.warning(f"Free-text Nominatim error for {address}, {city}: {e}")
         return []
-        return None, None, None
-        if resp.status_code != 200:
-            return []
-        return resp.json()
-    except Exception as e:
-        logging.warning(f"Free-text Nominatim error for {address}, {city}: {e}")
-        return []
 
 
 def geocode_with_overpass(name, city, oblast):
@@ -356,25 +411,44 @@ def geocode_address(address, city, oblast, name_hint=None):
             CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google', 'display_name': display}
             save_cache(CACHE)
             return lat, lng, 'google', display
-    # If the street contains a housenumber, try free-text Nominatim first and prefer exact housenumber matches
+    # Try free-text Nominatim search first (more flexible than structured)
     import re
     m = re.search(r"(.*)\b(?:№|No\.?|n\.|#)?\s*([0-9]+[A-Za-z0-9/-]*)\s*$", street)
-    if m:
-        housenumber = m.group(2)
-        ft = nominatim_free_text_search(street, city, oblast, limit=8)
-        for cand in ft:
-            disp = cand.get('display_name','')
-            if housenumber and housenumber in disp:
-                try:
-                    lat = float(cand.get('lat'))
-                    lng = float(cand.get('lon'))
-                    display = disp
-                    logging.info(f"Using free-text Nominatim hibit for housenumber {housenumber}: {display}")
-                    CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
-                    save_cache(CACHE)
-                    return lat, lng, 'nominatim_free', display
-                except Exception:
-                    pass
+    housenumber = m.group(2) if m else None
+    
+    # Free-text search with address + city
+    ft = nominatim_free_text_search(street, city, oblast, limit=10)
+    for cand in ft:
+        disp = cand.get('display_name','')
+        
+        # Validate city match
+        if not _validate_result_city_match(disp, city):
+            continue
+        
+        # If we have housenumber, prefer exact match
+        if housenumber and housenumber in disp:
+            try:
+                lat = float(cand.get('lat'))
+                lng = float(cand.get('lon'))
+                display = disp
+                logging.info(f"Using free-text Nominatim with housenumber {housenumber}: {display}")
+                CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
+                save_cache(CACHE)
+                return lat, lng, 'nominatim_free', display
+            except Exception:
+                pass
+        # Otherwise, take first valid result with city match
+        elif cand.get('lat') and cand.get('lon'):
+            try:
+                lat = float(cand.get('lat'))
+                lng = float(cand.get('lon'))
+                display = disp
+                logging.info(f"Using free-text Nominatim: {display}")
+                CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
+                save_cache(CACHE)
+                return lat, lng, 'nominatim_free', display
+            except Exception:
+                pass
 
     # Fallback to Overpass (OSM) search by name inside city bbox for exact place matches (hospitals/clinics)
     try:
@@ -391,8 +465,11 @@ def geocode_address(address, city, oblast, name_hint=None):
         # or the same coordinates are already used for many cache entries, treat
         # this result as low-confidence/ambiguous and try other providers
         dup_count = _count_cache_same_coord(lat, lng)
-        if _is_generic_display(info) or dup_count >= 3:
-            logging.info(f"Overpass result for {cache_key} considered ambiguous (display={info}, dup_count={dup_count}); will try other methods")
+        is_generic = _is_generic_display(info)
+        city_match = _validate_result_city_match(info, city)
+        
+        if is_generic or dup_count >= 3 or not city_match:
+            logging.info(f"Overpass result for {cache_key} considered ambiguous (display={info}, dup_count={dup_count}, city_match={city_match}); will try other methods")
             # do not cache ambiguous Overpass results as definitive — fall through
             pass
         else:
@@ -404,29 +481,36 @@ def geocode_address(address, city, oblast, name_hint=None):
     res = geocode_with_nominatim(street, city, oblast, name_hint=name_hint)
     if res and res[0] and res[1]:
         lat, lng, display = res
-        # Prefer free-text candidate that contains exact housenumber when available
-        # Try free-text only if street contains a housenumber
-        import re
-        m = re.search(r"(.*)\b(?:№|No\.?|n\.|#)?\s*([0-9]+[A-Za-z0-9/-]*)\s*$", street)
-        if m:
-            housenumber = m.group(2)
-            ft = nominatim_free_text_search(street, city, oblast, limit=8)
-            for cand in ft:
-                disp = cand.get('display_name','')
-                if housenumber in disp:
-                    try:
-                        lat = float(cand.get('lat'))
-                        lng = float(cand.get('lon'))
-                        display = disp
-                        logging.info(f"Preferred free-text Nominatim candidate with housenumber {housenumber}: {display}")
-                        CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
-                        save_cache(CACHE)
-                        return lat, lng, 'nominatim_free', display
-                    except Exception:
-                        pass
-        CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim', 'display_name': display}
-        save_cache(CACHE)
-        return lat, lng, 'nominatim', display
+        
+        # Validate city match
+        if not _validate_result_city_match(display, city):
+            logging.warning(f"Nominatim result city mismatch for {cache_key}: {display}")
+            # Don't accept this result, try free-text below
+            res = None
+        else:
+            # Prefer free-text candidate that contains exact housenumber when available
+            # Try free-text only if street contains a housenumber
+            import re
+            m = re.search(r"(.*)\b(?:№|No\.?|n\.|#)?\s*([0-9]+[A-Za-z0-9/-]*)\s*$", street)
+            if m:
+                housenumber = m.group(2)
+                ft = nominatim_free_text_search(street, city, oblast, limit=8)
+                for cand in ft:
+                    disp = cand.get('display_name','')
+                    if housenumber in disp and _validate_result_city_match(disp, city):
+                        try:
+                            lat = float(cand.get('lat'))
+                            lng = float(cand.get('lon'))
+                            display = disp
+                            logging.info(f"Preferred free-text Nominatim candidate with housenumber {housenumber}: {display}")
+                            CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
+                            save_cache(CACHE)
+                            return lat, lng, 'nominatim_free', display
+                        except Exception:
+                            pass
+            CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim', 'display_name': display}
+            save_cache(CACHE)
+            return lat, lng, 'nominatim', display
 
     # As a last resort, try a looser query (city-level)
     # As a last resort, try looser queries / variants
