@@ -397,38 +397,39 @@ class UltimateGeocoder:
             
             time.sleep(1.0)
         
-        # === SELECT BEST CANDIDATE with enhanced filtering ===
+        # === SELECT BEST CANDIDATE with enhanced filtering (SHOW ALL RESULTS) ===
         if candidates:
             # Sort by score (highest first)
             candidates.sort(key=lambda x: x['score'], reverse=True)
-            
-            # Apply stricter quality threshold
+
+            # Prefer high-quality candidates but fallback to the best available
             top_candidates = [c for c in candidates if c['score'] >= 50]
-            
+
             if top_candidates:
                 best = top_candidates[0]
-                
-                # Additional validation: reject if top score is too low
-                if best['score'] < 40:
-                    logging.warning(f"✗ Best score too low ({best['score']}): {address}, {city}")
-                    return (None, None, None, None, 0)
-                
-                # Cache result
-                self.cache[cache_key] = {
-                    'lat': best['lat'],
-                    'lng': best['lng'],
-                    'provider': best['provider'],
-                    'display': best['display'],
-                    'score': best['score']
-                }
-                self._save_cache()
-                
-                logging.info(f"✓ Found: {best['display'][:80]} (score={best['score']}, provider={best['provider']})")
-                return (best['lat'], best['lng'], best['provider'], best['display'], best['score'])
+                chosen_reason = 'high_confidence'
             else:
-                # All candidates below quality threshold
-                logging.warning(f"✗ No high-quality candidates: {address}, {city} (best score={candidates[0]['score']})")
-                return (None, None, None, None, 0)
+                # No high-quality results — still return the best candidate (lowest confidence)
+                best = candidates[0]
+                chosen_reason = 'low_confidence'
+
+            # If very low score, mark provider so UI can style it differently
+            provider = best.get('provider', 'unknown')
+            if chosen_reason == 'low_confidence' or best.get('score', 0) < 50:
+                provider = f"{provider}_lowconf"
+
+            # Cache result (store exact returned score)
+            self.cache[cache_key] = {
+                'lat': best['lat'],
+                'lng': best['lng'],
+                'provider': provider,
+                'display': best.get('display'),
+                'score': best.get('score', 0)
+            }
+            self._save_cache()
+
+            logging.info(f"✓ Selected ({chosen_reason}): {str(best.get('display'))[:80]} (score={best.get('score')}, provider={provider})")
+            return (best['lat'], best['lng'], provider, best.get('display'), best.get('score', 0))
         
         # No acceptable result found
         logging.warning(f"✗ Failed to geocode: {address}, {city}")
