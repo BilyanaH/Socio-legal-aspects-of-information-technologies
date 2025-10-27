@@ -32,6 +32,32 @@
             margin-bottom: 20px;
             color: #2c3e50;
         }
+        .legend {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            font-size: 10pt;
+        }
+        .legend h3 {
+            font-size: 11pt;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .legend-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .sidebar select {
             width: 100%;
             padding: 10px;
@@ -114,6 +140,34 @@
             <select id="oblast-filter">
                 <option value="">Всички области</option>
             </select>
+            
+            <div class="legend">
+                <h3>Качество на координатите</h3>
+                <div class="legend-item">
+                    <div class="legend-icon">
+                        <i class="fa fa-hospital" style="color: #27ae60; font-size: 16px;"></i>
+                    </div>
+                    <span>★★★ Отлично (80-100)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon">
+                        <i class="fa fa-hospital" style="color: #f39c12; font-size: 16px;"></i>
+                    </div>
+                    <span>★★ Добро (60-79)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon">
+                        <i class="fa fa-hospital" style="color: #e67e22; font-size: 16px;"></i>
+                    </div>
+                    <span>★ Приемливо (40-59)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon">
+                        <i class="fa fa-hospital" style="color: #e74c3c; font-size: 16px;"></i>
+                    </div>
+                    <span>✗ Ниско качество</span>
+                </div>
+            </div>
         </div>
         <div id="map"></div>
         <div id="loading">
@@ -147,9 +201,17 @@
             }
         });
 
-        fetch('hospitals_with_coords.csv') // Update to '/your-repo/proba/hospitals_with_coords.csv' for GitHub
+        fetch('hospitals_ultimate_coords.csv') // Latest version with quality scores
             .then(response => {
-                if (!response.ok) throw new Error('CSV файлът не е намерен. Уверете се, че hospitals_with_coords.csv е в репозиториото.');
+                if (!response.ok) {
+                    // Fallback to older versions
+                    return fetch('hospitals_official_with_coords.csv')
+                        .then(r => r.ok ? r : fetch('hospitals_with_coords.csv'));
+                }
+                return response;
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('CSV файлът не е намерен.');
                 return response.text();
             })
             .then(csvText => {
@@ -174,22 +236,38 @@
                             hospitals.forEach(hospital => {
                                 if (hospital.lat && hospital.lng && !isNaN(hospital.lat) && !isNaN(hospital.lng)) {
                                     if (!filterOblast || hospital.Област === filterOblast) {
+                                        const qualityScore = parseFloat(hospital.quality_score) || 0;
+                                        // Color based on quality
+                                        const markerColor = qualityScore >= 80 ? '#27ae60' :  // Green for excellent
+                                                           qualityScore >= 60 ? '#f39c12' :  // Orange for good
+                                                           qualityScore >= 40 ? '#e67e22' :  // Dark orange for fair
+                                                           '#e74c3c';                         // Red for failed/unknown
+                                        
                                         const marker = L.marker([parseFloat(hospital.lat), parseFloat(hospital.lng)], {
                                             icon: L.divIcon({
-                                                html: '<i class="fa fa-hospital" style="color: #e74c3c; font-size: 24px;"></i>',
+                                                html: `<i class="fa fa-hospital" style="color: ${markerColor}; font-size: 24px;"></i>`,
                                                 className: 'custom-marker',
                                                 iconSize: [30, 30],
                                                 iconAnchor: [15, 30]
                                             })
                                         });
+                                        
+                                        const qualityLabel = qualityScore >= 80 ? '★★★ Отлично' :
+                                                            qualityScore >= 60 ? '★★ Добро' :
+                                                            qualityScore >= 40 ? '★ Приемливо' : '✗ Ниско';
+                                        const qualityColor = qualityScore >= 80 ? '#27ae60' :
+                                                            qualityScore >= 60 ? '#f39c12' :
+                                                            qualityScore >= 40 ? '#e67e22' : '#c0392b';
+                                        
                                         marker.bindPopup(`
                                             <b>${hospital.Наименование || 'N/A'}</b><br>
                                             Област: ${hospital.Област || 'N/A'}<br>
                                             Община: ${hospital.Община || 'N/A'}<br>
-                                            Населено място: ${hospital.Населено_място || 'N/A'}<br>
+                                            Населено място: ${hospital['Населено място'] || hospital.Населено_място || 'N/A'}<br>
                                             Адрес: ${hospital.Адрес || 'N/A'}<br>
                                             Управител: ${hospital.Управител || 'N/A'}<br>
                                             Телефон: ${hospital.Телефон || 'N/A'}<br>
+                                            ${qualityScore > 0 ? `<br><span style="color: ${qualityColor}; font-weight: bold;">Качество: ${qualityLabel} (${qualityScore}/100)</span><br>Източник: ${hospital.provider || 'N/A'}` : ''}
                                         `);
                                         markers.addLayer(marker);
                                     }

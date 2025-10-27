@@ -293,11 +293,34 @@ def get_city_bbox(city, oblast):
 def nominatim_free_text_search(address, city, oblast, limit=10):
     """Run a free-text Nominatim search for 'address, city, oblast, Bulgaria'."""
     try:
-        q = f"{address}, {city}, {oblast}, Bulgaria"
-        resp = requests.get('https://nominatim.openstreetmap.org/search', params={'format':'json','addressdetails':1,'limit':limit,'q':q}, headers={'User-Agent':'GeocodeHospitals/1.0 (contact@example.com)'}, timeout=15)
-        if resp.status_code != 200:
-            return []
-        return resp.json()
+        # Try multiple query variations for better results
+        queries = [
+            f"{address}, {city}, Bulgaria",  # Most specific
+            f"{address}, {city}, {oblast}, Bulgaria",  # With oblast
+        ]
+        
+        # Try each query until we get good results
+        for q in queries:
+            resp = requests.get('https://nominatim.openstreetmap.org/search', 
+                              params={'format':'json','addressdetails':1,'limit':limit,'q':q}, 
+                              headers={'User-Agent':'GeocodeHospitals/1.0 (contact@example.com)'}, 
+                              timeout=15)
+            if resp.status_code != 200:
+                continue
+            
+            results = resp.json()
+            if results:
+                # Filter results to only those matching the city
+                filtered = []
+                for r in results:
+                    disp = r.get('display_name', '').lower()
+                    if city.lower() in disp:
+                        filtered.append(r)
+                
+                if filtered:
+                    return filtered
+        
+        return []
     except Exception as e:
         logging.warning(f"Free-text Nominatim error for {address}, {city}: {e}")
         return []
@@ -512,28 +535,55 @@ def geocode_address(address, city, oblast, name_hint=None):
             save_cache(CACHE)
             return lat, lng, 'nominatim', display
 
-    # As a last resort, try a looser query (city-level)
-    # As a last resort, try looser queries / variants
+    # Try Overpass by hospital name if we still don't have good result
+    if name_hint:
+        try:
+            o_lat, o_lon, o_disp = geocode_with_overpass(name_hint, city, oblast)
+            if o_lat and o_lon:
+                # Validate it's not generic
+                dup_count = _count_cache_same_coord(o_lat, o_lon)
+                is_generic = _is_generic_display(o_disp)
+                city_match = _validate_result_city_match(o_disp, city)
+                
+                if not is_generic and dup_count < 3 and city_match:
+                    # Good Overpass result
+                    CACHE[cache_key] = {'lat': o_lat, 'lng': o_lon, 'provider': 'overpass_name', 'display_name': o_disp}
+                    save_cache(CACHE)
+                    return o_lat, o_lon, 'overpass_name', o_disp
+        except Exception as e:
+            logging.warning(f"Overpass by name error for {name_hint}: {e}")
+
+    # LAST RESORT: Try variants but REJECT pure city-level results
+    # Better to have NO coordinates than wrong city-center coordinates
     variants = []
     # remove street number
     import re as _re
-    variants.append(_re.sub(r"\s+[0-9A-Za-z\-/]+$", '', street).strip())
-    # try only name_hint + city
-    if name_hint:
-        variants.append(f"{name_hint}, {city}")
-    # try city-only
-    if city:
-        variants.append(city)
+    street_no_number = _re.sub(r"\s+[0-9A-Za-z\-/]+$", '', street).strip()
+    if street_no_number and street_no_number != street:
+        variants.append(street_no_number)
 
     for v in variants:
         if not v:
             continue
-        res = geocode_with_nominatim(v, city if v != city else '', oblast, name_hint=name_hint, limit=3)
+        res = geocode_with_nominatim(v, city, oblast, name_hint=name_hint, limit=5)
         if res and res[0] and res[1]:
             lat, lng, display = res
-            CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_city', 'display_name': display}
-            save_cache(CACHE)
-            return lat, lng, 'nominatim_city', display
+            
+            # STRICT: Only accept if street name is in the result
+            # Extract street base name (remove ул./бул. prefix)
+            street_base = v.replace('ул.', '').replace('бул.', '').replace('жк', '').strip()
+            street_parts = street_base.split()
+            # Get first significant word (skip single letters)
+            street_word = next((w for w in street_parts if len(w) > 2), '')
+            
+            if street_word and street_word.lower() in display.lower():
+                # Result contains the street name - acceptable
+                CACHE[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_partial', 'display_name': display}
+                save_cache(CACHE)
+                return lat, lng, 'nominatim_partial', display
+            else:
+                logging.info(f"Rejected city-level result for {cache_key}: street '{street_word}' not in '{display}'")
+
 
     logging.error(f"Failed to geocode: {street}, {city}, {oblast}")
     return None, None, None, None
