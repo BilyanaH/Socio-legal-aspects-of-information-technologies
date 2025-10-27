@@ -3604,3 +3604,311 @@
 2025-10-27 02:16:03,103 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
 2025-10-27 02:16:05,569 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in СВЕТИ ВЛАС: score=30 -> Лайф хоспитал
 2025-10-27 02:16:06,780 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
+2025-10-27 02:18:30,912 - INFO - Successfully read hospitals.csv with 218 rows
+2025-10-27 02:18:30,915 - INFO - Cache hit for ж.к. Лазур бл. 158||БУРГАС||Бургас
+2025-10-27 02:18:32,117 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:18:33,320 - INFO - Cache hit for ул. Д-р Златко Петков 1||БАЛЧИК||Добрич
+2025-10-27 02:18:36,306 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:18:37,229 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:18:37,231 - ERROR - Failed to geocode: к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 02:18:38,432 - INFO - Cache hit for бул. 25-ти септември 68||ДОБРИЧ||Добрич
+2025-10-27 02:18:39,634 - INFO - Cache hit for ул. Димитър Петков 3||ДОБРИЧ||Добрич
+2025-10-27 02:18:40,837 - INFO - Cache hit for 25-ти Септември 68||ДОБРИЧ||Добрич
+2025-10-27 02:18:42,039 - INFO - Cache hit for ул. Славянска 2А 2||РУСЕ||Русе
+2025-10-27 02:18:43,242 - INFO - Cache hit for бул. Демокрация 86||БУРГАС||Бургас
+2025-10-27 02:18:44,445 - INFO - Cache hit for ул. Стефан Стамболов 73||БУРГАС||Бургас
+2025-10-27 02:18:45,647 - INFO - Cache hit for ул. Доц.д-р Константин Кънчев||БУРГАС||Бургас
+2025-10-27 02:18:46,850 - INFO - Cache hit for ул. Бригадирска 1||ЕТРОПОЛЕ||София - област
+2025-10-27 02:18:48,052 - INFO - Cache hit for ул. Божко Божилов 1||БОТЕВГРАД||София - област
+2025-10-27 02:18:49,254 - INFO - Cache hit for ул. Георги Бенковски 24||ПИРДОП||София - област
+2025-10-27 02:18:50,457 - INFO - Cache hit for ул. Македония 49||САМОКОВ||София - област
+2025-10-27 02:18:51,660 - INFO - Cache hit for ул. Георги Бенковски 24||ПИРДОП||София - област
+2025-10-27 02:18:55,462 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:18:56,365 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:18:56,367 - ERROR - Failed to geocode: ул. Първа 32, С.ДОГАНОВО, София - област
+2025-10-27 02:18:57,569 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 02:18:58,772 - INFO - Cache hit for ул. Коста Хаджипакев 7||ПЛЕВЕН||Плевен
+2025-10-27 02:18:59,974 - INFO - Cache hit for парк Кайлъка местност Стражата||ПЛЕВЕН||Плевен
+2025-10-27 02:19:03,682 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 19', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:19:04,780 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:19:04,781 - ERROR - Failed to geocode: ул. Георги Бенковски 19, С.ТУЧЕНИЦА, Плевен
+2025-10-27 02:19:05,984 - INFO - Cache hit for ул. Радецки 30||ТРОЯН||Ловеч
+2025-10-27 02:19:07,186 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 02:19:08,388 - INFO - Cache hit for ул. Шипка 30||ИХТИМАН||София - област
+2025-10-27 02:19:09,590 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:19:10,793 - INFO - Cache hit for ул. Търновска 55||ОМУРТАГ||Търговище
+2025-10-27 02:19:11,995 - INFO - Cache hit for ул. Пирин 16||ТЪРГОВИЩЕ||Търговище
+2025-10-27 02:19:13,197 - INFO - Cache hit for кв. Запад||ПОПОВО||Търговище
+2025-10-27 02:19:14,400 - INFO - Cache hit for ул. Съйко Съев 27||ЛОВЕЧ||Ловеч
+2025-10-27 02:19:15,603 - INFO - Cache hit for ул. Староселска 4||СВОГЕ||София - област
+2025-10-27 02:19:16,805 - INFO - Cache hit for кв. Запад||ТЪРГОВИЩЕ||Търговище
+2025-10-27 02:19:18,007 - INFO - Cache hit for ул. Генерал Леонов 95 3||ВРАЦА||Враца
+2025-10-27 02:19:19,209 - INFO - Cache hit for ул. Хан Крум 5||ГОРНА ОРЯХОВИЦА||Велико Търново
+2025-10-27 02:19:20,413 - INFO - Cache hit for ул. Отец Пайсий 72||ГОРНА ОРЯХОВИЦА||Велико Търново
+2025-10-27 02:19:21,615 - INFO - Cache hit for ул. Александровска 87||БУРГАС||Бургас
+2025-10-27 02:19:22,817 - INFO - Cache hit for ж.к. Славейков ул. Георги Минков 174||БУРГАС||Бургас
+2025-10-27 02:19:24,019 - INFO - Cache hit for ул. Александровска 78||БУРГАС||Бургас
+2025-10-27 02:19:25,221 - INFO - Cache hit for ул. Транспортна 33||БУРГАС||Бургас
+2025-10-27 02:19:26,424 - INFO - Cache hit for ул. Иван Вазов 11||НЕСЕБЪР||Бургас
+2025-10-27 02:19:27,627 - INFO - Cache hit for ул. Средна Гора 1||ХАСКОВО||Хасково
+2025-10-27 02:19:28,830 - INFO - Cache hit for ул. Васил Левски 66||ХАРМАНЛИ||Хасково
+2025-10-27 02:19:30,032 - INFO - Cache hit for ул. Христо Ботев 29||ДИМИТРОВГРАД||Хасково
+2025-10-27 02:19:31,234 - INFO - Cache hit for бул. Стефан Стамболов 73 приземен етаж 1 и част от 2 от Терапевтичен корпус /блок 3/||БУРГАС||Бургас
+2025-10-27 02:19:32,436 - INFO - Cache hit for УПИ VII-842 кв.68 по плана на ПЗ Север||БУРГАС||Бургас
+2025-10-27 02:19:33,639 - INFO - Cache hit for ул. Здраве 29||БУРГАС||Бургас
+2025-10-27 02:19:34,842 - INFO - Cache hit for ул. Стефан Стамболов 2||ХАСКОВО||Хасково
+2025-10-27 02:19:36,046 - INFO - Cache hit for ул. Тодор Николов 10||СРЕДЕЦ||Бургас
+2025-10-27 02:19:37,249 - INFO - Cache hit for ж.к. Изгрев бул. Димитър Димов /Панорамен път/||БУРГАС||Бургас
+2025-10-27 02:19:38,451 - INFO - Cache hit for ул. Ивайло 11А||СВЕТИ ВЛАС||Бургас
+2025-10-27 02:19:42,512 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - СВИЛЕНГРАД ЕООД in СВИЛЕНГРАД: score=40 -> ДКЦ
+2025-10-27 02:19:44,523 - INFO - Using free-text Nominatim hibit for housenumber 49: 49, бул. Съединение, Източна индустриална зона, ж.к. Изгрев, Хасково, 6300, България
+2025-10-27 02:19:48,583 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ Д-Р МАДЖУРОВ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:19:52,505 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ КАРНОБАТ ЕООД in КАРНОБАТ: score=30 -> МБАЛ Карнобат
+2025-10-27 02:19:56,481 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ-АЙТОС ЕООД in АЙТОС: score=30 -> ЦСМП Айтос
+2025-10-27 02:19:59,589 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ-БУРГАСМЕД ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:20:03,499 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ-ПОМОРИЕ ЕООД in ПОМОРИЕ: score=30 -> св.Георги
+2025-10-27 02:20:07,481 - INFO - Overpass best for Многопрофилна болница за активно лечение - Балчик ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 02:20:09,436 - INFO - Using free-text Nominatim hibit for housenumber 5: 5, бул. Мизия, ж.к. Здравец, Ловеч, 5500, България
+2025-10-27 02:20:13,323 - INFO - Overpass best for НЕФРОЦЕНТЪР БУРГАС ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:20:16,795 - INFO - Overpass best for ОЧЕН МЕДИЦИНСКИ ЦЕНТЪР ХАСКОВО ООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 02:20:20,447 - INFO - Overpass best for ОЧЕН МЕДИЦИНСКИ ЦЕНТЪР ХАСКОВО ООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 02:20:29,334 - WARNING - Overpass status 504 for ОЧЕН МЕДИЦИНСКИ ЦЕНТЪР ХАСКОВО ООД in ХАСКОВО
+2025-10-27 02:20:29,828 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. П. Евтимий 1 нула-партер', 'city': 'ХАСКОВО', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 02:20:30,806 - INFO - Nominatim chosen candidate (score=25.394889387546076): Хасково, България
+2025-10-27 02:20:34,445 - INFO - Overpass best for ОЧЕН МЕДИЦИНСКИ ЦЕНТЪР ХАСКОВО ООД in ДИМИТРОВГРАД: score=30 -> hospital
+2025-10-27 02:20:37,956 - INFO - Overpass best for СБАЛББ-Троян ЕООД in ТРОЯН: score=40 -> Специализирана болница за активно лечение на белодробни болести - Троян
+2025-10-27 02:20:41,691 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Бул. Столетов 67', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:20:42,733 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:20:42,734 - ERROR - Failed to geocode: Бул. Столетов 67, СОФИЯ, София (столица)
+2025-10-27 02:20:46,549 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Сливница 309', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:20:47,464 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:20:47,467 - ERROR - Failed to geocode: бул. Сливница 309, СОФИЯ, София (столица)
+2025-10-27 02:20:50,805 - INFO - Overpass best for СБПЛР-Костенец ЕООД in КОСТЕНЕЦ: score=30 -> clinic
+2025-10-27 02:20:53,596 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'кв. Санаториума', 'city': 'С.ИСКРЕЦ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:20:54,572 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ИСКРЕЦ', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:20:54,574 - ERROR - Failed to geocode: кв. Санаториума, С.ИСКРЕЦ, София - област
+2025-10-27 02:20:57,982 - INFO - Overpass best for СБР-НК ЕАД филиал Момин проход in МОМИН ПРОХОД: score=30 -> clinic
+2025-10-27 02:21:00,783 - INFO - Overpass best for СБР-Тузлата ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 02:21:04,306 - INFO - Overpass best for СОБАЛ Д-Р ТАСКОВ ООД in ТЪРГОВИЩЕ: score=30 -> Многопрофилна болница за активно лечение Търговище АД
+2025-10-27 02:21:12,259 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ НА ПНЕВМО-ФТИЗИАТРИЧНИ ЗАБОЛЯВАНИЯ ХАСКОВО ЕООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 02:21:15,775 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ НА ПНЕВМО-ФТИЗИАТРИЧНИ ЗАБОЛЯВАНИЯ- БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:21:19,080 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ ПО ВЪТРЕШНИ БОЛЕСТИ - ТОПОЛОВГРАД ЕООД in ТОПОЛОВГРАД: score=30 -> hospital
+2025-10-27 02:21:20,304 - INFO - Cache hit for бул. Съединение 49||ХАСКОВО||Хасково
+2025-10-27 02:21:24,206 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Републиканска 38', 'city': 'ЛЮБИМЕЦ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 02:21:25,260 - INFO - Nominatim chosen candidate (score=24.76687168623597): Любимец, Хасково, България
+2025-10-27 02:21:28,743 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА РЕХАБИЛИТАЦИЯ НЕСЕБЪР АД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 02:21:30,649 - INFO - Using free-text Nominatim hibit for housenumber 20: 20, Kv. Cherno More 2, кв. Черно море, Несебър, Бургас, 8230, България
+2025-10-27 02:21:33,156 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА РЕХАБИЛИТАЦИЯ НЕСЕБЪР АД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 02:21:36,616 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА РЕХАБИЛИТАЦИЯ - НАЦИОНАЛЕН КОМПЛЕКС ЕАД СОФИЯ ФИЛИАЛ ПОМОРИЕ in ПОМОРИЕ: score=30 -> св.Георги
+2025-10-27 02:21:40,024 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА РЕХАБИЛИТАЦИЯ МАРИ ООД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 02:21:42,476 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА БОЛНИЦА ЗА РЕХАБИЛИТАЦИЯ СТАЙКОВ И ФАМИЛИЯ ЕООД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 02:21:46,263 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Любен Каравелов 8', 'city': 'С.МИНЕРАЛНИ БАНИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 02:21:47,282 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.МИНЕРАЛНИ БАНИ', 'county': 'Хасково', 'country': 'Bulgaria'}
+2025-10-27 02:21:47,285 - ERROR - Failed to geocode: ул. Любен Каравелов 8, С.МИНЕРАЛНИ БАНИ, Хасково
+2025-10-27 02:21:49,882 - INFO - Overpass best for СПЕЦИАЛИЗИРАНА ОЧНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - БУРГАС ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:21:53,716 - INFO - Overpass best for Специализирана болница за рехабилитация - Вита ЕООД клон Поморие in ПОМОРИЕ: score=30 -> св.Георги
+2025-10-27 02:21:57,628 - INFO - Overpass best for УНИВЕРСИТЕТСКА МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СВЕТА МАРИНА-ПЛЕВЕН ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:22:01,347 - INFO - Overpass best for УНИВЕРСИТЕТСКА МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СВЕТА МАРИНА-ПЛЕВЕН ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:22:05,102 - INFO - Overpass best for УНИВЕРСИТЕТСКА МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СВЕТА МАРИНА-ПЛЕВЕН ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:22:10,123 - INFO - Overpass best for УНИВЕРСИТЕТСКА МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СВЕТА МАРИНА-ПЛЕВЕН ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:22:11,349 - INFO - Cache hit for ул. Стефан Стамболов 73||БУРГАС||Бургас
+2025-10-27 02:22:14,849 - INFO - Overpass best for УНИВЕРСИТЕТСКА МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ ДЕВА МАРИЯ ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:22:19,439 - INFO - Overpass best for УНИВЕРСИТЕТСКА МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ ДЕВА МАРИЯ ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:22:23,234 - INFO - Overpass best for ЦЕНТЪР ЗА КОЖНО-ВЕНЕРИЧЕСКИ ЗАБОЛЯВАНИЯ-ВЕЛИКО ТЪРНОВО ЕООД in ВЕЛИКО ТЪРНОВО: score=40 -> Медицински Център "Дозис"
+2025-10-27 02:22:27,016 - INFO - Overpass best for МБАЛ Уро Медикс ЕООД in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:22:30,473 - INFO - Overpass best for SBR_NK_VN in ВЕЛИНГРАД: score=30 -> clinic
+2025-10-27 02:22:34,284 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. М. Ташев 2', 'city': 'СОФИЯ 11 рн КРАСНА ПОЛЯНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:35,318 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 11 рн КРАСНА ПОЛЯНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:35,320 - ERROR - Failed to geocode: ул. М. Ташев 2, СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица)
+2025-10-27 02:22:39,189 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Македония 38', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:40,003 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:40,005 - ERROR - Failed to geocode: бул. Македония 38, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 02:22:43,915 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Христо Ботев 120', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:44,753 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:44,756 - ERROR - Failed to geocode: бул. Христо Ботев 120, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 02:22:48,464 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Околовръстен път 127', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:49,448 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:49,450 - ERROR - Failed to geocode: ул. Околовръстен път 127, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 02:22:52,156 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Цариградско шосе 66А', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:53,225 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:53,228 - ERROR - Failed to geocode: бул. Цариградско шосе 66А, СОФИЯ 15 рн МЛАДОСТ, София (столица)
+2025-10-27 02:22:56,928 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Константин Помянов-1', 'city': 'СОФИЯ КВ.ДРАГАЛЕВЦИ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:57,948 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ КВ.ДРАГАЛЕВЦИ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:22:57,951 - ERROR - Failed to geocode: ул. Константин Помянов-1, СОФИЯ КВ.ДРАГАЛЕВЦИ, София (столица)
+2025-10-27 02:23:00,906 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Н. Й. Вапцаров 51Б', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:23:01,637 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:23:01,639 - ERROR - Failed to geocode: бул. Н. Й. Вапцаров 51Б, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 02:23:05,415 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Брегалница 47', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:23:06,316 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:23:06,319 - ERROR - Failed to geocode: ул. Брегалница 47, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица)
+2025-10-27 02:23:13,308 - INFO - Overpass best for АИСМП-МЦ за очно здраве ВИСТА ООД in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:23:16,272 - INFO - Overpass best for АМЦСМП ОМЦ Свети Николай Чудотворец ООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:23:19,859 - INFO - Overpass best for АМЦСМП ОМЦ Свети Николай Чудотворец ООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 02:23:23,654 - INFO - Overpass best for АМЦСМП Очна клиника Света Петка АД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:23:27,334 - INFO - Overpass best for АМЦСМП Очна клиника Света Петка АД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:23:29,888 - INFO - Overpass best for АМЦСМП Очна клиника Света Петка АД in ШУМЕН: score=40 -> МБАЛ-Шумен
+2025-10-27 02:23:33,317 - INFO - Overpass best for АМЦСМП Очна клиника д р Хубанов ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:23:34,545 - INFO - Cache hit for ул. Иван Драсов 12||ВАРНА||Варна
+2025-10-27 02:23:35,747 - INFO - Cache hit for ул. Проф. д-р Георги Георгиев 4||ВАРНА||Варна
+2025-10-27 02:23:37,700 - INFO - Using free-text Nominatim hibit for housenumber 40: 40, бул. Сливница, 4-ти микрорайон, Варна, Одесос, Варна, 9000, България
+2025-10-27 02:23:40,407 - INFO - Overpass best for АМЦСМП Света Петка Ай Кеър ЕООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:23:41,631 - INFO - Cache hit for ул. Иван Драсов 12||ВАРНА||Варна
+2025-10-27 02:23:42,834 - INFO - Cache hit for ул. Проф. д-р Георги Георгиев 4||ВАРНА||Варна
+2025-10-27 02:23:46,680 - INFO - Overpass best for АСИП-МЦ-ЕВРОХОСПИТАЛ ПЛОВДИВ ЕООД in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:23:49,389 - INFO - Overpass best for АСИП-МЦ-ЕВРОХОСПИТАЛ ПЛОВДИВ ЕООД in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:23:53,080 - INFO - Overpass best for АСМП-МЦ-ОКУЛУС-КУШИНОВА ЕООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:23:56,764 - INFO - Overpass best for АСМП-МЦ-ОКУЛУС-КУШИНОВА ЕООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:24:00,580 - INFO - Overpass best for Аджибадем Сити Клиник МЦ Варна ЕООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:24:04,992 - INFO - Overpass best for Аджибадем Сити Клиник МЦ Варна ЕООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:24:07,878 - INFO - Overpass best for БПЛР - филиал гр. Варна при МИ НА МВР in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:24:11,729 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Иван Вазов 5', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:12,799 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:12,803 - ERROR - Failed to geocode: ул. Иван Вазов 5, СОФИЯ 24 рн БАНКЯ, София (столица)
+2025-10-27 02:24:16,672 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Хисар 2', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:17,715 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 24 рн БАНКЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:17,717 - ERROR - Failed to geocode: ул. Хисар 2, СОФИЯ 24 рн БАНКЯ, София (столица)
+2025-10-27 02:24:23,104 - INFO - Overpass best for БПЛР МИ-МВР филиал Хисар in ХИСАРЯ: score=30 -> hospital
+2025-10-27 02:24:26,695 - INFO - Overpass best for ВМА- Болница за продължително лечение и рехабилитация- Хисаря in ХИСАРЯ: score=30 -> hospital
+2025-10-27 02:24:30,391 - INFO - Overpass best for ВМА-МБАЛ-ПЛЕВЕН in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:24:34,160 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Св. Георги Софийски 3', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:35,220 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:35,222 - ERROR - Failed to geocode: ул. Св. Георги Софийски 3, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 02:24:39,206 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Шейново 19', 'city': 'СОФИЯ 01 рн СРЕДЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:40,194 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 01 рн СРЕДЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:24:40,196 - ERROR - Failed to geocode: ул. Шейново 19, СОФИЯ 01 рн СРЕДЕЦ, София (столица)
+2025-10-27 02:24:45,297 - INFO - Overpass best for ДИАГНОСТИЧНО-КОНСУЛТАТИВЕН ЦЕНТЪР 1 ЯМБОЛ ЕООД in ЯМБОЛ: score=40 -> МЦ "Европейска здравна грижа"
+2025-10-27 02:24:49,346 - INFO - Overpass best for ДИАГНОСТИЧНО-КОНСУЛТАТИВЕН ЦЕНТЪР 1 ЯМБОЛ ЕООД in ЯМБОЛ: score=40 -> МЦ "Европейска здравна грижа"
+2025-10-27 02:24:53,697 - INFO - Overpass best for ДИАГНОСТИЧНО-КОНСУЛТАТИВЕН ЦЕНТЪР 1 ЯМБОЛ ЕООД in ЯМБОЛ: score=40 -> МЦ "Европейска здравна грижа"
+2025-10-27 02:24:53,806 - INFO - Successfully read hospitals.csv with 218 rows
+2025-10-27 02:24:53,826 - INFO - Cache hit for ж.к. Лазур бл. 158||БУРГАС||Бургас
+2025-10-27 02:24:55,028 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:24:56,229 - INFO - Cache hit for ул. Д-р Златко Петков 1||БАЛЧИК||Добрич
+2025-10-27 02:24:56,684 - INFO - Overpass best for ДИАЛИЗЕН ЦЕНТЪР ДИАЛИЗА ЕТРОПАЛ БЕТА ЕООД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 02:24:58,076 - INFO - Google no results for к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич, Bulgaria: REQUEST_DENIED
+2025-10-27 02:25:00,774 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:25:02,999 - INFO - Overpass best for ДИАЛИЗЕН ЦЕНТЪР ОМЕГА ЕООД in ВИДИН: score=40 -> МБАЛ "Света Петка"
+2025-10-27 02:25:07,485 - INFO - Overpass best for ДИАЛИЗЕН ЦЕНТЪР ВИРТУС МЕДИКАЛ ЕООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:25:11,553 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. България 104', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:12,601 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:12,603 - ERROR - Failed to geocode: бул. България 104, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 02:25:20,267 - INFO - Overpass best for ДКЦ ІІ-ПЛЕВЕН ЕООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:25:24,683 - INFO - Overpass best for ДКЦ ІІ-ПЛЕВЕН ЕООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:25:28,571 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Петко Ю. Тодоров 20', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:29,498 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:29,500 - ERROR - Failed to geocode: бул. Петко Ю. Тодоров 20, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 02:25:33,101 - INFO - Overpass best for ДКЦ СВЕТИ ПАНТАЛЕЙМОН ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:25:37,375 - INFO - Overpass best for ДКЦ СВЕТИ ПАНТАЛЕЙМОН ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:25:41,264 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Стефан Сарафов 7', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:42,188 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:42,190 - ERROR - Failed to geocode: ул. Стефан Сарафов 7, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 02:25:45,976 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Р-Н ВРЪБНИЦА, Ж.К. ОБЕЛЯ 2', 'city': 'СОФИЯ, КВ.ОБЕЛЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:46,906 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ, КВ.ОБЕЛЯ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:25:46,908 - ERROR - Failed to geocode: Р-Н ВРЪБНИЦА, Ж.К. ОБЕЛЯ 2, СОФИЯ, КВ.ОБЕЛЯ, София (столица)
+2025-10-27 02:25:51,328 - INFO - Overpass best for ДЦ - П in ПЕРНИК: score=40 -> Многопрофилна болница за долекуване, продължително лечение и рехабилитация - "Профилакториум"
+2025-10-27 02:25:55,109 - INFO - Overpass best for ДЦ ФЪРСТ ДИАЛИЗИС СЪРВИСИЗ БЪЛГАРИЯ ЕАД ГР. МОНТАНА in МОНТАНА: score=30 -> Център за Спешна Медицинска Помощ
+2025-10-27 02:25:57,965 - INFO - Overpass best for ДЦ Фърст Диализис Сървисиз България ЕАД Пловдив in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:26:01,956 - INFO - Overpass best for ДЦ ХИПОКРАТ ЕООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:26:05,750 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Голям Братан 8', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:26:06,767 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 10 рн ТРИАДИЦА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:26:06,770 - ERROR - Failed to geocode: ул. Голям Братан 8, СОФИЯ 10 рн ТРИАДИЦА, София (столица)
+2025-10-27 02:26:10,358 - INFO - Overpass best for Диализен център ВИА ДИАЛ ООД in СТАРА ЗАГОРА: score=40 -> Медицински център Света Анна Стара Загора
+2025-10-27 02:26:14,026 - INFO - Overpass best for Дъчмед Диализа България - Диализен център Шумен ЕООД in ШУМЕН: score=40 -> МБАЛ-Шумен
+2025-10-27 02:26:18,153 - INFO - Overpass best for Дъчмед Диализа България-ДЦ Пазарджик in ПАЗАРДЖИК: score=40 -> Ортодонт Д-р Стоянка Ангелова
+2025-10-27 02:26:20,917 - INFO - Overpass best for Дъчмед Диализа България-ДЦ ЕООД in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:26:22,145 - INFO - Cache hit for ул. Бузлуджа 1||ВЕЛИКО ТЪРНОВО||Велико Търново
+2025-10-27 02:26:23,983 - INFO - Using free-text Nominatim hibit for housenumber 68: Комплексен онкологичен център Враца, 68, бул. Втори юни, кв. Медковец, Враца, 3001, България
+2025-10-27 02:26:26,778 - INFO - Overpass best for КОЦ Пловдив ЕООД in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:26:35,026 - INFO - Overpass best for КОЦ Русе ЕООД in РУСЕ: score=40 -> ЦМИ.ТПЦ
+2025-10-27 02:26:38,621 - INFO - Overpass best for КОЦ Стара Загора ЕООД in СТАРА ЗАГОРА: score=40 -> Медицински център Света Анна Стара Загора
+2025-10-27 02:26:42,227 - INFO - Overpass best for КОЦ-ШУМЕН ЕООД in ШУМЕН: score=40 -> МБАЛ-Шумен
+2025-10-27 02:26:43,968 - INFO - Using free-text Nominatim hibit for housenumber 1: МБАЛ Доктор Никола Василиев, 1, пл. 17 януари, Кюстендил, 2500, България
+2025-10-27 02:26:47,540 - INFO - Overpass best for МБАЛ СВ. ИВАН РИЛСКИ ЕООД in ДУПНИЦА: score=40 -> Медицински център „Асклепий“
+2025-10-27 02:26:50,402 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Столетов 67 А', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:26:51,292 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 05 рн СЕРДИКА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:26:51,295 - ERROR - Failed to geocode: бул. Столетов 67 А, СОФИЯ 05 рн СЕРДИКА, София (столица)
+2025-10-27 02:26:53,990 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'местност Герена 020Г', 'city': 'С.БРАНИПОЛЕ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 02:26:55,007 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.БРАНИПОЛЕ', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 02:26:55,009 - ERROR - Failed to geocode: местност Герена 020Г, С.БРАНИПОЛЕ, Пловдив
+2025-10-27 02:27:00,607 - INFO - Overpass best for МБАЛ Професор доктор Георги Златарски ЕООД in БЕЛОГРАДЧИК: score=40 -> МБАЛ "Проф. Георги Златарски"
+2025-10-27 02:27:04,211 - INFO - Overpass best for МБАЛ Св.Св.Козма и Дамян ООД Пловдив in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:27:07,925 - INFO - Overpass best for МБАЛ - Варна ЕООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:27:11,357 - INFO - Overpass best for МБАЛ - Д-Р АСЕН ВЕЛЕВ ЕООД in РАЗЛОГ: score=30 -> МБАЛ
+2025-10-27 02:27:13,893 - INFO - Overpass best for МБАЛ - Девня ЕООД in ДЕВНЯ: score=30 -> hospital
+2025-10-27 02:27:19,844 - INFO - Overpass best for МБАЛ - Първомай ЕООД in ПЪРВОМАЙ: score=30 -> Здравна служба
+2025-10-27 02:27:21,075 - INFO - Cache hit for ул. Васил Априлов 63||ШУМЕН||Шумен
+2025-10-27 02:27:24,556 - INFO - Overpass best for МБАЛ - ШУМЕН АД in НОВИ ПАЗАР: score=30 -> ДКЦ Нови Пазар
+2025-10-27 02:27:28,006 - INFO - Overpass best for МБАЛ АРДИНО ЕООД in АРДИНО: score=30 -> МБАЛ
+2025-10-27 02:27:31,418 - INFO - Overpass best for МБАЛ Асеновград ЕООД in АСЕНОВГРАД: score=30 -> МБАЛ Асеновград
+2025-10-27 02:27:35,468 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'бул. Пенчо Славейков 2', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:27:36,438 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:27:36,441 - ERROR - Failed to geocode: бул. Пенчо Славейков 2, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 02:27:44,818 - INFO - Overpass best for МБАЛ Благоевград АД in БЛАГОЕВГРАД: score=40 -> МБАЛ-Благоевград
+2025-10-27 02:27:48,857 - INFO - Overpass best for МБАЛ Бяла Слатина ЕООД in БЯЛА СЛАТИНА: score=30 -> МБАЛ Бяла Слатина
+2025-10-27 02:27:51,127 - INFO - Using free-text Nominatim hibit for housenumber 3: бл. 3, бул. Христо Смирненски, Северна промишлена зона, ж.к. Победа, Варна, Младост, Варна, 9025, България
+2025-10-27 02:27:55,531 - INFO - Overpass best for МБАЛ ВЕЛИКИ ПРЕСЛАВ ЕООД in ВЕЛИКИ ПРЕСЛАВ: score=30 -> МБАЛ
+2025-10-27 02:27:59,539 - INFO - Overpass best for МБАЛ ВЕЛИМЕД ЕООД in ВЕЛИНГРАД: score=30 -> clinic
+2025-10-27 02:28:03,834 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Драговица 9', 'city': 'СОФИЯ 07 рн СЛАТИНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:28:04,835 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 07 рн СЛАТИНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:28:04,837 - ERROR - Failed to geocode: ул. Драговица 9, СОФИЯ 07 рн СЛАТИНА, София (столица)
+2025-10-27 02:28:09,021 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Филип Кутев 10', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:28:10,017 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:28:10,020 - ERROR - Failed to geocode: ул. Филип Кутев 10, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 02:28:12,080 - INFO - Using free-text Nominatim hibit for housenumber 2: МБАЛ "Д-р Братан Шукеров", 2, бул. България, ж.к. Нов център, Смолян, 4700, България
+2025-10-27 02:28:16,309 - INFO - Overpass best for МБАЛ Д-Р СТАМЕН ИЛИЕВ АД in МОНТАНА: score=30 -> Център за Спешна Медицинска Помощ
+2025-10-27 02:28:20,101 - INFO - Overpass best for МБАЛ Д-Р ХРИСТО СТАМБОЛСКИ ЕООД in КАЗАНЛЪК: score=40 -> Д-р Тотка Чукалова
+2025-10-27 02:28:23,831 - INFO - Overpass best for МБАЛ Д-р Иван Селимински - Сливен АД in КОТЕЛ: score=30 -> МБАЛ "Проф.д-р Цончев"
+2025-10-27 02:28:27,544 - INFO - Overpass best for МБАЛ Д-р Иван Селимински - Сливен АД in СЛИВЕН: score=40 -> Д-р. Жечкова
+2025-10-27 02:28:35,932 - INFO - Overpass best for МБАЛ Д-р Киро Попов - Карлово ЕООД in КАРЛОВО: score=30 -> Вита Мед
+2025-10-27 02:28:39,167 - INFO - Overpass best for МБАЛ Д-р Стойчо Христов ЕООД Севлиево in СЕВЛИЕВО: score=40 -> Акта Медика
+2025-10-27 02:28:42,973 - INFO - Overpass best for МБАЛ Д-р Тота Венкова АД Габрово in ГАБРОВО: score=40 -> ДКЦ І – Габрово ЕООД - II база
+2025-10-27 02:28:47,086 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Явор 3', 'city': 'ДЕВИН', 'county': 'Смолян', 'country': 'Bulgaria'}
+2025-10-27 02:28:48,158 - INFO - Nominatim chosen candidate (score=24.787222793054895): Девин, Смолян, 4800, България
+2025-10-27 02:28:51,907 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Овча купел 2, ул. Фридрих Грюнангер 2', 'city': 'СОФИЯ 18 рн ОВЧА КУПЕЛ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:28:52,906 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 18 рн ОВЧА КУПЕЛ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:28:52,908 - ERROR - Failed to geocode: ж.к. Овча купел 2, ул. Фридрих Грюнангер 2, СОФИЯ 18 рн ОВЧА КУПЕЛ, София (столица)
+2025-10-27 02:28:54,649 - INFO - Using free-text Nominatim hibit for housenumber 53: МБАЛ „ Д-р Атанас Дафовски", 53, бул. Беломорски, Център, Кърджали, 6600, България
+2025-10-27 02:28:58,100 - INFO - Overpass best for МБАЛ ДР СЕРГЕЙ РОСТОВЦЕВ ЕООД in МОМЧИЛГРАД: score=40 -> МБАЛ "Д-р Сергей Ростовцев"
+2025-10-27 02:29:01,691 - INFO - Overpass best for МБАЛ ДУЛОВО ЕООД in ДУЛОВО: score=40 -> "МБАЛ-Дулово" ЕООД (Болница)
+2025-10-27 02:29:04,402 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'кв. Виница, ул. Найден Райков 2А', 'city': 'С.ВИНИЦА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 02:29:05,398 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ВИНИЦА', 'county': 'Варна', 'country': 'Bulgaria'}
+2025-10-27 02:29:05,400 - ERROR - Failed to geocode: кв. Виница, ул. Найден Райков 2А, С.ВИНИЦА, Варна
+2025-10-27 02:29:08,796 - INFO - Overpass best for МБАЛ Живот плюс ЕООД in КРУМОВГРАД: score=30 -> МБАЛ "Живот плюс"
+2025-10-27 02:29:12,577 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Блага вест 3', 'city': 'СОФИЯ 11 рн КРАСНА ПОЛЯНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:13,656 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 11 рн КРАСНА ПОЛЯНА', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:13,658 - ERROR - Failed to geocode: ул. Блага вест 3, СОФИЯ 11 рн КРАСНА ПОЛЯНА, София (столица)
+2025-10-27 02:29:17,433 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'гр. София, ж.к. Красно село, ул. Маестро Кънев 4', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:18,393 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 02 рн КРАСНО СЕЛО', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:18,395 - ERROR - Failed to geocode: гр. София, ж.к. Красно село, ул. Маестро Кънев 4, СОФИЯ 02 рн КРАСНО СЕЛО, София (столица)
+2025-10-27 02:29:22,071 - INFO - Overpass best for МБАЛ Иван Скендеров ЕООД in ГОЦЕ ДЕЛЧЕВ: score=30 -> hospital
+2025-10-27 02:29:25,630 - INFO - Overpass best for МБАЛ Кърджали ООД in КЪРДЖАЛИ: score=40 -> Спешна помощ
+2025-10-27 02:29:29,410 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'УЛ. КОЗЯК 1', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:30,450 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 09 рн ЛОЗЕНЕЦ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:30,453 - ERROR - Failed to geocode: УЛ. КОЗЯК 1, СОФИЯ 09 рн ЛОЗЕНЕЦ, София (столица)
+2025-10-27 02:29:34,230 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ж.к. Люлин-6 бул. Д-р Петър Дертлиев 81и 90, ул. Ал. Пушкин 71', 'city': 'СОФИЯ 19 рн ЛЮЛИН', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:35,128 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 19 рн ЛЮЛИН', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:29:35,131 - ERROR - Failed to geocode: ж.к. Люлин-6 бул. Д-р Петър Дертлиев 81и 90, ул. Ал. Пушкин 71, СОФИЯ 19 рн ЛЮЛИН, София (столица)
+2025-10-27 02:29:38,638 - INFO - Overpass best for МБАЛ Луковит ЕООД in ЛУКОВИТ: score=30 -> МБАЛ Луковит
+2025-10-27 02:29:41,395 - INFO - Overpass best for МБАЛ МК Свети Иван Рилски ЕООД Пловдив in ПЛОВДИВ: score=40 -> НАМЛИЕВ - ДЕНТАЛ ЕООД
+2025-10-27 02:29:45,109 - INFO - Overpass best for МБАЛ Майчин дом-Варна ЕООД in ВАРНА: score=40 -> Хирургическа Болница Проф. Темелков
+2025-10-27 02:29:48,976 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Филип Македонски 37', 'city': 'ПЛОВДИВ 1 р-н ЦЕНТРАЛЕН', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 02:29:49,821 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'ПЛОВДИВ 1 р-н ЦЕНТРАЛЕН', 'county': 'Пловдив', 'country': 'Bulgaria'}
+2025-10-27 02:29:49,822 - ERROR - Failed to geocode: ул. Филип Македонски 37, ПЛОВДИВ 1 р-н ЦЕНТРАЛЕН, Пловдив
+2025-10-27 02:29:53,475 - INFO - Overpass best for МБАЛ Медицински комплекс Свети Иван Рилски ЕООД клон гр. Стара Загора in СТАРА ЗАГОРА: score=40 -> Медицински център Света Анна Стара Загора
+2025-10-27 02:29:56,911 - INFO - Overpass best for МБАЛ Мездра ЕООД in МЕЗДРА: score=30 -> МБАЛ Мездра
+2025-10-27 02:30:00,658 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'гр.София район Илинден ул. Коньовица 65 и гр. Банкя, ул. Шейново 4', 'city': 'СОФИЯ 12 рн ИЛИНДЕН', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:30:01,673 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 12 рн ИЛИНДЕН', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:30:01,675 - ERROR - Failed to geocode: гр.София район Илинден ул. Коньовица 65 и гр. Банкя, ул. Шейново 4, СОФИЯ 12 рн ИЛИНДЕН, София (столица)
+2025-10-27 02:30:05,474 - INFO - Overpass best for МБАЛ Ниамед ООД гр. Стара Загора in СТАРА ЗАГОРА: score=40 -> Медицински център Света Анна Стара Загора
+2025-10-27 02:30:09,357 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'гр.София 1303, р-н Възраждане, ул. Брегалница 47', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:30:10,188 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 03 рн ВЪЗРАЖДАНЕ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:30:10,190 - ERROR - Failed to geocode: гр.София 1303, р-н Възраждане, ул. Брегалница 47, СОФИЯ 03 рн ВЪЗРАЖДАНЕ, София (столица)
+2025-10-27 02:30:13,859 - INFO - Overpass best for МБАЛ ПРОФ ДИМИТЪР РАНЕВ ООД in ПЕЩЕРА: score=40 -> Dr Georgi Nichev
+2025-10-27 02:30:19,080 - INFO - Overpass best for МБАЛ Павликени ЕООД in ПАВЛИКЕНИ: score=30 -> hospital
+2025-10-27 02:30:26,400 - INFO - Overpass best for МБАЛ Проф. Д-р Асен Шопов ЕООД in ЗЛАТОГРАД: score=30 -> МБАЛ проф. д-р. Асен Шопов
+2025-10-27 02:30:31,644 - INFO - Overpass best for МБАЛ Проф. Д-р Константин Чилов ЕООД in МАДАН: score=30 -> МБАЛ "Проф. Константин Чилов"
+2025-10-27 02:30:35,577 - INFO - Overpass best for МБАЛ Пулс АД in БЛАГОЕВГРАД: score=40 -> МБАЛ-Благоевград
+2025-10-27 02:30:40,411 - INFO - Overpass best for МБАЛ Р.Ангелова АД in ПЕРНИК: score=40 -> Многопрофилна болница за долекуване, продължително лечение и рехабилитация - "Профилакториум"
+2025-10-27 02:30:44,268 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'Ж.К. МЛАДОСТ 1 УЛ. ДИМИТЪР МОЛЛОВ 1', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:30:45,260 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'СОФИЯ 15 рн МЛАДОСТ', 'county': 'София (столица)', 'country': 'Bulgaria'}
+2025-10-27 02:30:45,262 - ERROR - Failed to geocode: Ж.К. МЛАДОСТ 1 УЛ. ДИМИТЪР МОЛЛОВ 1, СОФИЯ 15 рн МЛАДОСТ, София (столица)
+2025-10-27 02:30:46,471 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
