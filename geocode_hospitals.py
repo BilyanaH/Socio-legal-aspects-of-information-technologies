@@ -296,19 +296,15 @@ def geocode_address(address, city, oblast, name_hint=None):
         val = cache[cache_key]
         return val.get('lat'), val.get('lng'), val.get('provider'), val.get('display_name')
 
-    # Mode: force Nominatim only if environment variable set
-    force_nominatim = os.environ.get('FORCE_NOMINATIM', '').lower() in ('1', 'true', 'yes')
-
-    # Try Google first if api key present and not forcing Nominatim-only
-    if not force_nominatim:
-        gkey = os.environ.get('GOOGLE_API_KEY')
-        if gkey:
-            res = geocode_with_google(street, city, oblast, name_hint=name_hint, api_key=gkey)
-            if res and res[0] and res[1]:
-                lat, lng, display = res
-                cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google', 'display_name': display}
-                save_cache(cache)
-                return lat, lng, 'google', display
+    # Try Google first if api key present
+    gkey = os.environ.get('GOOGLE_API_KEY')
+    if gkey:
+        res = geocode_with_google(street, city, oblast, name_hint=name_hint, api_key=gkey)
+        if res and res[0] and res[1]:
+            lat, lng, display = res
+            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'google', 'display_name': display}
+            save_cache(cache)
+            return lat, lng, 'google', display
     # If the street contains a housenumber, try free-text Nominatim first and prefer exact housenumber matches
     import re
     m = re.search(r"(.*)\b(?:№|No\.?|n\.|#)?\s*([0-9]+[A-Za-z0-9/-]*)\s*$", street)
@@ -322,30 +318,28 @@ def geocode_address(address, city, oblast, name_hint=None):
                     lat = float(cand.get('lat'))
                     lng = float(cand.get('lon'))
                     display = disp
-                    logging.info(f"Using free-text Nominatim candidate for housenumber {housenumber}: {display}")
+                    logging.info(f"Using free-text Nominatim hibit for housenumber {housenumber}: {display}")
                     cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'nominatim_free', 'display_name': display}
                     save_cache(cache)
                     return lat, lng, 'nominatim_free', display
                 except Exception:
                     pass
 
-    # If not forcing Nominatim-only, try Overpass (OSM) by name
-    if not force_nominatim:
-        try:
-            res = geocode_with_overpass(name_hint or street, city, oblast)
-            if res and res[0] and res[1]:
-                lat, lng, info = res
-            else:
-                lat, lng, info = None, None, None
-        except NameError:
+    # Fallback to Overpass (OSM) search by name inside city bbox for exact place matches (hospitals/clinics)
+    try:
+        res = geocode_with_overpass(name_hint or street, city, oblast)
+        if res and res[0] and res[1]:
+            lat, lng, info = res
+        else:
             lat, lng, info = None, None, None
+    except NameError:
+        lat, lng, info = None, None, None
 
-        if lat and lng:
-            cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'overpass', 'display_name': info}
-            save_cache(cache)
-            return lat, lng, 'overpass', info
+    if lat and lng:
+        cache[cache_key] = {'lat': lat, 'lng': lng, 'provider': 'overpass', 'display_name': info}
+        save_cache(cache)
+        return lat, lng, 'overpass', info
 
-    # Finally, use structured Nominatim
     res = geocode_with_nominatim(street, city, oblast, name_hint=name_hint)
     if res and res[0] and res[1]:
         lat, lng, display = res

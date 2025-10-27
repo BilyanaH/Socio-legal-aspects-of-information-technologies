@@ -3407,3 +3407,200 @@
 2025-10-27 01:57:50,195 - ERROR - Failed to geocode: кв. Санаториума, С.ИСКРЕЦ, София - област
 2025-10-27 01:57:50,197 - INFO - Cache hit for ул. Христо Ботев 6||МОМИН ПРОХОД||София - област
 2025-10-27 01:57:50,200 - INFO - Cache hit for местност Тузлата||БАЛЧИК||Добрич
+2025-10-27 02:03:47,325 - INFO - Successfully read hospitals.csv with 468 rows
+2025-10-27 02:03:47,327 - WARNING - Could not read cache geocode_cache.json: Expecting value: line 1 column 1 (char 0)
+2025-10-27 02:03:48,297 - INFO - Using free-text Nominatim hibit for housenumber 158: бл. 158, ж.к. Лазур, Бургас, 8001, България
+2025-10-27 02:03:52,006 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 02:03:55,666 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 02:03:58,431 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:03:59,388 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:03:59,390 - ERROR - Failed to geocode: к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 02:04:01,169 - INFO - Using free-text Nominatim hibit for housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 02:04:05,422 - INFO - Overpass best for ДКЦ-I-Добрич ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 02:04:09,811 - INFO - Overpass best for Диализен Център Диалхелп ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 02:04:14,887 - INFO - Overpass best for Диализен център Руриком ООД in РУСЕ: score=40 -> ЦМИ.ТПЦ
+2025-10-27 02:04:18,705 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:04:22,390 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:04:24,883 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:04:28,410 - INFO - Overpass best for МБАЛ Проф. д-р Александър Герчев Етрополе ЕООД in ЕТРОПОЛЕ: score=30 -> МБАЛ „Проф.д-р Ал.Герчев” Етрополе
+2025-10-27 02:04:31,811 - INFO - Overpass best for МБАЛ - Ботевград ЕООД in БОТЕВГРАД: score=40 -> МБАЛ
+2025-10-27 02:04:34,255 - INFO - Successfully read hospitals.csv with 468 rows
+2025-10-27 02:04:34,258 - INFO - Cache hit for ж.к. Лазур бл. 158||БУРГАС||Бургас
+2025-10-27 02:04:35,460 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:04:36,663 - INFO - Cache hit for ул. Д-р Златко Петков 1||БАЛЧИК||Добрич
+2025-10-27 02:04:39,412 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:04:40,395 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:04:40,397 - ERROR - Failed to geocode: к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 02:04:41,599 - INFO - Cache hit for бул. 25-ти септември 68||ДОБРИЧ||Добрич
+2025-10-27 02:04:42,801 - INFO - Cache hit for ул. Димитър Петков 3||ДОБРИЧ||Добрич
+2025-10-27 02:04:44,003 - INFO - Cache hit for 25-ти Септември 68||ДОБРИЧ||Добрич
+2025-10-27 02:04:45,205 - INFO - Cache hit for ул. Славянска 2А 2||РУСЕ||Русе
+2025-10-27 02:04:46,407 - INFO - Cache hit for бул. Демокрация 86||БУРГАС||Бургас
+2025-10-27 02:04:47,609 - INFO - Cache hit for ул. Стефан Стамболов 73||БУРГАС||Бургас
+2025-10-27 02:04:48,812 - INFO - Cache hit for ул. Доц.д-р Константин Кънчев||БУРГАС||Бургас
+2025-10-27 02:04:50,014 - INFO - Cache hit for ул. Бригадирска 1||ЕТРОПОЛЕ||София - област
+2025-10-27 02:04:51,215 - INFO - Cache hit for ул. Божко Божилов 1||БОТЕВГРАД||София - област
+2025-10-27 02:05:01,532 - INFO - Overpass best for МБАЛ - Пирдоп АД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 02:05:05,131 - INFO - Overpass best for МБАЛ - Самоков ЕООД in САМОКОВ: score=30 -> clinic
+2025-10-27 02:05:06,336 - INFO - Cache hit for ул. Георги Бенковски 24||ПИРДОП||София - област
+2025-10-27 02:05:10,094 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:05:11,092 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:05:11,094 - ERROR - Failed to geocode: ул. Първа 32, С.ДОГАНОВО, София - област
+2025-10-27 02:05:12,883 - INFO - Using free-text Nominatim hibit for housenumber 15: МБАЛ Елин Пелин, 15, улица Здравец, Елин Пелин, Софийска, 2100, България
+2025-10-27 02:05:27,392 - INFO - Successfully read hospitals.csv with 468 rows
+2025-10-27 02:05:27,394 - WARNING - Could not read cache geocode_cache.json: Expecting value: line 1 column 1 (char 0)
+2025-10-27 02:05:28,091 - INFO - Using free-text Nominatim hibit for housenumber 158: бл. 158, ж.к. Лазур, Бургас, 8001, България
+2025-10-27 02:05:31,615 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 02:05:35,221 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 02:05:38,005 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:05:38,963 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:05:38,965 - ERROR - Failed to geocode: к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 02:05:40,707 - INFO - Using free-text Nominatim hibit for housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 02:05:44,236 - INFO - Overpass best for ДКЦ-I-Добрич ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 02:05:53,730 - INFO - Overpass best for Диализен Център Диалхелп ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 02:05:57,453 - INFO - Overpass best for Диализен център Руриком ООД in РУСЕ: score=40 -> ЦМИ.ТПЦ
+2025-10-27 02:06:01,050 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:06:04,639 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:06:07,148 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:06:10,648 - INFO - Overpass best for МБАЛ Проф. д-р Александър Герчев Етрополе ЕООД in ЕТРОПОЛЕ: score=30 -> МБАЛ „Проф.д-р Ал.Герчев” Етрополе
+2025-10-27 02:06:15,541 - INFO - Overpass best for МБАЛ - Ботевград ЕООД in БОТЕВГРАД: score=40 -> МБАЛ
+2025-10-27 02:06:19,242 - INFO - Overpass best for МБАЛ - Пирдоп АД in ПИРДОП: score=30 -> МБАЛ Пирдоп
+2025-10-27 02:06:23,015 - INFO - Overpass best for МБАЛ - Самоков ЕООД in САМОКОВ: score=30 -> clinic
+2025-10-27 02:06:24,219 - INFO - Cache hit for ул. Георги Бенковски 24||ПИРДОП||София - област
+2025-10-27 02:06:28,032 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:06:28,970 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:06:28,972 - ERROR - Failed to geocode: ул. Първа 32, С.ДОГАНОВО, София - област
+2025-10-27 02:06:30,787 - INFO - Using free-text Nominatim hibit for housenumber 15: МБАЛ Елин Пелин, 15, улица Здравец, Елин Пелин, Софийска, 2100, България
+2025-10-27 02:06:34,666 - INFO - Overpass best for МБАЛ Авис Медика ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:06:37,414 - INFO - Overpass best for МБАЛ Авис Медика ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:06:41,127 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 19', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:06:42,111 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:06:42,113 - ERROR - Failed to geocode: ул. Георги Бенковски 19, С.ТУЧЕНИЦА, Плевен
+2025-10-27 02:06:45,647 - INFO - Overpass best for МБАЛ-Д-р Георги Стоев-Шварц-Троян-ЕООД in ТРОЯН: score=40 -> Специализирана болница за активно лечение на белодробни болести - Троян
+2025-10-27 02:06:46,850 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 02:06:51,255 - INFO - Overpass best for МБАЛ-Ихтиман-Д-р Станю Янков ЕООД in ИХТИМАН: score=30 -> МБАЛ Ихтиман
+2025-10-27 02:06:52,460 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:06:56,016 - INFO - Overpass best for МБАЛ-ОМУРТАГ ЕАД in ОМУРТАГ: score=30 -> МБАЛ Омуртаг
+2025-10-27 02:07:00,190 - INFO - Overpass best for МБАЛ-ПОПОВО ЕООД in ТЪРГОВИЩЕ: score=30 -> Многопрофилна болница за активно лечение Търговище АД
+2025-10-27 02:07:02,697 - INFO - Overpass best for МБАЛ-ПОПОВО ЕООД in ПОПОВО: score=30 -> МБАЛ Попово
+2025-10-27 02:07:06,788 - INFO - Overpass best for МБАЛ-Проф. Д-р Параскев Стоянов-АД Ловеч in ЛОВЕЧ: score=40 -> Многопрофилна болница за активно лечение Проф. Д-р. Параскев Стоянов - Ловеч
+2025-10-27 02:07:10,316 - INFO - Overpass best for МБАЛ-Своге ЕООД in СВОГЕ: score=30 -> Здравен център "ОЛИМП"
+2025-10-27 02:07:12,880 - INFO - Overpass best for МБАЛ-ТЪРГОВИЩЕ АД in ТЪРГОВИЩЕ: score=30 -> Многопрофилна болница за активно лечение Търговище АД
+2025-10-27 02:07:16,779 - INFO - Overpass best for МЕДИКО - ДЕНТАЛЕН ЦЕНТЪР ТРИО ЕООД in ВРАЦА: score=40 -> Първа частна МБАЛ - Враца
+2025-10-27 02:07:20,476 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД in ГОРНА ОРЯХОВИЦА: score=30 -> МБАЛ Св. Иван Рилски
+2025-10-27 02:07:24,543 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД in ГОРНА ОРЯХОВИЦА: score=30 -> МБАЛ Св. Иван Рилски
+2025-10-27 02:07:29,320 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:07:32,821 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:07:36,301 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:07:39,731 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:07:43,172 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 02:07:46,681 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР УРОЛОДЖИЯ ЕООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 02:07:54,860 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ХАРМАНЛИ ЕООД in ХАРМАНЛИ: score=30 -> МБАЛ-Харманли
+2025-10-27 02:08:02,368 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СВЕТА ЕКАТЕРИНА - ДИМИТРОВГРАД ЕООД in ДИМИТРОВГРАД: score=30 -> hospital
+2025-10-27 02:08:05,829 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:08:08,437 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:08:11,863 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:08:15,957 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ ХИГИЯ ООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 02:08:19,551 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ГР. СРЕДЕЦ in СРЕДЕЦ: score=30 -> hospital
+2025-10-27 02:08:21,973 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:08:24,783 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in СВЕТИ ВЛАС: score=30 -> Лайф хоспитал
+2025-10-27 02:08:28,252 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - СВИЛЕНГРАД ЕООД in СВИЛЕНГРАД: score=40 -> ДКЦ
+2025-10-27 02:08:30,045 - INFO - Using free-text Nominatim hibit for housenumber 49: 49, бул. Съединение, Източна индустриална зона, ж.к. Изгрев, Хасково, 6300, България
+2025-10-27 02:11:57,679 - INFO - Successfully read hospitals.csv with 468 rows
+2025-10-27 02:11:57,681 - WARNING - Could not read cache geocode_cache.json: Expecting value: line 1 column 1 (char 0)
+2025-10-27 02:11:58,607 - INFO - Using free-text Nominatim hibit for housenumber 158: бл. 158, ж.к. Лазур, Бургас, 8001, България
+2025-10-27 02:12:02,954 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in КАВАРНА: score=40 -> МБАЛ Каварна
+2025-10-27 02:12:06,512 - INFO - Overpass best for ДКЦ-2-Добрич ЕООД in БАЛЧИК: score=30 -> СБЗ "Тузлата"
+2025-10-27 02:12:09,238 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:12:10,180 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:12:10,182 - ERROR - Failed to geocode: к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 02:12:11,957 - INFO - Using free-text Nominatim hibit for housenumber 68: 2 ДКЦ, 68, бул. 25-ти Септември, ж.к. Север 1, Добрич, 9300, България
+2025-10-27 02:12:15,779 - INFO - Overpass best for ДКЦ-I-Добрич ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 02:12:20,187 - INFO - Overpass best for Диализен Център Диалхелп ЕООД in ДОБРИЧ: score=40 -> hospital
+2025-10-27 02:12:28,696 - WARNING - Overpass status 504 for Диализен център Руриком ООД in РУСЕ
+2025-10-27 02:12:29,318 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Славянска 2А 2', 'city': 'РУСЕ', 'county': 'Русе', 'country': 'Bulgaria'}
+2025-10-27 02:12:30,289 - INFO - Nominatim chosen candidate (score=25.980667737699658): Русе, България
+2025-10-27 02:12:34,316 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:12:38,093 - INFO - Overpass best for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:12:45,489 - WARNING - Overpass status 504 for КОМПЛЕКСЕН ОНКОЛОГИЧЕН ЦЕНТЪР БУРГАС ЕООД in БУРГАС
+2025-10-27 02:12:45,999 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Доц.д-р Константин Кънчев', 'city': 'БУРГАС', 'county': 'Бургас', 'country': 'Bulgaria'}
+2025-10-27 02:12:46,948 - INFO - Nominatim chosen candidate (score=26.01960904776607): Бургас, България
+2025-10-27 02:12:50,809 - INFO - Overpass best for МБАЛ Проф. д-р Александър Герчев Етрополе ЕООД in ЕТРОПОЛЕ: score=30 -> МБАЛ „Проф.д-р Ал.Герчев” Етрополе
+2025-10-27 02:12:59,915 - WARNING - Overpass status 429 for МБАЛ - Ботевград ЕООД in БОТЕВГРАД
+2025-10-27 02:13:00,379 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Божко Божилов 1', 'city': 'БОТЕВГРАД', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:13:01,377 - INFO - Nominatim chosen candidate (score=20.1312912029114): Ботевград, Софийска, 2140, България
+2025-10-27 02:13:11,443 - WARNING - Overpass status 429 for МБАЛ - Пирдоп АД in ПИРДОП
+2025-10-27 02:13:11,941 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 24', 'city': 'ПИРДОП', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:13:13,034 - INFO - Nominatim chosen candidate (score=19.840087414497724): Пирдоп, Софийска, 2070, България
+2025-10-27 02:13:17,995 - INFO - Overpass best for МБАЛ - Самоков ЕООД in САМОКОВ: score=30 -> clinic
+2025-10-27 02:13:19,220 - INFO - Cache hit for ул. Георги Бенковски 24||ПИРДОП||София - област
+2025-10-27 02:13:23,070 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:13:24,081 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:13:24,082 - ERROR - Failed to geocode: ул. Първа 32, С.ДОГАНОВО, София - област
+2025-10-27 02:13:25,930 - INFO - Using free-text Nominatim hibit for housenumber 15: МБАЛ Елин Пелин, 15, улица Здравец, Елин Пелин, Софийска, 2100, България
+2025-10-27 02:13:30,577 - INFO - Overpass best for МБАЛ Авис Медика ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:13:36,850 - INFO - Overpass best for МБАЛ Авис Медика ООД in ПЛЕВЕН: score=40 -> Психолог Даниела Кръстева
+2025-10-27 02:13:40,569 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 19', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:13:41,595 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:13:41,597 - ERROR - Failed to geocode: ул. Георги Бенковски 19, С.ТУЧЕНИЦА, Плевен
+2025-10-27 02:13:45,287 - INFO - Overpass best for МБАЛ-Д-р Георги Стоев-Шварц-Троян-ЕООД in ТРОЯН: score=40 -> Специализирана болница за активно лечение на белодробни болести - Троян
+2025-10-27 02:13:46,511 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 02:13:50,091 - INFO - Overpass best for МБАЛ-Ихтиман-Д-р Станю Янков ЕООД in ИХТИМАН: score=30 -> МБАЛ Ихтиман
+2025-10-27 02:13:51,315 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:13:53,937 - INFO - Successfully read hospitals.csv with 49 rows
+2025-10-27 02:13:53,940 - INFO - Cache hit for ж.к. Лазур бл. 158||БУРГАС||Бургас
+2025-10-27 02:13:55,142 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:13:56,344 - INFO - Cache hit for ул. Д-р Златко Петков 1||БАЛЧИК||Добрич
+2025-10-27 02:13:59,199 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'к.к. Албена МЦ Медика-Албена', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:14:00,228 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ОБРОЧИЩЕ К.К.АЛБЕНА', 'county': 'Добрич', 'country': 'Bulgaria'}
+2025-10-27 02:14:00,230 - ERROR - Failed to geocode: к.к. Албена МЦ Медика-Албена, С.ОБРОЧИЩЕ К.К.АЛБЕНА, Добрич
+2025-10-27 02:14:01,432 - INFO - Cache hit for бул. 25-ти септември 68||ДОБРИЧ||Добрич
+2025-10-27 02:14:02,634 - INFO - Cache hit for ул. Димитър Петков 3||ДОБРИЧ||Добрич
+2025-10-27 02:14:03,836 - INFO - Cache hit for 25-ти Септември 68||ДОБРИЧ||Добрич
+2025-10-27 02:14:05,038 - INFO - Cache hit for ул. Славянска 2А 2||РУСЕ||Русе
+2025-10-27 02:14:06,264 - INFO - Cache hit for бул. Демокрация 86||БУРГАС||Бургас
+2025-10-27 02:14:07,466 - INFO - Cache hit for ул. Стефан Стамболов 73||БУРГАС||Бургас
+2025-10-27 02:14:08,667 - INFO - Cache hit for ул. Доц.д-р Константин Кънчев||БУРГАС||Бургас
+2025-10-27 02:14:09,869 - INFO - Cache hit for ул. Бригадирска 1||ЕТРОПОЛЕ||София - област
+2025-10-27 02:14:11,071 - INFO - Cache hit for ул. Божко Божилов 1||БОТЕВГРАД||София - област
+2025-10-27 02:14:12,273 - INFO - Cache hit for ул. Георги Бенковски 24||ПИРДОП||София - област
+2025-10-27 02:14:13,475 - INFO - Cache hit for ул. Македония 49||САМОКОВ||София - област
+2025-10-27 02:14:14,677 - INFO - Cache hit for ул. Георги Бенковски 24||ПИРДОП||София - област
+2025-10-27 02:14:18,458 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Първа 32', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:14:19,483 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ДОГАНОВО', 'county': 'София - област', 'country': 'Bulgaria'}
+2025-10-27 02:14:19,486 - ERROR - Failed to geocode: ул. Първа 32, С.ДОГАНОВО, София - област
+2025-10-27 02:14:20,688 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 02:14:21,891 - INFO - Cache hit for ул. Коста Хаджипакев 7||ПЛЕВЕН||Плевен
+2025-10-27 02:14:23,094 - INFO - Cache hit for парк Кайлъка местност Стражата||ПЛЕВЕН||Плевен
+2025-10-27 02:14:26,859 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 5, 'countrycodes': 'bg', 'street': 'ул. Георги Бенковски 19', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:14:27,828 - INFO - Nominatim: no results for {'format': 'json', 'addressdetails': 1, 'limit': 3, 'countrycodes': 'bg', 'city': 'С.ТУЧЕНИЦА', 'county': 'Плевен', 'country': 'Bulgaria'}
+2025-10-27 02:14:27,830 - ERROR - Failed to geocode: ул. Георги Бенковски 19, С.ТУЧЕНИЦА, Плевен
+2025-10-27 02:14:29,031 - INFO - Cache hit for ул. Радецки 30||ТРОЯН||Ловеч
+2025-10-27 02:14:30,234 - INFO - Cache hit for ул. Здравец 15||ЕЛИН ПЕЛИН||София - област
+2025-10-27 02:14:31,436 - INFO - Cache hit for ул. Шипка 30||ИХТИМАН||София - област
+2025-10-27 02:14:32,637 - INFO - Cache hit for ул. Васил Левски 36||КАВАРНА||Добрич
+2025-10-27 02:14:36,139 - INFO - Overpass best for МБАЛ-ОМУРТАГ ЕАД in ОМУРТАГ: score=30 -> МБАЛ Омуртаг
+2025-10-27 02:14:40,270 - INFO - Overpass best for МБАЛ-ПОПОВО ЕООД in ТЪРГОВИЩЕ: score=30 -> Многопрофилна болница за активно лечение Търговище АД
+2025-10-27 02:14:42,784 - INFO - Overpass best for МБАЛ-ПОПОВО ЕООД in ПОПОВО: score=30 -> МБАЛ Попово
+2025-10-27 02:14:46,415 - INFO - Overpass best for МБАЛ-Проф. Д-р Параскев Стоянов-АД Ловеч in ЛОВЕЧ: score=40 -> Многопрофилна болница за активно лечение Проф. Д-р. Параскев Стоянов - Ловеч
+2025-10-27 02:14:49,768 - INFO - Overpass best for МБАЛ-Своге ЕООД in СВОГЕ: score=30 -> Здравен център "ОЛИМП"
+2025-10-27 02:14:52,362 - INFO - Overpass best for МБАЛ-ТЪРГОВИЩЕ АД in ТЪРГОВИЩЕ: score=30 -> Многопрофилна болница за активно лечение Търговище АД
+2025-10-27 02:14:56,458 - INFO - Overpass best for МЕДИКО - ДЕНТАЛЕН ЦЕНТЪР ТРИО ЕООД in ВРАЦА: score=40 -> Първа частна МБАЛ - Враца
+2025-10-27 02:15:07,517 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД in ГОРНА ОРЯХОВИЦА: score=30 -> МБАЛ Св. Иван Рилски
+2025-10-27 02:15:11,096 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА МЕДИЦИНСКА ПОМОЩ - ВИЗУС ООД in ГОРНА ОРЯХОВИЦА: score=30 -> МБАЛ Св. Иван Рилски
+2025-10-27 02:15:14,644 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:15:18,140 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:15:21,620 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:15:25,435 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:15:28,995 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР ЗА СПЕЦИАЛИЗИРАНА ПОМОЩ Д-Р ИВАНОВИ - МЛАДОСТ ООД in НЕСЕБЪР: score=40 -> Специализирана болница за рехабилитация Мари
+2025-10-27 02:15:33,719 - INFO - Overpass best for МЕДИЦИНСКИ ЦЕНТЪР УРОЛОДЖИЯ ЕООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 02:15:37,182 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ХАРМАНЛИ ЕООД in ХАРМАНЛИ: score=30 -> МБАЛ-Харманли
+2025-10-27 02:15:40,686 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СВЕТА ЕКАТЕРИНА - ДИМИТРОВГРАД ЕООД in ДИМИТРОВГРАД: score=30 -> hospital
+2025-10-27 02:15:44,149 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:15:46,674 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:15:50,154 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ СЪРЦЕ И МОЗЪК ЕАД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:15:54,266 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ ХИГИЯ ООД in ХАСКОВО: score=40 -> Даймонд Клиник
+2025-10-27 02:15:57,824 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ГР. СРЕДЕЦ in СРЕДЕЦ: score=30 -> hospital
+2025-10-27 02:16:03,103 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in БУРГАС: score=40 -> Педиатър - Златинка Радева
+2025-10-27 02:16:05,569 - INFO - Overpass best for МНОГОПРОФИЛНА БОЛНИЦА ЗА АКТИВНО ЛЕЧЕНИЕ - ЛАЙФ ХОСПИТАЛ ЕООД in СВЕТИ ВЛАС: score=30 -> Лайф хоспитал
+2025-10-27 02:16:06,780 - INFO - Geocoding complete. Saved to hospitals_with_coords.csv in c:\Users\user\Desktop\hospitals\proba
